@@ -1,6 +1,5 @@
 const { series, watch, parallel, src, dest } = require('gulp');
-const less = require('gulp-less');
-var sass = require('gulp-sass');
+const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const browserSync = require('browser-sync').create();
 
