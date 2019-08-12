@@ -1,2 +1,60 @@
-h1 {
-  color: red; }
+button {
+  border: none; }
+
+.container {
+  margin: 0 10px; }
+
+body {
+  font-family: 'Nanum Barun Gothic', sans-serif;
+  font-size: 15px;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  color: #2F2F2F; }
+
+a {
+  text-decoration: none;
+  color: #28D899;
+  color: #2F2F2F; }
+
+.header__upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0; }
+
+.header__upper__menu_btn {
+  background: url(../images/sprites.png) no-repeat;
+  text-indent: -9999em;
+  outline: none;
+  width: 18px;
+  height: 13px;
+  background-position: -250px -60px; }
+
+.header__upper__logo {
+  background: url(../images/sprites.png) no-repeat;
+  text-indent: -9999em;
+  outline: none;
+  width: 140px;
+  height: 30px;
+  background-position: 0px -140px;
+  display: block; }
+
+.header__upper__search_btn {
+  background: url(../images/sprites.png) no-repeat;
+  text-indent: -9999em;
+  outline: none;
+  width: 24px;
+  height: 23px;
+  background-position: -330px -30px; }
+
+.header__nav {
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px 0;
+  overflow-x: hidden; }
+
+.header__nav a {
+  font-family: 'NanumSquare', sans-serif;
+  font-size: 12px;
+  letter-spacing: -0.02em;
+  color: #000; }

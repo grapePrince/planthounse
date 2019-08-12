@@ -1,0 +1,26 @@
+
+@mixin sprites {
+  background: url(../images/sprites.png) no-repeat;
+  text-indent: -9999em;
+  outline: none;
+}
+
+@mixin sprites__header__upper__menu_btn {
+  width: 18px;
+  height: 13px;
+  background-position: -250px -60px;
+}
+
+@mixin sprites__header__upper__logo {
+  width: 140px;
+  height: 30px;
+  background-position: 0px -140px;
+}
+
+@mixin sprites__header__upper__search_btn {
+  width: 24px;
+  height: 23px;
+  background-position: -330px -30px;
+}
+
+

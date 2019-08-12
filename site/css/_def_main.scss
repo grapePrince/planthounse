@@ -1,0 +1,28 @@
+
+.header__upper {
+  @include l_header__upper;
+}
+
+.header__upper__menu_btn {
+  @include sprites;
+  @include sprites__header__upper__menu_btn;
+}
+
+.header__upper__logo {
+  @include sprites;
+  @include sprites__header__upper__logo;
+  @include s_header__upper__logo;
+}
+
+.header__upper__search_btn {
+  @include sprites;
+  @include sprites__header__upper__search_btn;
+}
+
+.header__nav {
+  @include l_header__nav;
+}
+
+.header__nav a {
+  @include s_header__nav__item;
+}

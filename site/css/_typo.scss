@@ -1,0 +1,17 @@
+@mixin typo_title {
+  font-family: 'NanumSquare', sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+}
+
+@mixin typo_title_tiny {
+  font-family: 'NanumSquare', sans-serif;
+  font-size: 12px;
+  letter-spacing: -0.02em;
+}
+
+@mixin typo_content {
+  font-family: 'Nanum Barun Gothic', sans-serif;
+  font-size: 15px;
+  letter-spacing: -0.05em;
+}

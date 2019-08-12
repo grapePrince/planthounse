@@ -1,0 +1,23 @@
+
+@mixin l_header__upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+@mixin s_header__upper__logo {
+  display: block;
+}
+
+@mixin l_header__nav {
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px 0;
+  overflow-x: hidden;
+}
+
+@mixin s_header__nav__item {
+  @include typo_title_tiny;
+  color: #000;
+}

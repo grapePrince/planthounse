@@ -1,0 +1,23 @@
+@import "sprites";
+@import "typo";
+@import "color";
+
+button {
+  border: none;
+}
+
+.container {
+  margin: 0 10px;
+}
+
+body {
+  @include typo_content;
+  line-height: 1;
+  color: $color_black5;
+}
+
+a {
+  text-decoration: none;
+  color: $color_green;
+  color: $color_black5;
+}
