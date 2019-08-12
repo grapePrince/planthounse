@@ -47,14 +47,31 @@ a {
   height: 23px;
   background-position: -330px -30px; }
 
+.header__nav__container {
+  background: #F5F7F8; }
+
 .header__nav {
   display: flex;
   justify-content: flex-start;
-  padding: 15px 0;
-  overflow-x: hidden; }
+  white-space: nowrap;
+  overflow-x: scroll; }
 
 .header__nav a {
+  margin-right: 40px;
+  position: relative;
+  display: inline-block;
+  padding: 15px 0;
+  box-sizing: border-box;
   font-family: 'NanumSquare', sans-serif;
   font-size: 12px;
   letter-spacing: -0.02em;
   color: #000; }
+
+.header__nav .js-active a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #28D899; }

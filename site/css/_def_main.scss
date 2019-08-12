@@ -19,10 +19,19 @@
   @include sprites__header__upper__search_btn;
 }
 
+.header__nav__container {
+  @include s_header__nav__container;
+}
+
 .header__nav {
   @include l_header__nav;
 }
 
 .header__nav a {
+  @include l_header__nav__item;
   @include s_header__nav__item;
+}
+
+.header__nav .js-active a {
+  @include s_header__nav__item--active;
 }

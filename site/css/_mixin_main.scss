@@ -1,4 +1,6 @@
 
+// header upper
+
 @mixin l_header__upper {
   display: flex;
   justify-content: space-between;
@@ -10,14 +12,39 @@
   display: block;
 }
 
+@mixin s_header__nav__container {
+  background: $color_grey2; 
+}
+
+
+// header nav
+
 @mixin l_header__nav {
   display: flex;
   justify-content: flex-start;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+@mixin l_header__nav__item {
+  margin-right: 40px;
+  position: relative;
+  display: inline-block;
   padding: 15px 0;
-  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 @mixin s_header__nav__item {
   @include typo_title_tiny;
   color: #000;
+}
+
+@mixin s_header__nav__item--active {
+  &:after {
+   content: "";
+   position: absolute;
+   bottom: 0; left: 0; right: 0; 
+   height: 2px; 
+   background: $color_green;
+  }
 }
