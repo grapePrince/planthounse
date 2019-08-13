@@ -49,6 +49,8 @@
 />
 <meta property="og:url" content="http://rahata.dothome.co.kr/planthouse" />
 
+<link rel="stylesheet" href="css/lib/swiper.min.css">
+
 <link rel="stylesheet" href="css/reset.css" />
 <link rel="stylesheet" href="css/app.css" />
 
@@ -62,7 +64,7 @@
     <button class="header__upper__search_btn">검색버튼</button>
   </div>
   <nav class="header__nav__container">
-    <ul class="header__nav container">
+    <ul class="header__nav">
       <li class="js-active"><a href="">추천상품</a></li>
       <li><a href="">신상품</a></li>
       <li><a href="">타임세일</a></li>
@@ -76,13 +78,114 @@
   </nav>
 </header>
 <section class="main_banner">
-  
+  <h2 class="hidden">배너영역</h2>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <img src="images/banner1.jpg" alt="댓글달고 포인트 받기" class="swiper-slide">
+      <img src="images/banner1.jpg" alt="댓글달고 포인트 받기" class="swiper-slide">
+      <img src="images/banner1.jpg" alt="댓글달고 포인트 받기" class="swiper-slide">
+      <img src="images/banner1.jpg" alt="댓글달고 포인트 받기" class="swiper-slide">
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+<section class="main_category container">
+  <h2 class="main_category__title">카테고리로 보기</h2>
+  <ul class="main_category__container">
+    <li class="main_category__item">
+      <a><img class="main_category__image" src="images/category_1.png" alt="전체보기"></a>
+    </li>
+    <li class="main_category__item">
+      <a><img class="main_category__image" src="images/category_2.png" alt="화병"></a>
+    </li>
+    <li class="main_category__item">
+      <a><img class="main_category__image" src="images/category_3.png" alt="화분"></a>
+    </li>
+    <li class="main_category__item">
+      <a><img class="main_category__image" src="images/category_4.png" alt="바구니"></a>
+    </li>
+    <li class="main_category__item">
+      <a><img class="main_category__image" src="images/category_5.png" alt="유리"></a>
+    </li>
+    <li class="main_category__item">
+      <a><img class="main_category__image" src="images/category_6.png" alt="도자기"></a>
+    </li>
+    <li class="main_category__item">
+      <a><img class="main_category__image" src="images/category_7.png" alt="받침대"></a>
+    </li>
+    <li class="main_category__item">
+      <a><img class="main_category__image" src="images/category_8.png" alt="원예용품"></a>
+    </li>
+  </ul>
+</section>
+<section class="main_sale container">
+  <h2 class="main_sale__title">놓치면 후회하는 세일상품!</h2>
+  <ul class="main_sale__product__container">
+    <li class="main_sale__product__item">
+      <div class="main_sale__product__item__left">
+        <img class="main_sale__product__item__image" src="images/product_1.jpg" alt="해초바구니">
+        <span class="main_sale__product__item__sale">9%</span>
+      </div>
+      <div class="main_sale__product__item__right">
+        <h4 class="main_sale__product__item__title">내츄럴 해초바구니(왕바구니) 12type</h4>
+        <p class="main_sale__product__item__desc">#해초바구니 #바구니</p>
+        <div class="main_sale__product__item__price__container">
+          <span class="main_sale__product__item__saleprice">4,900원</span>
+          <span class="main_sale__product__item__price">5,400원</span>
+        </div>
+        <div class="main_sale__product__item__buttons">
+          <span class="main_sale__product__item__buttons--basket hidden_text">장바구니</span>
+          <span class="main_sale__product__item__buttons--like hidden_text">찜하기</span>
+        </div>
+      </div>
+    </li>    
+    <li class="main_sale__product__item">
+      <div class="main_sale__product__item__left">
+        <img class="main_sale__product__item__image" src="images/product_2.jpg" alt="석고상화분">
+        <span class="main_sale__product__item__sale">25%</span>
+      </div>
+      <div class="main_sale__product__item__right">
+        <h4 class="main_sale__product__item__title">석고상화분</h4>
+        <p class="main_sale__product__item__desc">#석고상 #클래식</p>
+        <div class="main_sale__product__item__price__container">
+          <span class="main_sale__product__item__saleprice">36,000원</span>
+          <span class="main_sale__product__item__price">48,000원</span>
+        </div>
+        <div class="main_sale__product__item__buttons">
+          <span class="main_sale__product__item__buttons--basket hidden_text">장바구니</span>
+          <span class="main_sale__product__item__buttons--like hidden_text">찜하기</span>
+        </div>
+      </div>
+    </li>    
+    <li class="main_sale__product__item">
+      <div class="main_sale__product__item__left">
+        <img class="main_sale__product__item__image" src="images/product_3.jpg" alt="모노스탠드화분">
+        <span class="main_sale__product__item__sale">43%</span>
+      </div>
+      <div class="main_sale__product__item__right">
+        <h4 class="main_sale__product__item__title">모노 스탠드화분 14종</h4>
+        <p class="main_sale__product__item__desc">#스탠드화분 #14종류</p>
+        <div class="main_sale__product__item__price__container">
+          <span class="main_sale__product__item__saleprice">7,900원</span>
+          <span class="main_sale__product__item__price">14,000원</span>
+        </div>
+        <div class="main_sale__product__item__buttons">
+          <span class="main_sale__product__item__buttons--basket hidden_text">장바구니</span>
+          <span class="main_sale__product__item__buttons--like hidden_text">찜하기</span>
+        </div>
+      </div>
+    </li>    
+  </ul>
+  <a class="main_sale__more" href="">세일상품 더보기 &gt;</a>
 </section>
 
-
-
-
 <link rel="stylesheet" href="css/font.css">
+
+<script src="js/lib/jquery-3.4.1.min.js"></script>
+<script src="js/lib/swiper.min.js"></script>
+
+<script src="js/main.js"></script>
 
 </body>
 </html>

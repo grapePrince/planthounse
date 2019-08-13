@@ -4,10 +4,15 @@
 
 button {
   border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
 }
 
 .container {
-  margin: 0 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 body {
@@ -20,4 +25,23 @@ a {
   text-decoration: none;
   color: $color_green;
   color: $color_black5;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+@mixin section_title {
+  @include l_section_title;
+  @include s_section_title;
+}
+
+@mixin l_section_title {
+  margin-top: 10px;
+}
+
+@mixin s_section_title {
+  @include typo_title_bold;
+  color: $color_black;
 }

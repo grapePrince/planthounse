@@ -1,11 +1,16 @@
 button {
-  border: none; }
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer; }
 
 .container {
-  margin: 0 10px; }
+  margin-left: 10px;
+  margin-right: 10px; }
 
 body {
-  font-family: 'Nanum Barun Gothic', sans-serif;
+  font-family: 'NanumBarunGothic', sans-serif;
   font-size: 15px;
   letter-spacing: -0.05em;
   line-height: 1;
@@ -14,7 +19,14 @@ body {
 a {
   text-decoration: none;
   color: #28D899;
-  color: #2F2F2F; }
+  color: #2F2F2F;
+  cursor: pointer; }
+
+.hidden {
+  display: none; }
+
+section {
+  margin-top: 20px; }
 
 .header__upper {
   display: flex;
@@ -57,14 +69,13 @@ a {
   overflow-x: scroll; }
 
 .header__nav a {
-  margin-right: 40px;
-  position: relative;
-  display: inline-block;
-  padding: 15px 0;
-  box-sizing: border-box;
   font-family: 'NanumSquare', sans-serif;
   font-size: 12px;
   letter-spacing: -0.02em;
+  position: relative;
+  display: inline-block;
+  padding: 15px 20px;
+  box-sizing: border-box;
   color: #000; }
 
 .header__nav .js-active a:after {
@@ -75,3 +86,145 @@ a {
   right: 0;
   height: 2px;
   background: #28D899; }
+
+.main_banner {
+  margin: 0; }
+
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  left: 10px;
+  bottom: 10px;
+  text-align: left; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 3px;
+  width: 6px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.3); }
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet-active {
+  background: #fff; }
+
+.main_category__title {
+  margin-top: 10px;
+  font-family: 'NanumSquare', sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  color: #000; }
+
+.main_category__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 15px; }
+
+.main_category__item {
+  margin-bottom: 5px;
+  width: 23%;
+  border-radius: 100%; }
+
+.main_category__image {
+  width: 100%; }
+
+.main_sale__title {
+  margin-top: 10px;
+  font-family: 'NanumSquare', sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  color: #000; }
+
+.main_sale__product__container {
+  margin-bottom: 10px; }
+
+.main_sale__product__item {
+  display: flex;
+  margin-top: 10px; }
+
+.main_sale__product__item__left {
+  position: relative;
+  width: 50%;
+  margin-right: 10px; }
+
+.main_sale__product__item__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1; }
+
+.main_sale__product__item__image {
+  width: 100%;
+  border-radius: 3px; }
+
+.main_sale__product__item__sale {
+  font-family: 'NanumSquare', sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background: #ff7777;
+  color: #fff;
+  padding: 7px 10px;
+  box-sizing: border-box;
+  border-radius: 3px; }
+
+.main_sale__product__item__title {
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 15px;
+  letter-spacing: -0.05em;
+  margin-bottom: 7px; }
+
+.main_sale__product__item__desc {
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 12px;
+  letter-spacing: -0.05em;
+  margin-bottom: 10px;
+  color: #636363; }
+
+.main_sale__product__item__price__container {
+  margin-bottom: 7px; }
+
+.main_sale__product__item__saleprice {
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 19px;
+  letter-spacing: -0.05em;
+  font-weight: 700;
+  margin-right: 5px;
+  color: #000; }
+
+.main_sale__product__item__price {
+  color: #979797;
+  text-decoration: line-through; }
+
+.main_sale__product__item__buttons--basket {
+  background: url(../images/sprites.png) no-repeat;
+  text-indent: -9999em;
+  outline: none;
+  width: 15px;
+  height: 14px;
+  background-position: -50px -0px;
+  margin-right: 5px;
+  display: inline-block; }
+
+.main_sale__product__item__buttons--like {
+  background: url(../images/sprites.png) no-repeat;
+  text-indent: -9999em;
+  outline: none;
+  width: 15px;
+  height: 14px;
+  background-position: -70px -0px;
+  display: inline-block; }
+
+.main_sale__more {
+  font-family: 'NanumSquare', sans-serif;
+  font-size: 12px;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  float: right;
+  color: #ff7777; }
