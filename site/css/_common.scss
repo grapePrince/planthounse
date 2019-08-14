@@ -2,6 +2,12 @@
 @import "typo";
 @import "color";
 
+.clearfix:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
 button {
   border: none;
   background: none;
@@ -44,4 +50,261 @@ a {
 @mixin s_section_title {
   @include typo_title_bold;
   color: $color_black;
+}
+
+
+// 리스트 CSS
+@mixin l_list__container {
+  margin-bottom: 10px;
+}
+
+@mixin l_list__container--horizontal {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+@mixin l_list__item--horizontal {
+  display: flex;
+  margin-top: 10px;
+}
+
+@mixin l_list__item--vertical {
+  margin: 10px 10px 0;
+}
+
+@mixin l_list__item__image__container {
+  position: relative;
+}
+
+@mixin l_list__item__left {
+  width: 50%;
+  margin-right: 10px;
+}
+
+@mixin l_list__item__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+@mixin l_list__item__up {
+  margin-bottom: 10px;
+}
+
+@mixin l_list__item__sale {
+  position: absolute; 
+  left: 10px; 
+  top: 10px;
+}
+
+@mixin l_list__item__title {
+  margin-bottom: 7px;
+}
+
+@mixin l_list__item__desc {
+  margin-bottom: 10px;
+}
+
+@mixin l_list__item__row_container {
+  margin-bottom: 2px;
+}
+
+@mixin l_list__item__row_container--buttons {
+  margin-top: 5px;
+}
+
+@mixin l_list__item__saleprice {
+  margin-right: 5px;
+}
+
+@mixin l_list__item__button--basket {
+  margin-right: 5px;
+}
+
+@mixin l_list__item__button--float {
+  position: absolute;
+  right: 10px; bottom: 10px;
+}
+
+
+@mixin s_list__item__image {
+  width: 100%;
+  border-radius: 3px;
+}
+
+@mixin s_list__item__image--new {
+  width: 196px;
+}
+
+@mixin s_list__item__sale {
+  background: $color_red;
+  color: $color_white;
+  padding: 7px 10px;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+@mixin s_list__item__desc { 
+  color: $color_black3;
+}
+
+@mixin s_list__item__saleprice {
+  color: $color_black;
+}
+
+@mixin s_list__item__price {
+  color: $color_black2;
+  text-decoration: line-through;
+}
+
+@mixin s_list__item__button--basket {
+  display: inline-block;
+}
+
+@mixin s_list__item__button--like {
+  display: inline-block;
+}
+
+@mixin s_list__item__button--float {
+  width: 20px; height: 20px;
+  background: $color_white5;
+}
+
+@mixin s_list__item__percent {
+  color: $color_green;
+}
+
+@mixin s_list__item__tag {
+  padding: 3px 4px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  color: $color_white;
+}
+
+@mixin s_list__item__tag--soldout {
+  background: $color_black1;
+}
+
+@mixin s_list__item__tag--new {
+  background: $color_green;
+}
+
+@mixin s_list__item__tag--hot {
+  background: $color_red;
+}
+
+
+.list__container {
+  @include l_list__container;
+}
+
+.list__container--horizontal {
+  @include l_list__container--horizontal;
+}
+
+.list__item--horizontal {
+  @include l_list__item--horizontal;
+}
+
+.list__item--vertical {
+  @include l_list__item--vertical;
+}
+
+.list__item__image__container {
+  @include l_list__item__image__container;
+}
+
+.list__item__left {
+  @include l_list__item__left;
+}
+
+.list__item__right {
+  @include l_list__item__right;
+}
+
+.list__item__up {
+  @include l_list__item__up;
+}
+
+.list__item__image {
+  @include s_list__item__image;
+}
+
+.list__item__image--new {
+  @include s_list__item__image--new;
+}
+
+.list__item__sale {
+  @include typo_title_bold;
+  @include l_list__item__sale;
+  @include s_list__item__sale;
+}
+
+.list__item__title {
+  @include typo_content;
+  @include l_list__item__title;
+}
+
+.list__item__desc {
+  @include typo_content_tiny;
+  @include l_list__item__desc;
+  @include s_list__item__desc;
+}
+
+.list__item__row_container {
+  @include l_list__item__row_container;
+}
+
+.list__item__row_container--buttons {
+  @include l_list__item__row_container--buttons;
+}
+
+.list__item__saleprice {
+  @include typo_content_big_bold;
+  @include l_list__item__saleprice;
+  @include s_list__item__saleprice;
+}
+
+.list__item__price {
+  @include s_list__item__price;
+}
+
+.list__item__button--basket {
+  @include sprites;
+  @include sprites__basket;
+  @include l_list__item__button--basket;
+  @include s_list__item__button--basket;
+}
+
+.list__item__button--like {
+  @include sprites;
+  @include sprites__like;
+  @include s_list__item__button--like;
+}
+
+.list__item__button--float {
+  @include s_list__item__button--float;
+  @include l_list__item__button--float;
+}
+
+.list__item__percent {
+  @include typo_title_bold;
+  @include s_list__item__percent;
+}
+
+.list__item__tag {
+  @include typo_title_tiny;
+  @include s_list__item__tag;
+}
+
+.list__item__tag--soldout {
+  @include s_list__item__tag--soldout;
+}
+.list__item__tag--new {
+  @include s_list__item__tag--new;
+}
+.list__item__tag--hot {
+  @include s_list__item__tag--hot;
 }

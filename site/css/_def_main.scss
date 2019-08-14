@@ -94,72 +94,14 @@ section {
   @include section_title;
 }
 
-.main_sale__product__container {
-  @include l_main_sale__product__container;
-}
-
-.main_sale__product__item {
-  @include l_main_sale__product__item;
-}
-
-.main_sale__product__item__left {
-  @include l_main_sale__product__item__left;
-}
-
-.main_sale__product__item__right {
-  @include l_main_sale__product__item__right;
-}
-
-.main_sale__product__item__image {
-  @include s_main_sale__product__item__image;
-}
-
-.main_sale__product__item__sale {
-  @include typo_title;
-  @include l_main_sale__product__item__sale;
-  @include s_main_sale__product__item__sale;
-}
-
-.main_sale__product__item__title {
-  @include typo_content;
-  @include l_main_sale__product__item__title;
-}
-
-.main_sale__product__item__desc {
-  @include typo_content_tiny;
-  @include l_main_sale__product__item__desc;
-  @include s_main_sale__product__item__desc;
-}
-
-.main_sale__product__item__price__container {
-  @include l_main_sale__product__item__price__container;
-}
-
-.main_sale__product__item__saleprice {
-  @include typo_content_big_bold;
-  @include l_main_sale__product__item__saleprice;
-  @include s_main_sale__product__item__saleprice;
-}
-
-.main_sale__product__item__price {
-  @include s_main_sale__product__item__price;
-}
-
-.main_sale__product__item__buttons--basket {
-  @include sprites;
-  @include sprites__basket;
-  @include l_main_sale__product__item__buttons--basket;
-  @include s_main_sale__product__item__buttons--basket;
-}
-
-.main_sale__product__item__buttons--like {
-  @include sprites;
-  @include sprites__like;
-  @include s_main_sale__product__item__buttons--like;
-}
-
 .main_sale__more {  
   @include typo_title_tiny_bold;
   @include l_main_sale__more;
   @include s_main_sale__more;
+}
+
+// new 
+
+.main_new__title {
+  @include section_title;
 }
