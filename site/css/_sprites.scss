@@ -3,12 +3,9 @@
   background: url(../images/sprites.png) no-repeat;
   text-indent: -9999em;
   outline: none;
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 2) {
-  @mixin sprites {
-    background-image: url('../images/sprite@2x.png');
-    background-size: 784px 520px;
+  @media all and (-webkit-min-device-pixel-ratio: 2) {
+    background-image: url('../images/sprites@2x.png');
+    background-size: 392px 260px;
   }
 }
 

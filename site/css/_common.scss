@@ -94,6 +94,15 @@ a {
   margin-bottom: 10px;
 }
 
+@mixin l_list__item__rows--wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin l_list__item__image__container--new {
+  width: 60vw;
+}
+
 @mixin l_list__item__sale {
   position: absolute; 
   left: 10px; 
@@ -138,9 +147,6 @@ a {
   border-radius: 3px;
 }
 
-@mixin s_list__item__image--new {
-  width: 196px;
-}
 
 @mixin s_list__item__sale {
   background: $color_red;
@@ -237,8 +243,8 @@ a {
   @include s_list__item__image;
 }
 
-.list__item__image--new {
-  @include s_list__item__image--new;
+.list__item__image__container--new {
+  @include l_list__item__image__container--new;
 }
 
 .list__item__sale {
@@ -256,6 +262,10 @@ a {
   @include typo_content_tiny;
   @include l_list__item__desc;
   @include s_list__item__desc;
+}
+
+.list__item__rows--wrap {
+  @include l_list__item__rows--wrap;
 }
 
 .list__item__row_container {

@@ -66,8 +66,8 @@ a {
   width: 100%;
   border-radius: 3px; }
 
-.list__item__image--new {
-  width: 196px; }
+.list__item__image__container--new {
+  width: 60vw; }
 
 .list__item__sale {
   font-family: 'NanumSquare', sans-serif;
@@ -96,6 +96,10 @@ a {
   margin-bottom: 10px;
   color: #636363; }
 
+.list__item__rows--wrap {
+  display: flex;
+  flex-wrap: wrap; }
+
 .list__item__row_container {
   margin-bottom: 2px; }
 
@@ -123,6 +127,10 @@ a {
   background-position: -50px -0px;
   margin-right: 5px;
   display: inline-block; }
+  @media all and (-webkit-min-device-pixel-ratio: 2) {
+    .list__item__button--basket {
+      background-image: url("../images/sprites@2x.png");
+      background-size: 392px 260px; } }
 
 .list__item__button--like {
   background: url(../images/sprites.png) no-repeat;
@@ -132,6 +140,10 @@ a {
   height: 14px;
   background-position: -70px -0px;
   display: inline-block; }
+  @media all and (-webkit-min-device-pixel-ratio: 2) {
+    .list__item__button--like {
+      background-image: url("../images/sprites@2x.png");
+      background-size: 392px 260px; } }
 
 .list__item__button--float {
   width: 20px;
@@ -186,6 +198,10 @@ section {
   width: 18px;
   height: 13px;
   background-position: -250px -60px; }
+  @media all and (-webkit-min-device-pixel-ratio: 2) {
+    .header__upper__menu_btn {
+      background-image: url("../images/sprites@2x.png");
+      background-size: 392px 260px; } }
 
 .header__upper__logo {
   background: url(../images/sprites.png) no-repeat;
@@ -195,6 +211,10 @@ section {
   height: 30px;
   background-position: 0px -140px;
   display: block; }
+  @media all and (-webkit-min-device-pixel-ratio: 2) {
+    .header__upper__logo {
+      background-image: url("../images/sprites@2x.png");
+      background-size: 392px 260px; } }
 
 .header__upper__search_btn {
   background: url(../images/sprites.png) no-repeat;
@@ -203,6 +223,10 @@ section {
   width: 24px;
   height: 23px;
   background-position: -330px -30px; }
+  @media all and (-webkit-min-device-pixel-ratio: 2) {
+    .header__upper__search_btn {
+      background-image: url("../images/sprites@2x.png");
+      background-size: 392px 260px; } }
 
 .header__nav__container {
   background: #F5F7F8; }
