@@ -5,6 +5,13 @@
   outline: none;
 }
 
+@media all and (-webkit-min-device-pixel-ratio: 2) {
+  @mixin sprites {
+    background-image: url('../images/sprite@2x.png');
+    background-size: 784px 520px;
+  }
+}
+
 @mixin sprites__header__upper__menu_btn {
   width: 18px;
   height: 13px;

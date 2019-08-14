@@ -36,7 +36,8 @@ a {
 .list__container--horizontal {
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: scroll; }
+  overflow-x: scroll;
+  padding-bottom: 5px; }
 
 .list__item--horizontal {
   display: flex;
@@ -78,7 +79,7 @@ a {
   top: 10px;
   background: #ff7777;
   color: #fff;
-  padding: 7px 10px;
+  padding: 5px 6px 4px;
   box-sizing: border-box;
   border-radius: 3px; }
 
@@ -136,9 +137,13 @@ a {
   width: 20px;
   height: 20px;
   background: rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
   position: absolute;
   right: 10px;
-  bottom: 10px; }
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .list__item__percent {
   font-family: 'NanumSquare', sans-serif;
@@ -151,7 +156,7 @@ a {
   font-family: 'NanumSquare', sans-serif;
   font-size: 12px;
   letter-spacing: -0.02em;
-  padding: 3px 4px;
+  padding: 3px 4px 2px;
   box-sizing: border-box;
   border-radius: 3px;
   color: #fff; }
