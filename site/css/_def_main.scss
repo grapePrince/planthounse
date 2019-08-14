@@ -130,3 +130,41 @@ section {
   @include l_main_banner2__desc__button;
   @include s_main_banner2__desc__button;
 }
+
+
+// banner 3
+
+.main_banner3__container {
+  @include l_main_banner3__container;
+  @include s_main_banner3__container;
+}
+
+.main_banner3__desc__container {
+  @include l_main_banner3__desc__container;
+}
+
+.main_banner3__desc__subtitle {
+  @include typo_title_smaller;
+  @include l_main_banner3__desc__subtitle;
+}
+
+.main_banner3__desc__title {
+  @include typo_title_bold;
+  @include s_main_banner3__desc__title;
+}
+
+.main_banner3__button__container {
+  @include l_main_banner3__button__container;
+}
+
+.main_banner3__button {
+  @include typo_title_small;
+  @include s_main_banner3__button;
+}
+
+
+// hot
+
+.main_hot {
+  @include l_main_hot;
+}

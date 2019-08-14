@@ -105,7 +105,7 @@
 }
 
 
-// banner
+// banner2
 
 @mixin l_main_banner2 {
   margin-top: 0;
@@ -145,4 +145,52 @@
   padding: 5px 7px 4px;
   color: $color_white;
   border-radius: 3px;
+}
+
+// banner3 
+
+@mixin l_main_banner3__container {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+
+@mixin l_main_banner3__desc__container {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin l_main_banner3__desc__subtitle {
+  margin-bottom: 5px;
+}
+
+@mixin l_main_banner3__button__container {
+  flex:1;
+  display: flex;
+  justify-content: center;
+}
+
+
+@mixin s_main_banner3__container {
+  background: $color_yellow;
+}
+
+@mixin s_main_banner3__desc__title {
+  font-size: 21px;
+}
+
+@mixin s_main_banner3__button {
+  padding: 5px 7px;
+  background: $color_red;
+  color: $color_white;
+  border-radius: 3px;
+}
+
+
+// hot 
+
+@mixin l_main_hot {
+  margin-top: 30px;
 }
