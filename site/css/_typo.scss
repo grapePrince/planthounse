@@ -18,6 +18,18 @@
   font-weight: 800;
 }
 
+@mixin typo_title_small {
+  font-family: 'NanumSquare', sans-serif;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+}
+
+@mixin typo_title_smaller {
+  font-family: 'NanumSquare', sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+}
+
 @mixin typo_title_tiny {
   font-family: 'NanumSquare', sans-serif;
   font-size: 12px;

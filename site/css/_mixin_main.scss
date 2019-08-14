@@ -104,13 +104,45 @@
   width: 100%;
 }
 
-// sale
 
-@mixin l_main_sale__more {
-  float: right;
+// banner
+
+@mixin l_main_banner2 {
+  margin-top: 0;
 }
 
-@mixin s_main_sale__more {
-  color: $color_red;
+@mixin l_main_banner2__container {
+  display: flex;
 }
 
+@mixin l_main_banner2__desc__container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align : center;
+}
+
+@mixin s_main_banner2__desc__container {
+  background: $color_palesky; 
+}
+
+@mixin s_main_banner2__image {
+  width: 50%;
+}
+
+@mixin s_main_banner2__desc__title {
+  line-height: 21px;
+}
+
+@mixin l_main_banner2__desc__button {
+  margin-top: 10px;
+}
+
+@mixin s_main_banner2__desc__button {
+  background: $color_green;
+  padding: 5px 7px 4px;
+  color: $color_white;
+  border-radius: 3px;
+}

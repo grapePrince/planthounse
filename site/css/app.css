@@ -182,6 +182,14 @@ a {
 .list__item__tag--hot {
   background: #ff7777; }
 
+.list__more {
+  font-family: 'NanumSquare', sans-serif;
+  font-size: 12px;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  float: right;
+  color: #ff7777; }
+
 section {
   margin-top: 20px; }
 
@@ -308,14 +316,6 @@ section {
   font-weight: 800;
   color: #000; }
 
-.main_sale__more {
-  font-family: 'NanumSquare', sans-serif;
-  font-size: 12px;
-  letter-spacing: -0.02em;
-  font-weight: 800;
-  float: right;
-  color: #ff7777; }
-
 .main_new__title {
   margin-top: 10px;
   font-family: 'NanumSquare', sans-serif;
@@ -323,3 +323,37 @@ section {
   letter-spacing: -0.02em;
   font-weight: 800;
   color: #000; }
+
+.main_banner2 {
+  margin-top: 0; }
+
+.main_banner2__container {
+  display: flex; }
+
+.main_banner2__desc__container {
+  background: #EBF6FF;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+.main_banner2__image {
+  width: 50%; }
+
+.main_banner2__desc__title {
+  font-family: 'NanumSquare', sans-serif;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  line-height: 21px; }
+
+.main_banner2__desc__button {
+  font-family: 'NanumSquare', sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  margin-top: 10px;
+  background: #28D899;
+  padding: 5px 7px 4px;
+  color: #fff;
+  border-radius: 3px; }

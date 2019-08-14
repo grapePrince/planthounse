@@ -94,14 +94,39 @@ section {
   @include section_title;
 }
 
-.main_sale__more {  
-  @include typo_title_tiny_bold;
-  @include l_main_sale__more;
-  @include s_main_sale__more;
-}
 
 // new 
 
 .main_new__title {
   @include section_title;
+}
+
+// banner2 
+
+.main_banner2 {
+  @include l_main_banner2;
+}
+
+.main_banner2__container {
+  @include l_main_banner2__container;
+}
+
+.main_banner2__desc__container {
+  @include s_main_banner2__desc__container;
+  @include l_main_banner2__desc__container;
+}
+
+.main_banner2__image {
+  @include s_main_banner2__image;
+}
+
+.main_banner2__desc__title {
+  @include typo_title_small;
+  @include s_main_banner2__desc__title;
+}
+
+.main_banner2__desc__button {
+  @include typo_title_smaller;
+  @include l_main_banner2__desc__button;
+  @include s_main_banner2__desc__button;
 }

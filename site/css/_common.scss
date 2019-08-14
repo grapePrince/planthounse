@@ -141,6 +141,10 @@ a {
   align-items: center;
 }
 
+@mixin l_list__more {
+  float: right;
+}
+
 
 @mixin s_list__item__image {
   width: 100%;
@@ -204,6 +208,10 @@ a {
 
 @mixin s_list__item__tag--hot {
   background: $color_red;
+}
+
+@mixin s_list__more {
+  color: $color_red;
 }
 
 
@@ -322,4 +330,10 @@ a {
 }
 .list__item__tag--hot {
   @include s_list__item__tag--hot;
+}
+
+.list__more {  
+  @include typo_title_tiny_bold;
+  @include l_list__more;
+  @include s_list__more;
 }
