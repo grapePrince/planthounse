@@ -168,3 +168,46 @@ section {
 .main_hot {
   @include l_main_hot;
 }
+
+
+// footer
+
+footer {
+  @include l_footer;
+}
+
+.footer_nav {
+  @include l_footer_nav;
+  @include s_footer_nav;
+}
+
+.footer_nav__item {
+  @include typo_title_smaller;
+}
+
+.footer_social {
+  @include l_footer_social;
+}
+
+.footer_social__item {
+  @include sprites;
+  @include l_footer_social__item;
+}
+
+.footer_social__item--facebook {
+  @include sprites__facebook;
+}
+
+.footer_social__item--instagram {
+  @include sprites__instagram;
+}
+
+.footer_social__item--kakaotalk {
+  @include sprites__kakaotalk;
+}
+
+.footer_copy {
+  @include typo_title_smaller;
+  @include l_footer_copy;
+  @include s_footer_copy;
+}

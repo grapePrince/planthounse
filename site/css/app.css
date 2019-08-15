@@ -408,3 +408,58 @@ section {
 
 .main_hot {
   margin-top: 30px; }
+
+footer {
+  margin-top: 30px; }
+
+.footer_nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  border-top: #28D899 1px solid;
+  border-bottom: #28D899 1px solid; }
+
+.footer_nav__item {
+  font-family: 'NanumSquare', sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.02em; }
+
+.footer_social {
+  display: flex;
+  justify-content: center; }
+
+.footer_social__item {
+  background: url(../images/sprites.png) no-repeat;
+  text-indent: -9999em;
+  outline: none;
+  display: inline-block;
+  margin: 25px 10px; }
+  @media all and (-webkit-min-device-pixel-ratio: 2) {
+    .footer_social__item {
+      background-image: url("../images/sprites@2x.png");
+      background-size: 392px 260px; } }
+
+.footer_social__item--facebook {
+  width: 40px;
+  height: 40px;
+  background-position: -0px -60px; }
+
+.footer_social__item--instagram {
+  width: 40px;
+  height: 40px;
+  background-position: -40px -60px; }
+
+.footer_social__item--kakaotalk {
+  width: 40px;
+  height: 40px;
+  background-position: -80px -60px; }
+
+.footer_copy {
+  font-family: 'NanumSquare', sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  border-top: #C4C4C4 1px solid;
+  color: #636363; }

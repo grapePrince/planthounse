@@ -39,3 +39,20 @@
   background-position: -70px -0px;
 }
 
+@mixin sprites__facebook {
+  width: 40px;
+  height: 40px;
+  background-position: -0px -60px;
+}
+
+@mixin sprites__instagram {
+  width: 40px;
+  height: 40px;
+  background-position: -40px -60px;
+}
+
+@mixin sprites__kakaotalk {
+  width: 40px;
+  height: 40px;
+  background-position: -80px -60px;
+}

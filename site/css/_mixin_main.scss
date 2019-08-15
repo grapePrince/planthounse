@@ -194,3 +194,42 @@
 @mixin l_main_hot {
   margin-top: 30px;
 }
+
+// footer 
+
+@mixin l_footer {
+  margin-top: 30px;
+}
+
+@mixin l_footer_nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+
+}
+
+@mixin l_footer_social {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin l_footer_social__item {
+  display: inline-block;
+  margin: 25px 10px;
+}
+
+@mixin l_footer_copy {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+@mixin s_footer_nav {
+  border-top: $color_green 1px solid;
+  border-bottom: $color_green 1px solid; 
+}
+
+@mixin s_footer_copy {
+  border-top: $color_black1 1px solid;
+  color: $color_black3;
+}
