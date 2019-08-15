@@ -55,301 +55,397 @@
 <link rel="stylesheet" href="css/app.css" />
 
 </head>
-<body class="main">
+<body class="main js-search-opened">
 
-<header class="header">
-  <div class="header__upper container">
-    <a class="header__upper__menu_btn" href="">좌측메뉴</a>
-    <h1><a class="header__upper__logo" href="">로고</a></h1>
-    <button class="header__upper__search_btn">검색버튼</button>
-  </div>
-  <nav class="header__nav__container">
-    <ul class="header__nav">
-      <li class="js-active"><a href="">추천상품</a></li>
-      <li><a href="">신상품</a></li>
-      <li><a href="">타임세일</a></li>
-      <li><a href="">고객센터</a></li>
-      <li><a href="">Q&A</a></li>
-      <li><a href="">찜한목록</a></li>
-      <li><a href="">마이페이지</a></li>
-      <li><a href="">공지사항</a></li>
-      <li><a href="">최근본목록</a></li>
+<div class="content">
+  <header class="header">
+    <div class="header__upper container">
+      <a class="header__upper__menu_btn" href="">좌측메뉴</a>
+      <h1><a class="header__upper__logo" href="">로고</a></h1>
+      <button class="header__upper__search_btn">검색버튼</button>
+    </div>
+    <nav class="header__nav__container">
+      <ul class="header__nav">
+        <li class="js-active"><a href="">추천상품</a></li>
+        <li><a href="">신상품</a></li>
+        <li><a href="">타임세일</a></li>
+        <li><a href="">고객센터</a></li>
+        <li><a href="">Q&A</a></li>
+        <li><a href="">찜한목록</a></li>
+        <li><a href="">마이페이지</a></li>
+        <li><a href="">공지사항</a></li>
+        <li><a href="">최근본목록</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="main_banner">
+    <h2 class="hidden">배너영역</h2>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <img src="images/banner1.jpg" alt="댓글달고 포인트 받기" class="swiper-slide">
+        <img src="images/banner1.jpg" alt="댓글달고 포인트 받기" class="swiper-slide">
+        <img src="images/banner1.jpg" alt="댓글달고 포인트 받기" class="swiper-slide">
+        <img src="images/banner1.jpg" alt="댓글달고 포인트 받기" class="swiper-slide">
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <section class="main_category container">
+    <h2 class="main_category__title">카테고리로 보기</h2>
+    <ul class="main_category__container">
+      <li class="main_category__item">
+        <a><img class="main_category__image" src="images/category_1.png" alt="전체보기"></a>
+      </li>
+      <li class="main_category__item">
+        <a><img class="main_category__image" src="images/category_2.png" alt="화병"></a>
+      </li>
+      <li class="main_category__item">
+        <a><img class="main_category__image" src="images/category_3.png" alt="화분"></a>
+      </li>
+      <li class="main_category__item">
+        <a><img class="main_category__image" src="images/category_4.png" alt="바구니"></a>
+      </li>
+      <li class="main_category__item">
+        <a><img class="main_category__image" src="images/category_5.png" alt="유리"></a>
+      </li>
+      <li class="main_category__item">
+        <a><img class="main_category__image" src="images/category_6.png" alt="도자기"></a>
+      </li>
+      <li class="main_category__item">
+        <a><img class="main_category__image" src="images/category_7.png" alt="받침대"></a>
+      </li>
+      <li class="main_category__item">
+        <a><img class="main_category__image" src="images/category_8.png" alt="원예용품"></a>
+      </li>
     </ul>
-  </nav>
-</header>
-<section class="main_banner">
-  <h2 class="hidden">배너영역</h2>
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <img src="images/banner1.jpg" alt="댓글달고 포인트 받기" class="swiper-slide">
-      <img src="images/banner1.jpg" alt="댓글달고 포인트 받기" class="swiper-slide">
-      <img src="images/banner1.jpg" alt="댓글달고 포인트 받기" class="swiper-slide">
-      <img src="images/banner1.jpg" alt="댓글달고 포인트 받기" class="swiper-slide">
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-  </div>
-</section>
-<section class="main_category container">
-  <h2 class="main_category__title">카테고리로 보기</h2>
-  <ul class="main_category__container">
-    <li class="main_category__item">
-      <a><img class="main_category__image" src="images/category_1.png" alt="전체보기"></a>
-    </li>
-    <li class="main_category__item">
-      <a><img class="main_category__image" src="images/category_2.png" alt="화병"></a>
-    </li>
-    <li class="main_category__item">
-      <a><img class="main_category__image" src="images/category_3.png" alt="화분"></a>
-    </li>
-    <li class="main_category__item">
-      <a><img class="main_category__image" src="images/category_4.png" alt="바구니"></a>
-    </li>
-    <li class="main_category__item">
-      <a><img class="main_category__image" src="images/category_5.png" alt="유리"></a>
-    </li>
-    <li class="main_category__item">
-      <a><img class="main_category__image" src="images/category_6.png" alt="도자기"></a>
-    </li>
-    <li class="main_category__item">
-      <a><img class="main_category__image" src="images/category_7.png" alt="받침대"></a>
-    </li>
-    <li class="main_category__item">
-      <a><img class="main_category__image" src="images/category_8.png" alt="원예용품"></a>
-    </li>
-  </ul>
-</section>
-<section class="main_sale container">
-  <h2 class="main_sale__title">놓치면 후회하는 세일상품!</h2>
-  <ul class="list__container">
-    <li class="list__item--horizontal">
-      <div class="list__item__left list__item__image__container ">
-        <img class="list__item__image" src="images/product_1.jpg" alt="해초바구니">
-        <span class="list__item__sale">9%</span>
-      </div>
-      <div class="list__item__right">
-        <h4 class="list__item__title">내츄럴 해초바구니(왕바구니) 12type</h4>
-        <p class="list__item__desc">#해초바구니 #바구니</p>
-        <div class="list__item__row_container">
-          <span class="list__item__saleprice">4,900원</span>
-          <span class="list__item__price">5,400원</span>
-        </div>
-        <div class="list__item__row_container--buttons">
-          <span class="list__item__button--basket">장바구니</span>
-          <span class="list__item__button--like">찜하기</span>
-        </div>
-      </div>
-    </li>    
-    <li class="list__item--horizontal">
-      <div class="list__item__left list__item__image__container ">
-        <img class="list__item__image" src="images/product_2.jpg" alt="석고상화분">
-        <span class="list__item__sale">25%</span>
-      </div>
-      <div class="list__item__right">
-        <h4 class="list__item__title">석고상화분</h4>
-        <p class="list__item__desc">#석고상 #클래식</p>
-        <div class="list__item__row_container">
-          <span class="list__item__saleprice">36,000원</span>
-          <span class="list__item__price">48,000원</span>
-        </div>
-        <div class="list__item__row_container--buttons">
-          <span class="list__item__button--basket">장바구니</span>
-          <span class="list__item__button--like">찜하기</span>
-        </div>
-      </div>
-    </li>    
-    <li class="list__item--horizontal">
-      <div class="list__item__left list__item__image__container ">
-        <img class="list__item__image" src="images/product_3.jpg" alt="모노스탠드화분">
-        <span class="list__item__sale">43%</span>
-      </div>
-      <div class="list__item__right">
-        <h4 class="list__item__title">모노 스탠드화분 14종</h4>
-        <p class="list__item__desc">#스탠드화분 #14종류</p>
-        <div class="list__item__row_container">
-          <span class="list__item__saleprice">7,900원</span>
-          <span class="list__item__price">14,000원</span>
-        </div>
-        <div class="list__item__row_container--buttons">
-          <span class="list__item__button--basket">장바구니</span>
-          <span class="list__item__button--like">찜하기</span>
-        </div>
-      </div>
-    </li>    
-  </ul>
-  <div class="clearfix">
-    <a class="list__more" href="">세일상품 더보기 &gt;</a>
-  </div>
-</section>
-<section class="main_new">
-  <div class="container">
-    <h2 class="main_new__title">따끈한 신상품 보고가세요</h2>
-  </div>
-  <ul class="list__container list__container--horizontal">
-    <li class="list__item--vertical">
-        <div class="list__item__image__container list__item__up list__item__image__container--new">
-          <img class="list__item__image" src="images/product_4.jpg" alt="무광베이직 원형화분">
-          <div class="list__item__button--float">
-            <span class="list__item__button--like">찜하기</span>
-          </div>
-        </div>
-        <div class="list__item__down">
-          <h4 class="list__item__title">무광베이직 원형화분</h4>
-          <p class="list__item__desc">#원형화분 #무광</p>
-          <div class="list__item__rows--wrap">
-            <div class="list__item__row_container">
-              <span class="list__item__saleprice">3,500원</span>
-            </div>  
-            <div class="list__item__row_container">
-              <span class="list__item__percent">5% 할인</span>
-              <span class="list__item__price">30,000원</span>
-            </div>
-          </div>
-          <div class="list__item__row_container--buttons">
-            <span class="list__item__tag list__item__tag--new">신규</span>
-            <span class="list__item__tag list__item__tag--hot">인기</span>
-          </div>
-        </div>
-    </li>
-    <li class="list__item--vertical">
-        <div class="list__item__image__container  list__item__up list__item__image__container--new">
-          <img class="list__item__image" src="images/product_5.jpg" alt="철재 베란다 화분걸이 화분받침대">
-          <div class="list__item__button--float">
-            <span class="list__item__button--like">찜하기</span>
-          </div>
-        </div>
-        <div class="list__item__down">
-          <h4 class="list__item__title">철재 베란다 화분걸이 화분받침대</h4>
-          <p class="list__item__desc">#화분받침대 #베란다</p>
-          <div class="list__item__rows--wrap">
-            <div class="list__item__row_container">
-              <span class="list__item__saleprice">19,800원</span>
-            </div>  
-            <div class="list__item__row_container">
-              <span class="list__item__percent">34% 할인</span>
-              <span class="list__item__price">30,000원</span>
-            </div>
-          </div>
-          <div class="list__item__row_container--buttons">
-            <span class="list__item__tag list__item__tag--soldout">품절</span>
-            <span class="list__item__tag list__item__tag--new">신규</span>
-            <span class="list__item__tag list__item__tag--hot">인기</span>
-          </div>
-        </div>
-    </li>
-    <li class="list__item--vertical">
-        <div class="list__item__up list__item__image__container list__item__image__container--new">
-          <img class="list__item__image" src="images/product_6.jpg" alt="감성 화병, 꽃병 모음전(유리/도자기)">
-          <div class="list__item__button--float">
-            <span class="list__item__button--like">찜하기</span>
-          </div>
-        </div>
-        <div class="list__item__down">
-          <h4 class="list__item__title">감성 화병, 꽃병 모음전(유리/도자기)</h4>
-          <p class="list__item__desc">#화병 #꽃병 #감성</p>
-          <div class="list__item__rows--wrap">
-            <div class="list__item__row_container">
-              <span class="list__item__saleprice">6,800원</span>
-            </div>  
-            <div class="list__item__row_container">
-              <span class="list__item__percent">51% 할인</span>
-              <span class="list__item__price">14,100원</span>
-            </div>
-          </div>
-          <div class="list__item__row_container--buttons">
-            <span class="list__item__tag list__item__tag--soldout">품절</span>
-            <span class="list__item__tag list__item__tag--new">신규</span>
-            <span class="list__item__tag list__item__tag--hot">인기</span>
-          </div>
-        </div>
-    </li>
-  </ul>
-  
-</section>
-<section class="main_banner2">
-  <div class="main_banner2__container">
-    <img class="main_banner2__image" src="images/present.jpg" alt="">
-    <div class="main_banner2__desc__container">
-      <h2 class="main_banner2__desc__title">
-        특별한 날에 어울리는<br>
-        특별한 선물
-      </h2>
-      <span class="main_banner2__desc__button">
-        상품 보러가기
-      </span>
-    </div>
-  </div>
-</section>
-<section class="main_event">
-    <h2 class="main_sale__title">이벤트</h2>
+  </section>
+  <section class="main_sale container">
+    <h2 class="main_sale__title">놓치면 후회하는 세일상품!</h2>
     <ul class="list__container">
       <li class="list__item--horizontal">
         <div class="list__item__left list__item__image__container ">
-          <img class="list__item__image" src="images/event_1.jpg" alt="해초바구니">
+          <img class="list__item__image" src="images/product_1.jpg" alt="해초바구니">
+          <span class="list__item__sale">9%</span>
         </div>
         <div class="list__item__right">
-          <p class="list__item__desc">[1+1] 8월 맞이 대할인</p>
-          <h4 class="list__item__title">무더운 여름철, 식물들의 분갈이 대란!</h4>         
+          <h4 class="list__item__title">내츄럴 해초바구니(왕바구니) 12type</h4>
+          <p class="list__item__desc">#해초바구니 #바구니</p>
+          <div class="list__item__row_container">
+            <span class="list__item__saleprice">4,900원</span>
+            <span class="list__item__price">5,400원</span>
+          </div>
+          <div class="list__item__row_container--buttons">
+            <span class="list__item__button--basket">장바구니</span>
+            <span class="list__item__button--like">찜하기</span>
+          </div>
         </div>
       </li>    
       <li class="list__item--horizontal">
         <div class="list__item__left list__item__image__container ">
-          <img class="list__item__image" src="images/event_2.jpg" alt="해초바구니">
+          <img class="list__item__image" src="images/product_2.jpg" alt="석고상화분">
+          <span class="list__item__sale">25%</span>
         </div>
         <div class="list__item__right">
-          <p class="list__item__desc">[1+1] 8월 맞이 대할인</p>
-          <h4 class="list__item__title">무더운 여름철, 식물들의 분갈이 대란!</h4>         
+          <h4 class="list__item__title">석고상화분</h4>
+          <p class="list__item__desc">#석고상 #클래식</p>
+          <div class="list__item__row_container">
+            <span class="list__item__saleprice">36,000원</span>
+            <span class="list__item__price">48,000원</span>
+          </div>
+          <div class="list__item__row_container--buttons">
+            <span class="list__item__button--basket">장바구니</span>
+            <span class="list__item__button--like">찜하기</span>
+          </div>
+        </div>
+      </li>    
+      <li class="list__item--horizontal">
+        <div class="list__item__left list__item__image__container ">
+          <img class="list__item__image" src="images/product_3.jpg" alt="모노스탠드화분">
+          <span class="list__item__sale">43%</span>
+        </div>
+        <div class="list__item__right">
+          <h4 class="list__item__title">모노 스탠드화분 14종</h4>
+          <p class="list__item__desc">#스탠드화분 #14종류</p>
+          <div class="list__item__row_container">
+            <span class="list__item__saleprice">7,900원</span>
+            <span class="list__item__price">14,000원</span>
+          </div>
+          <div class="list__item__row_container--buttons">
+            <span class="list__item__button--basket">장바구니</span>
+            <span class="list__item__button--like">찜하기</span>
+          </div>
         </div>
       </li>    
     </ul>
     <div class="clearfix">
-      <a class="list__more" href="">
-        이벤트 더보기 &gt;
-      </a>
+      <a class="list__more" href="">세일상품 더보기 &gt;</a>
     </div>
-</section>
-<section class="main_banner3">
-  <div class="main_banner3__container">
-    <div class="main_banner3__desc__container">
-      <div class="main_banner3__desc">
-        <h3 class="main_banner3__desc__subtitle">
-          요새 가장 유행하는 트렌드 화분은 뭘까?
-        </h3>
-        <h2 class="main_banner3__desc__title">
-          화분 TOP5 구경가기
-        </h2>
-      </div>
+  </section>
+  <section class="main_new">
+    <div class="container">
+      <h2 class="main_new__title">따끈한 신상품 보고가세요</h2>
     </div>
+    <ul class="list__container list__container--horizontal">
+      <li class="list__item--vertical">
+          <div class="list__item__image__container list__item__up list__item__image__container--new">
+            <img class="list__item__image" src="images/product_4.jpg" alt="무광베이직 원형화분">
+            <div class="list__item__button--float">
+              <span class="list__item__button--like">찜하기</span>
+            </div>
+          </div>
+          <div class="list__item__down">
+            <h4 class="list__item__title">무광베이직 원형화분</h4>
+            <p class="list__item__desc">#원형화분 #무광</p>
+            <div class="list__item__rows--wrap">
+              <div class="list__item__row_container">
+                <span class="list__item__saleprice">3,500원</span>
+              </div>  
+              <div class="list__item__row_container">
+                <span class="list__item__percent">5% 할인</span>
+                <span class="list__item__price">30,000원</span>
+              </div>
+            </div>
+            <div class="list__item__row_container--buttons">
+              <span class="list__item__tag list__item__tag--new">신규</span>
+              <span class="list__item__tag list__item__tag--hot">인기</span>
+            </div>
+          </div>
+      </li>
+      <li class="list__item--vertical">
+          <div class="list__item__image__container  list__item__up list__item__image__container--new">
+            <img class="list__item__image" src="images/product_5.jpg" alt="철재 베란다 화분걸이 화분받침대">
+            <div class="list__item__button--float">
+              <span class="list__item__button--like">찜하기</span>
+            </div>
+          </div>
+          <div class="list__item__down">
+            <h4 class="list__item__title">철재 베란다 화분걸이 화분받침대</h4>
+            <p class="list__item__desc">#화분받침대 #베란다</p>
+            <div class="list__item__rows--wrap">
+              <div class="list__item__row_container">
+                <span class="list__item__saleprice">19,800원</span>
+              </div>  
+              <div class="list__item__row_container">
+                <span class="list__item__percent">34% 할인</span>
+                <span class="list__item__price">30,000원</span>
+              </div>
+            </div>
+            <div class="list__item__row_container--buttons">
+              <span class="list__item__tag list__item__tag--soldout">품절</span>
+              <span class="list__item__tag list__item__tag--new">신규</span>
+              <span class="list__item__tag list__item__tag--hot">인기</span>
+            </div>
+          </div>
+      </li>
+      <li class="list__item--vertical">
+          <div class="list__item__up list__item__image__container list__item__image__container--new">
+            <img class="list__item__image" src="images/product_6.jpg" alt="감성 화병, 꽃병 모음전(유리/도자기)">
+            <div class="list__item__button--float">
+              <span class="list__item__button--like">찜하기</span>
+            </div>
+          </div>
+          <div class="list__item__down">
+            <h4 class="list__item__title">감성 화병, 꽃병 모음전(유리/도자기)</h4>
+            <p class="list__item__desc">#화병 #꽃병 #감성</p>
+            <div class="list__item__rows--wrap">
+              <div class="list__item__row_container">
+                <span class="list__item__saleprice">6,800원</span>
+              </div>  
+              <div class="list__item__row_container">
+                <span class="list__item__percent">51% 할인</span>
+                <span class="list__item__price">14,100원</span>
+              </div>
+            </div>
+            <div class="list__item__row_container--buttons">
+              <span class="list__item__tag list__item__tag--soldout">품절</span>
+              <span class="list__item__tag list__item__tag--new">신규</span>
+              <span class="list__item__tag list__item__tag--hot">인기</span>
+            </div>
+          </div>
+      </li>
+    </ul>
     
-    <div class="main_banner3__button__container">
-      <span class="main_banner3__button">
-        클릭 &gt;
-      </span>
+  </section>
+  <section class="main_banner2">
+    <div class="main_banner2__container">
+      <img class="main_banner2__image" src="images/present.jpg" alt="">
+      <div class="main_banner2__desc__container">
+        <h2 class="main_banner2__desc__title">
+          특별한 날에 어울리는<br>
+          특별한 선물
+        </h2>
+        <span class="main_banner2__desc__button">
+          상품 보러가기
+        </span>
+      </div>
     </div>
-  </div>
-</section>
-<section class="main_hot">
-  <div class="container">
-    <h2 class="main_new__title">인기 상품</h2>
-  </div>
-  <ul class="list__container list__container--wrap">
-    <li class="list__item--vertical list__item--vertical--50">
+  </section>
+  <section class="main_event">
+      <h2 class="main_sale__title">이벤트</h2>
+      <ul class="list__container">
+        <li class="list__item--horizontal">
+          <div class="list__item__left list__item__image__container ">
+            <img class="list__item__image" src="images/event_1.jpg" alt="해초바구니">
+          </div>
+          <div class="list__item__right">
+            <p class="list__item__desc">[1+1] 8월 맞이 대할인</p>
+            <h4 class="list__item__title">무더운 여름철, 식물들의 분갈이 대란!</h4>         
+          </div>
+        </li>    
+        <li class="list__item--horizontal">
+          <div class="list__item__left list__item__image__container ">
+            <img class="list__item__image" src="images/event_2.jpg" alt="해초바구니">
+          </div>
+          <div class="list__item__right">
+            <p class="list__item__desc">[1+1] 8월 맞이 대할인</p>
+            <h4 class="list__item__title">무더운 여름철, 식물들의 분갈이 대란!</h4>         
+          </div>
+        </li>    
+      </ul>
+      <div class="clearfix">
+        <a class="list__more" href="">
+          이벤트 더보기 &gt;
+        </a>
+      </div>
+  </section>
+  <section class="main_banner3">
+    <div class="main_banner3__container">
+      <div class="main_banner3__desc__container">
+        <div class="main_banner3__desc">
+          <h3 class="main_banner3__desc__subtitle">
+            요새 가장 유행하는 트렌드 화분은 뭘까?
+          </h3>
+          <h2 class="main_banner3__desc__title">
+            화분 TOP5 구경가기
+          </h2>
+        </div>
+      </div>
+      
+      <div class="main_banner3__button__container">
+        <span class="main_banner3__button">
+          클릭 &gt;
+        </span>
+      </div>
+    </div>
+  </section>
+  <section class="main_hot">
+    <div class="container">
+      <h2 class="main_new__title">인기 상품</h2>
+    </div>
+    <ul class="list__container list__container--wrap">
+      <li class="list__item--vertical list__item--vertical--50">
+          <div class="list__item__image__container list__item__up">
+            <img class="list__item__image" src="images/product_6.jpg" alt="감성 화병, 꽃병 모음전(유리/도자기)">
+            <div class="list__item__button--float">
+              <span class="list__item__button--like">찜하기</span>
+            </div>
+          </div>
+          <div class="list__item__down">
+            <h4 class="list__item__title">감성 화병, 꽃병 모음전(유리/도자기)</h4>
+            <p class="list__item__desc">#화병 #꽃병 #감성</p>
+            <div class="list__item__rows--wrap">
+              <div class="list__item__row_container">
+                <span class="list__item__saleprice">6,800원</span>
+              </div>  
+              <div class="list__item__row_container">
+                <span class="list__item__percent">51% 할인 </span>
+                <span class="list__item__price">13,000원</span>
+              </div>
+            </div>
+            <div class="list__item__row_container--buttons">
+              <span class="list__item__tag list__item__tag--soldout">품절</span>
+              <span class="list__item__tag list__item__tag--new">신규</span>
+              <span class="list__item__tag list__item__tag--hot">인기</span>
+            </div>
+          </div>
+      </li>
+      <li class="list__item--vertical list__item--vertical--50">
+          <div class="list__item__image__container list__item__up">
+            <img class="list__item__image" src="images/product_7.jpg" alt="독일 토분 바솔트 앤티크">
+            <div class="list__item__button--float">
+              <span class="list__item__button--like">찜하기</span>
+            </div>
+          </div>
+          <div class="list__item__down">
+            <h4 class="list__item__title">독일 토분 바솔트 앤티크</h4>
+            <p class="list__item__desc">#독일 #토분 #앤티크</p>
+            <div class="list__item__rows--wrap">
+              <div class="list__item__row_container">
+                <span class="list__item__saleprice">3,500원</span>
+              </div>  
+              <div class="list__item__row_container">
+                <span class="list__item__percent">12% 할인</span>
+                <span class="list__item__price">13,000원</span>
+              </div>
+            </div>
+            <div class="list__item__row_container--buttons">
+              <span class="list__item__tag list__item__tag--soldout">품절</span>
+              <span class="list__item__tag list__item__tag--new">신규</span>
+              <span class="list__item__tag list__item__tag--hot">인기</span>
+            </div>
+          </div>
+      </li>
+      <li class="list__item--vertical list__item--vertical--50">
+          <div class="list__item__image__container list__item__up">
+            <img class="list__item__image" src="images/product_8.jpg" alt="독일 토분 바솔트 앤티크">
+            <div class="list__item__button--float">
+              <span class="list__item__button--like">찜하기</span>
+            </div>
+          </div>
+          <div class="list__item__down">
+            <h4 class="list__item__title">스틸 플랜트박스</h4>
+            <p class="list__item__desc">#플랜트박스 #스틸</p>
+            <div class="list__item__rows--wrap">
+              <div class="list__item__row_container">
+                <span class="list__item__saleprice">99,900원</span>
+              </div>  
+            </div>
+            <div class="list__item__row_container--buttons">
+              <span class="list__item__tag list__item__tag--soldout">품절</span>
+              <span class="list__item__tag list__item__tag--new">신규</span>
+              <span class="list__item__tag list__item__tag--hot">인기</span>
+            </div>
+          </div>
+      </li>
+      <li class="list__item--vertical list__item--vertical--50">
+          <div class="list__item__image__container list__item__up">
+            <img class="list__item__image" src="images/product_9.jpg" alt="화이트 인테리어 화분">
+            <div class="list__item__button--float">
+              <span class="list__item__button--like">찜하기</span>
+            </div>
+          </div>
+          <div class="list__item__down">
+            <h4 class="list__item__title">화이트 인테리어 화분</h4>
+            <p class="list__item__desc">#인테리어화분 #화이트</p>
+            <div class="list__item__rows--wrap">
+              <div class="list__item__row_container">
+                <span class="list__item__saleprice">18,000원</span>
+              </div>  
+            </div>
+            <div class="list__item__row_container">
+              <span class="list__item__percent">10% 할인</span>
+              <span class="list__item__price">20,000원</span>
+            </div>
+          </div>
+      </li>
+      <li class="list__item--vertical list__item--vertical--50">
         <div class="list__item__image__container list__item__up">
-          <img class="list__item__image" src="images/product_6.jpg" alt="감성 화병, 꽃병 모음전(유리/도자기)">
+          <img class="list__item__image" src="images/product_10.jpg" alt="감성 화병, 꽃병 모음전(유리/도자기)">
           <div class="list__item__button--float">
             <span class="list__item__button--like">찜하기</span>
           </div>
         </div>
         <div class="list__item__down">
-          <h4 class="list__item__title">감성 화병, 꽃병 모음전(유리/도자기)</h4>
-          <p class="list__item__desc">#화병 #꽃병 #감성</p>
+          <h4 class="list__item__title">대형 석고 석고상 화분 모음 65cm 내외</h4>
+          <p class="list__item__desc">#석고상화분 #대형</p>
           <div class="list__item__rows--wrap">
             <div class="list__item__row_container">
-              <span class="list__item__saleprice">6,800원</span>
+              <span class="list__item__saleprice">65,000원</span>
             </div>  
             <div class="list__item__row_container">
-              <span class="list__item__percent">51% 할인 </span>
-              <span class="list__item__price">13,000원</span>
+              <span class="list__item__percent">13% 할인</span>
+              <span class="list__item__price">75,000원</span>
             </div>
           </div>
           <div class="list__item__row_container--buttons">
@@ -358,24 +454,24 @@
             <span class="list__item__tag list__item__tag--hot">인기</span>
           </div>
         </div>
-    </li>
-    <li class="list__item--vertical list__item--vertical--50">
+      </li>
+      <li class="list__item--vertical list__item--vertical--50">
         <div class="list__item__image__container list__item__up">
-          <img class="list__item__image" src="images/product_7.jpg" alt="독일 토분 바솔트 앤티크">
+          <img class="list__item__image" src="images/product_11.jpg" alt="AKASI 이동식 화분받침 아카시아">
           <div class="list__item__button--float">
             <span class="list__item__button--like">찜하기</span>
           </div>
         </div>
         <div class="list__item__down">
-          <h4 class="list__item__title">독일 토분 바솔트 앤티크</h4>
-          <p class="list__item__desc">#독일 #토분 #앤티크</p>
+          <h4 class="list__item__title">AKASI 이동식 화분받침 아카시아</h4>
+          <p class="list__item__desc">#화분받침 #이동식</p>
           <div class="list__item__rows--wrap">
             <div class="list__item__row_container">
-              <span class="list__item__saleprice">3,500원</span>
+              <span class="list__item__saleprice">9,900원</span>
             </div>  
             <div class="list__item__row_container">
-              <span class="list__item__percent">12% 할인</span>
-              <span class="list__item__price">13,000원</span>
+              <span class="list__item__percent">50% 할인</span>
+              <span class="list__item__price">19,900원</span>
             </div>
           </div>
           <div class="list__item__row_container--buttons">
@@ -384,126 +480,35 @@
             <span class="list__item__tag list__item__tag--hot">인기</span>
           </div>
         </div>
-    </li>
-    <li class="list__item--vertical list__item--vertical--50">
-        <div class="list__item__image__container list__item__up">
-          <img class="list__item__image" src="images/product_8.jpg" alt="독일 토분 바솔트 앤티크">
-          <div class="list__item__button--float">
-            <span class="list__item__button--like">찜하기</span>
-          </div>
-        </div>
-        <div class="list__item__down">
-          <h4 class="list__item__title">스틸 플랜트박스</h4>
-          <p class="list__item__desc">#플랜트박스 #스틸</p>
-          <div class="list__item__rows--wrap">
-            <div class="list__item__row_container">
-              <span class="list__item__saleprice">99,900원</span>
-            </div>  
-          </div>
-          <div class="list__item__row_container--buttons">
-            <span class="list__item__tag list__item__tag--soldout">품절</span>
-            <span class="list__item__tag list__item__tag--new">신규</span>
-            <span class="list__item__tag list__item__tag--hot">인기</span>
-          </div>
-        </div>
-    </li>
-    <li class="list__item--vertical list__item--vertical--50">
-        <div class="list__item__image__container list__item__up">
-          <img class="list__item__image" src="images/product_9.jpg" alt="화이트 인테리어 화분">
-          <div class="list__item__button--float">
-            <span class="list__item__button--like">찜하기</span>
-          </div>
-        </div>
-        <div class="list__item__down">
-          <h4 class="list__item__title">화이트 인테리어 화분</h4>
-          <p class="list__item__desc">#인테리어화분 #화이트</p>
-          <div class="list__item__rows--wrap">
-            <div class="list__item__row_container">
-              <span class="list__item__saleprice">18,000원</span>
-            </div>  
-          </div>
-          <div class="list__item__row_container">
-            <span class="list__item__percent">10% 할인</span>
-            <span class="list__item__price">20,000원</span>
-          </div>
-        </div>
-    </li>
-    <li class="list__item--vertical list__item--vertical--50">
-      <div class="list__item__image__container list__item__up">
-        <img class="list__item__image" src="images/product_10.jpg" alt="감성 화병, 꽃병 모음전(유리/도자기)">
-        <div class="list__item__button--float">
-          <span class="list__item__button--like">찜하기</span>
-        </div>
-      </div>
-      <div class="list__item__down">
-        <h4 class="list__item__title">대형 석고 석고상 화분 모음 65cm 내외</h4>
-        <p class="list__item__desc">#석고상화분 #대형</p>
-        <div class="list__item__rows--wrap">
-          <div class="list__item__row_container">
-            <span class="list__item__saleprice">65,000원</span>
-          </div>  
-          <div class="list__item__row_container">
-            <span class="list__item__percent">13% 할인</span>
-            <span class="list__item__price">75,000원</span>
-          </div>
-        </div>
-        <div class="list__item__row_container--buttons">
-          <span class="list__item__tag list__item__tag--soldout">품절</span>
-          <span class="list__item__tag list__item__tag--new">신규</span>
-          <span class="list__item__tag list__item__tag--hot">인기</span>
-        </div>
-      </div>
-    </li>
-    <li class="list__item--vertical list__item--vertical--50">
-      <div class="list__item__image__container list__item__up">
-        <img class="list__item__image" src="images/product_11.jpg" alt="AKASI 이동식 화분받침 아카시아">
-        <div class="list__item__button--float">
-          <span class="list__item__button--like">찜하기</span>
-        </div>
-      </div>
-      <div class="list__item__down">
-        <h4 class="list__item__title">AKASI 이동식 화분받침 아카시아</h4>
-        <p class="list__item__desc">#화분받침 #이동식</p>
-        <div class="list__item__rows--wrap">
-          <div class="list__item__row_container">
-            <span class="list__item__saleprice">9,900원</span>
-          </div>  
-          <div class="list__item__row_container">
-            <span class="list__item__percent">50% 할인</span>
-            <span class="list__item__price">19,900원</span>
-          </div>
-        </div>
-        <div class="list__item__row_container--buttons">
-          <span class="list__item__tag list__item__tag--soldout">품절</span>
-          <span class="list__item__tag list__item__tag--new">신규</span>
-          <span class="list__item__tag list__item__tag--hot">인기</span>
-        </div>
-      </div>
-    </li>
-  </ul>
-</section>
-<footer>
-  <ul class="footer_nav">
-    <li><a class="footer_nav__item" href="">회사소개</a></li>
-    <li><a class="footer_nav__item" href="">이용약관</a></li>
-    <li><a class="footer_nav__item" href="">개인정보처리방침</a></li>
-    <li><a class="footer_nav__item" href="">이용안내</a></li>
-  </ul>
-  <ul class="footer_social">
-    <li>
-      <a class="footer_social__item footer_social__item--facebook" href="">페이스북</a>
-    </li>
-    <li>
-      <a class="footer_social__item footer_social__item--instagram" href="">인스타그램</a>
-    </li>
-    <li>
-      <a class="footer_social__item footer_social__item--kakaotalk" href="">카카오톡</a>
-    </li>
-  </ul>
-  <div class="footer_copy">
-    Copyright&copy; 2019 Yeji Lee. All Rights Reserved. 
-  </div>
-</footer>
+      </li>
+    </ul>
+  </section>
+  <footer>
+    <ul class="footer_nav">
+      <li><a class="footer_nav__item" href="">회사소개</a></li>
+      <li><a class="footer_nav__item" href="">이용약관</a></li>
+      <li><a class="footer_nav__item" href="">개인정보처리방침</a></li>
+      <li><a class="footer_nav__item" href="">이용안내</a></li>
+    </ul>
+    <ul class="footer_social">
+      <li>
+        <a class="footer_social__item footer_social__item--facebook" href="">페이스북</a>
+      </li>
+      <li>
+        <a class="footer_social__item footer_social__item--instagram" href="">인스타그램</a>
+      </li>
+      <li>
+        <a class="footer_social__item footer_social__item--kakaotalk" href="">카카오톡</a>
+      </li>
+    </ul>
+    <div class="footer_copy">
+      Copyright&copy; 2019 Yeji Lee. All Rights Reserved. 
+    </div>
+  </footer>
+</div>
+<div class="layer_search">
+
+</div>
 
 <link rel="stylesheet" href="css/font.css">
 
