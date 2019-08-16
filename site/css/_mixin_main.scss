@@ -107,9 +107,6 @@
 
 // banner2
 
-@mixin l_main_banner2 {
-  margin-top: 0;
-}
 
 @mixin l_main_banner2__container {
   display: flex;
@@ -128,8 +125,12 @@
   background: $color_palesky; 
 }
 
-@mixin s_main_banner2__image {
+@mixin l_main_banner2__image__container {
   width: 50%;
+}
+
+@mixin s_main_banner2__image {
+  width: 100%;
 }
 
 @mixin s_main_banner2__desc__title {
@@ -231,5 +232,66 @@
 
 @mixin s_footer_copy {
   border-top: $color_black1 1px solid;
+  color: $color_black3;
+}
+
+
+@mixin l_layer_search__header{
+  display: flex;
+  align-items: center;
+  padding: 7px 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@mixin s_layer_search__header{
+  background: $color_green;
+}
+
+@mixin l_layer_search__back {
+  margin-right: 15px;
+}
+
+@mixin l_layer_search__input__container {
+  display: flex;
+  align-items: center;
+}
+
+@mixin s_layer_search__input__container {
+  // flex: 1;
+  border-radius: 3px;
+  background: #fff;
+  height: 42px;
+  padding: 8px 10px 8px 15px;
+  box-sizing: border-box;
+}
+
+@mixin l_layer_search__input {
+  flex: 1;
+  height: 24px;
+  line-height: 24px;
+}
+
+@mixin l_layer_search__input__delete {
+  margin-left: 10px;
+}
+
+@mixin l_layer_search__input__search {
+  margin-left: 10px;
+}
+
+@mixin l_layer_search__beforelist {
+  margin: 0 15px;
+}
+
+@mixin l_layer_search__beforelist__item {
+  padding: 20px 15px;
+}
+
+@mixin s_layer_search__beforelist__item {
+  border-bottom: 1px solid $color_grey4;
+}
+
+@mixin s_layer_search__beforelist__item__text {
   color: $color_black3;
 }

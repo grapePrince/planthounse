@@ -50,12 +50,13 @@
 <meta property="og:url" content="http://rahata.dothome.co.kr/planthouse" />
 
 <link rel="stylesheet" href="css/lib/swiper.min.css">
+<link rel="stylesheet" href="css/lib/jquery-ui.css">
 
 <link rel="stylesheet" href="css/reset.css" />
 <link rel="stylesheet" href="css/app.css" />
 
 </head>
-<body class="main js-search-opened">
+<body class="main">
 
 <div class="content">
   <header class="header">
@@ -269,7 +270,9 @@
   </section>
   <section class="main_banner2">
     <div class="main_banner2__container">
-      <img class="main_banner2__image" src="images/present.jpg" alt="">
+      <div class="main_banner2__image__container">
+        <img class="main_banner2__image" src="images/present.jpg" alt="">
+      </div>
       <div class="main_banner2__desc__container">
         <h2 class="main_banner2__desc__title">
           특별한 날에 어울리는<br>
@@ -507,13 +510,44 @@
   </footer>
 </div>
 <div class="layer_search">
-
+  <div class="layer_search__header">
+    <span class="layer_search__back">뒤로가기</span>
+    <div class="layer_search__input__container">
+      <input class="layer_search__input" type="text" placeholder="검색어를 입력하세요">
+      <span class="layer_search__input__delete">지우기</span>
+      <span class="layer_search__input__search">검색하기</span>
+    </div>
+  </div>
+  <ul class="layer_search__beforelist">
+    <li class="layer_search__beforelist__item"><a class="layer_search__beforelist__item__text" href="">샘플</a></li>
+    <li class="layer_search__beforelist__item"><a class="layer_search__beforelist__item__text" href="">샘플</a></li>
+    <li class="layer_search__beforelist__item"><a class="layer_search__beforelist__item__text" href="">샘플</a></li>
+    <li class="layer_search__beforelist__item"><a class="layer_search__beforelist__item__text" href="">샘플</a></li>
+    <li class="layer_search__beforelist__item"><a class="layer_search__beforelist__item__text" href="">샘플</a></li>
+  </ul>
+  <div class="layer_search__result">
+    <div class="layer_search__result__menu">
+      <div class="layer_search__result__view__container">
+        <span class="layer_search__result__view--list">한줄로보기</span>
+        <span class="layer_search__result__view--thumb">두줄로보기</span>
+      </div>
+      <select name="" id="layer_search__result__sort">
+        <option>신상품</option>
+        <option>상품명</option>
+        <option>높은가격</option>
+        <option>낮은가격</option>
+      </select>
+    </div>
+  </div>
 </div>
 
 <link rel="stylesheet" href="css/font.css">
 
 <script src="js/lib/jquery-3.4.1.min.js"></script>
+<script src="js/lib/jquery-ui.min.js"></script>
 <script src="js/lib/swiper.min.js"></script>
+
+
 
 <script src="js/main.js"></script>
 

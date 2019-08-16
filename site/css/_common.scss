@@ -2,6 +2,11 @@
 @import "typo";
 @import "color";
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
 .clearfix:after {
   content:"";
   display:block;
@@ -32,6 +37,23 @@ a {
   color: $color_green;
   color: $color_black5;
   cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+input::-webkit-input-placeholder {
+  color: $color_black1;
+}
+input:-ms-input-placeholder {
+  color: $color_black1;
+}
+textarea::-webkit-input-placeholder {
+  color: $color_black1;
+}
+textarea:-ms-input-placeholder {
+  color: $color_black1;
 }
 
 .hidden {

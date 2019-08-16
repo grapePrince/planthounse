@@ -22,7 +22,7 @@ section {
 
 .header__upper__search_btn {
   @include sprites;
-  @include sprites__header__upper__search_btn;
+  @include sprites__search;
 }
 
 // header nav
@@ -103,10 +103,6 @@ section {
 
 // banner2 
 
-.main_banner2 {
-  @include l_main_banner2;
-}
-
 .main_banner2__container {
   @include l_main_banner2__container;
 }
@@ -114,6 +110,10 @@ section {
 .main_banner2__desc__container {
   @include s_main_banner2__desc__container;
   @include l_main_banner2__desc__container;
+}
+
+.main_banner2__image__container {
+  @include l_main_banner2__image__container;
 }
 
 .main_banner2__image {
@@ -210,4 +210,144 @@ footer {
   @include typo_title_smaller;
   @include l_footer_copy;
   @include s_footer_copy;
+}
+
+
+// search opened 
+
+.layer_search {
+  display: none;
+}
+
+.js-search-opened .content {
+  display: none;
+}
+
+.js-search-opened .layer_search {
+  display: block;
+}
+
+.layer_search__header {
+  @include l_layer_search__header;
+  @include s_layer_search__header;
+}
+
+.layer_search__back {
+  @include sprites;
+  @include sprites__back;
+  @include l_layer_search__back;
+}
+
+.layer_search__input__container {
+  @include l_layer_search__input__container;
+  @include s_layer_search__input__container;
+}
+
+.layer_search__input {
+  @include typo_content;
+  @include l_layer_search__input;
+}
+
+.layer_search__input__delete {
+  @include sprites;
+  @include sprites__delete;
+  @include l_layer_search__input__delete;
+}
+
+.layer_search__input__search {
+  @include sprites;
+  @include sprites__search;
+  @include l_layer_search__input__search;
+}
+
+.layer_search__beforelist {
+  @include l_layer_search__beforelist;
+}
+
+.layer_search__beforelist__item {
+  @include l_layer_search__beforelist__item;
+  @include s_layer_search__beforelist__item;
+}
+
+.layer_search__beforelist__item__text {
+  @include typo_content;
+  @include s_layer_search__beforelist__item__text;
+}
+
+
+// search result
+
+.js-search-result .layer_search__beforelist {
+  display: none;
+}
+
+.layer_search__result {
+  display: none;
+}
+
+.js-search-result .layer_search__result {
+  display: block;
+}
+
+
+.layer_search__result__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 10px;
+
+  background: $color_grey2;
+}
+
+.layer_search__result__view--list {
+  @include sprites;
+  @include sprites__view--list;
+
+  display: inline-block;
+}
+
+.layer_search__result__view--thumb {
+  @include sprites;
+  @include sprites__view--thumb;
+  
+  display: inline-block;
+  margin-left: 5px;
+}
+
+
+.js-search-result--list .layer_search__result__view--list {
+  background-position-y: -30px;
+}
+
+.ui-selectmenu-button.ui-button {
+  position: relative;
+  width: 88px;
+  height: 30px;
+  background: $color_white;
+  border: none;
+}
+
+.ui-button .ui-icon {
+  @include sprites;
+  @include sprites__arrow--down;
+
+  position: absolute;
+  top: 50%; transform: translateY(-50%);
+  right: 15px;
+
+}
+
+.ui-selectmenu-text {
+  @include typo_content;
+
+  position: absolute;
+  top: 50%; transform: translateY(-50%);
+  left: 15px;
+
+  color: $color_black3;  
+}
+
+.ui-widget-content .ui-state-active {
+  background-color: $color_green;
+  border-color: $color_green;
 }
