@@ -218,6 +218,45 @@ textarea:-ms-input-placeholder {
   float: right;
   color: #ff7777; }
 
+.list__item__row_container--between {
+  display: flex;
+  justify-content: space-between; }
+
+.js-search--result--1line .list__container {
+  margin-bottom: 0px; }
+
+.js-search--result--1line .list__item {
+  display: flex;
+  margin-top: 10px;
+  margin-top: 0px;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #EEF2F3; }
+
+.js-search--result--1line .list__item__image__container {
+  width: 30%; }
+
+.js-search--result--2column .list__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 10px; }
+
+.js-search--result--2column .list__item {
+  margin: 10px 0px 0 10px;
+  width: 45vw;
+  margin: 10px 0; }
+
+.js-search--result--2column .list__item__image__container {
+  width: 100%;
+  margin-bottom: 10px; }
+
+.js-search--result--2column .list__item__buttons {
+  order: 2; }
+
+.js-search--result--2column .list__item__price__container {
+  order: 1; }
+
 section {
   margin-top: 20px; }
 
@@ -516,6 +555,11 @@ footer {
 .layer_search__input__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  width: 80%;
+  width: 90%;
+  flex: 1;
   border-radius: 3px;
   background: #fff;
   height: 42px;
@@ -526,6 +570,7 @@ footer {
   font-family: 'NanumBarunGothic', sans-serif;
   font-size: 16px;
   letter-spacing: 0em;
+  width: 80%;
   flex: 1;
   height: 24px;
   line-height: 24px; }
@@ -569,13 +614,18 @@ footer {
   letter-spacing: 0em;
   color: #636363; }
 
-.js-search-result .layer_search__beforelist {
-  display: none; }
-
 .layer_search__result {
   display: none; }
 
-.js-search-result .layer_search__result {
+.layer_search__beforelist,
+.layer_search__result {
+  display: none; }
+
+.js-search--search .layer_search__beforelist {
+  display: block; }
+
+.js-search--result--1line .layer_search__result,
+.js-search--result--2column .layer_search__result {
   display: block; }
 
 .layer_search__result__menu {
@@ -612,7 +662,10 @@ footer {
       background-image: url("../images/sprite@2x.png");
       background-size: 392px 260px; } }
 
-.js-search-result--list .layer_search__result__view--list {
+.js-search--result--1line .layer_search__result__view--list {
+  background-position-y: -30px; }
+
+.js-search--result--2column .layer_search__result__view--thumb {
   background-position-y: -30px; }
 
 .ui-selectmenu-button.ui-button {

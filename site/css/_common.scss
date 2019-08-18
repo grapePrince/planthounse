@@ -378,3 +378,81 @@ textarea:-ms-input-placeholder {
   @include l_list__more;
   @include s_list__more;
 }
+
+
+@mixin list__container--search {
+  margin-bottom: 0px;
+}
+
+@mixin list__item--horizontal {
+  display: flex;
+  margin-top: 10px;
+}
+
+@mixin list__item--horizontal--search {
+  margin-top: 0px;
+  padding: 20px 10px;
+  box-sizing: border-box;
+
+  border-bottom: 1px solid $color_grey3;
+}
+
+
+.list__item__row_container--between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.js-search--result--1line .list__container {
+  @include list__container--search;
+}
+
+.js-search--result--1line .list__item {
+  @include list__item--horizontal;
+  @include list__item--horizontal--search;
+}
+
+.js-search--result--1line .list__item__image__container {
+  width: 30%;
+}
+
+
+@mixin list__container--wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.js-search--result--2column .list__container {
+  @include list__container--wrap;
+  margin-top: 10px;
+}
+
+@mixin list__item--vertical {
+  margin: 10px 0px 0 10px;
+}
+
+@mixin list__item--vertical--50 {
+  width: 45vw;
+  margin: 10px 0;
+}
+
+.js-search--result--2column .list__item {
+  @include list__item--vertical;
+  @include list__item--vertical--50;
+}
+
+.js-search--result--2column .list__item__image__container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.js-search--result--2column {
+  .list__item__buttons {
+    order: 2;
+  }
+
+  .list__item__price__container {
+    order: 1;
+  }
+}
