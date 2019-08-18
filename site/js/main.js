@@ -36,5 +36,9 @@ $(function() {
   });
 
   $( "#layer_search__result__sort" ).selectmenu();
+  
+  $('.list__item__image, .list__item__title').on('click', function() {
+    location.href = '/detail.html';
+  });
 
 });
