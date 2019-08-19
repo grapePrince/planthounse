@@ -49,6 +49,13 @@
   font-weight: 800;
 }
 
+@mixin typo_content_jumbo_bold {
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 21px;
+  letter-spacing: 0em;
+  font-weight: 700;
+}
+
 @mixin typo_content_big_bold {
   font-family: 'NanumBarunGothic', sans-serif;
   font-size: 19px;
@@ -61,6 +68,20 @@
   font-size: 16px;
   letter-spacing: 0em;
 }
+
+@mixin typo_content_bold {
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0em;
+  font-weight: 700;
+}
+
+@mixin typo_content_small {
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+}
+
 
 @mixin typo_content_tiny {
   font-family: 'NanumBarunGothic', sans-serif;

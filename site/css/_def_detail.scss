@@ -1,0 +1,94 @@
+
+@mixin item__price {
+  color: $color_black2;
+  text-decoration: line-through;
+}
+
+@mixin item__percent {
+  @include typo_title_bold;
+  color: $color_green;
+}
+
+@mixin item__saleprice {
+  @include typo_content_big_bold;
+  color: $color_black;
+}
+
+.row {
+  margin: 0 10px;
+}
+
+.row--between {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.product_detail {
+  margin-bottom: 20px;
+}
+
+.bread_scrumbs {
+  margin: 0 10px 10px;
+  
+  @include typo_title_smaller;
+  color: $color_black2;
+}
+
+.product_detail__title {
+  margin: 10px 10px 7px;
+  line-height: 24px;
+
+  @include typo_title;
+}
+
+.product_detail__row {
+  margin: 3px 10px;
+}
+
+.product_detail__item__price {
+  @include item__price;
+}
+
+.product_detail__item__percent {
+  @include item__percent;
+  @include typo_content_bold;
+}
+
+.product_detail__item__saleprice {
+  @include item__saleprice;
+  @include typo_content_jumbo_bold;
+}
+
+.product_detail__item__share {
+  margin-right: 10px;
+
+  @include sprites;
+  @include sprites__share;
+}
+
+.product_detail__item__saletime {
+  margin-top: 10px;
+}
+
+.product_detail__item__saletime__title {
+  @include typo_content_small;
+  color: $color_black4;
+}
+
+.product_detail__item__saletime__icon {
+  display: inline-block;
+  margin: 0 3px;
+
+  @include sprites;
+  @include sprites__clock;
+}
+
+.product_detail__item__saletime__time {
+  @include typo_content_small;
+  color: $color_red;
+}
+
+
+
