@@ -93,3 +93,15 @@
   background-position: -380px -0px;
 }
 
+@mixin sprites__share {
+  width: 19px;
+  height: 20px;
+  background-position: -170px -20px;
+}
+
+@mixin sprites__clock {
+  width: 16px;
+  height: 16px;
+  background-position: -150px -20px;
+}
+

@@ -704,3 +704,98 @@ footer {
 .ui-widget-content .ui-state-active {
   background-color: #28D899;
   border-color: #28D899; }
+
+.row {
+  margin: 0 10px; }
+
+.row--between {
+  display: flex;
+  justify-content: space-between; }
+
+.product_detail {
+  margin-bottom: 20px; }
+
+.bread_scrumbs {
+  margin: 0 10px 10px;
+  font-family: 'NanumSquare', sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #979797; }
+
+.product_detail__title {
+  margin: 10px 10px 7px;
+  line-height: 24px;
+  font-family: 'NanumSquare', sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.02em; }
+
+.product_detail__row {
+  margin: 3px 10px; }
+
+.product_detail__item__price {
+  color: #979797;
+  text-decoration: line-through; }
+
+.product_detail__item__percent {
+  font-family: 'NanumSquare', sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  color: #28D899;
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0em;
+  font-weight: 700; }
+
+.product_detail__item__saleprice {
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 19px;
+  letter-spacing: -0.05em;
+  font-weight: 700;
+  color: #000;
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 21px;
+  letter-spacing: 0em;
+  font-weight: 700; }
+
+.product_detail__item__share {
+  margin-right: 10px;
+  background: url(../images/sprite.png) no-repeat;
+  text-indent: -9999em;
+  outline: none;
+  width: 19px;
+  height: 20px;
+  background-position: -170px -20px; }
+  @media all and (-webkit-min-device-pixel-ratio: 2) {
+    .product_detail__item__share {
+      background-image: url("../images/sprite@2x.png");
+      background-size: 392px 260px; } }
+
+.product_detail__item__saletime {
+  margin-top: 10px; }
+
+.product_detail__item__saletime__title {
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #444444; }
+
+.product_detail__item__saletime__icon {
+  display: inline-block;
+  margin: 0 3px;
+  background: url(../images/sprite.png) no-repeat;
+  text-indent: -9999em;
+  outline: none;
+  width: 16px;
+  height: 16px;
+  background-position: -150px -20px; }
+  @media all and (-webkit-min-device-pixel-ratio: 2) {
+    .product_detail__item__saletime__icon {
+      background-image: url("../images/sprite@2x.png");
+      background-size: 392px 260px; } }
+
+.product_detail__item__saletime__time {
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #ff7777; }
