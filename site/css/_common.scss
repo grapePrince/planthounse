@@ -456,3 +456,29 @@ textarea:-ms-input-placeholder {
     order: 1;
   }
 }
+
+@mixin item__price {
+  color: $color_black2;
+  text-decoration: line-through;
+}
+
+@mixin item__percent {
+  @include typo_title_bold;
+  color: $color_green;
+}
+
+@mixin item__saleprice {
+  @include typo_content_big_bold;
+  color: $color_black;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin: 0 10px 5px;
+}
+
+.row--between {
+  display: flex;
+  justify-content: space-between;
+}

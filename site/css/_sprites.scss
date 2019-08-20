@@ -105,3 +105,52 @@
   background-position: -150px -20px;
 }
 
+
+@mixin sprites__price {
+  width: 20px;
+  height: 20px;
+  background-position: -50px -20px;
+}
+
+@mixin sprites__coupon {
+  width: 20px;
+  height: 20px;
+  background-position: -70px -20px;
+}
+
+@mixin sprites__summary {
+  width: 20px;
+  height: 20px;
+  background-position: -90px -20px;
+}
+
+@mixin sprites__global {
+  width: 20px;
+  height: 20px;
+  background-position: -110px -20px;
+}
+
+@mixin sprites__express {
+  width: 20px;
+  height: 20px;
+  background-position: -130px -20px;
+}
+
+@mixin sprites__question {
+  width: 16px;
+  height: 16px;
+  background-position: -130px -0px;
+}
+
+@mixin sprites__cart--big {
+  width: 40px;
+  height: 30px;
+  background-position: -40px -100px;
+}
+
+@mixin sprites__heart--big {
+  width: 32px;
+  height: 30px;
+  background-position: -210px -60px;
+}
+

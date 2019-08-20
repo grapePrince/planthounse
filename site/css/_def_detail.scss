@@ -1,29 +1,11 @@
 
-@mixin item__price {
-  color: $color_black2;
-  text-decoration: line-through;
+.product_detail__summary {
+  display: none;
 }
 
-@mixin item__percent {
-  @include typo_title_bold;
-  color: $color_green;
+.js-content--summary .product_detail__summary {
+  display: block 
 }
-
-@mixin item__saleprice {
-  @include typo_content_big_bold;
-  color: $color_black;
-}
-
-.row {
-  margin: 0 10px;
-}
-
-.row--between {
-  display: flex;
-  justify-content: space-between;
-}
-
-
 
 .product_detail {
   margin-bottom: 20px;
@@ -52,6 +34,8 @@
 }
 
 .product_detail__item__percent {
+  margin-left: 5px;
+
   @include item__percent;
   @include typo_content_bold;
 }
@@ -80,15 +64,208 @@
 .product_detail__item__saletime__icon {
   display: inline-block;
   margin: 0 3px;
+  margin-left: 7px;
 
   @include sprites;
   @include sprites__clock;
 }
 
 .product_detail__item__saletime__time {
+  margin-left: 5px;
+
   @include typo_content_small;
   color: $color_red;
 }
 
 
+// 제품상세쪽 메뉴 
 
+.product_detail__menu {
+  background: #F5F7F8;
+}
+
+.product_detail__menu__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.product_detail__menu__item {
+  position: relative;
+  display: inline-block;
+  padding: 15px 20px;
+  box-sizing: border-box;
+
+
+  @include typo_title_tiny;
+  color: #000;
+}
+
+.js-active.product_detail__menu__item:after  {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  height: 2px;
+  background: #28D899;
+}
+
+.product_detail__row {
+  padding: 10px 0;
+
+  border-bottom: 1px solid $color_grey3;
+}
+
+.product_detail__icon {
+  display: inline-block;
+
+  @include sprites;
+}
+.product_detail__icon--price {
+  @include sprites__price;
+}
+.product_detail__icon--coupon {
+  @include sprites__coupon;
+}
+.product_detail__icon--summary {
+  @include sprites__summary;
+}
+.product_detail__icon--global {
+  @include sprites__global;
+}
+.product_detail__icon--express {
+  @include sprites__express;
+}
+
+
+.product_detail__summary {
+  margin-top: 5px;
+}
+
+.product_detail__row__container--title {
+  margin-bottom: 5px;
+}
+
+.product_detail__row__container--price {
+  margin-bottom: 0px;
+}
+
+.product_detail__rowtitle {
+  margin-left: 2px;
+
+  @include typo_content_small_bold;
+  color: $color_black;
+}
+
+.product__price {
+  @include item__price;
+}
+
+.product__salepercent {
+  margin-left: 7px;
+
+  @include item__percent;
+}
+
+.product__saleprice {
+  margin-top: 2px;
+
+  @include item__saleprice;
+  @include typo_content_jumbo_bold;
+}
+
+.product__couponprice {
+  @include typo_content_big_bold;
+  color: $color_black;
+}
+
+.product__couponperiod {
+  margin-left: 1px;
+}
+
+.product__coupondown {
+  @include typo_title_smaller_bold;
+  color: $color_red;
+}
+
+.product_detail__paragraph {
+  margin: 0 10px;
+}
+
+.product_detail__icon--question {
+  margin-left: 10px;
+
+  @include sprites__question;
+}
+
+// 안내문들
+
+.product_detail__notice {
+  padding: 20px 15px;
+  margin-bottom: 20px;
+
+  background: $color_grey2;
+  border-radius: 3px;
+}
+
+.product_detail__notice__title {
+  margin-bottom: 15px;
+
+
+  @include typo_content_small_bold;
+  color: $color_black;
+}
+
+.product_detail__notice__paragraph {
+  line-height: 21px;
+  
+  @include typo_content_tiny;
+
+}
+
+.product_detail__buttons__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_detail__buttons__order {
+  width: 240px;
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+
+  background: $color_green;
+  border-radius: 3px;
+}
+
+.product_detail__buttons__order__text {
+  color: $color_white;
+}
+
+.product_detail__buttons__icon {
+  display: inline-block;
+  @include sprites;
+}
+
+.product_detail__buttons__small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid $color_black1;
+  margin-left: 20px;
+
+  border-radius: 3px;
+}
+
+.product_detail__buttons__icon--order {
+  @include sprites__cart--big;
+}
+
+.product_detail__buttons__icon--like {
+  @include sprites__heart--big;
+}

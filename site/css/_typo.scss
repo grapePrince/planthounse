@@ -84,6 +84,14 @@
 }
 
 
+@mixin typo_content_small_bold {
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+
 @mixin typo_content_tiny {
   font-family: 'NanumBarunGothic', sans-serif;
   font-size: 12px;

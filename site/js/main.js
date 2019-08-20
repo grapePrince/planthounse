@@ -1,5 +1,7 @@
 $(function() {
 
+  var home_url = location.href.indexOf('local') !== -1 ? location.origin : location.origin + '/planthouse';
+
   var swiper = new Swiper('.swiper-container', {
     pagination: {
       el: '.swiper-pagination',
@@ -38,7 +40,21 @@ $(function() {
   $( "#layer_search__result__sort" ).selectmenu();
   
   $('.list__item__image, .list__item__title').on('click', function() {
-    location.href = '/detail.html';
+    location.href = home_url + '/detail.html';
+  });
+
+  $('.header__nav li').on('click', function(e) {
+    e.preventDefault();
+    $(this).addClass('js-active');
+    $(this).siblings().removeClass('js-active');
+  });
+
+  $('.product_detail__menu__item').on('click', function() {
+    $(this).addClass('js-active');
+    $(this).siblings().removeClass('js-active');
+
+    $('.content').removeClass('js-content--summary js-content--detail js-content--review js-content--qa');
+    $('.content').addClass($(this).attr('data-class'));
   });
 
 });
