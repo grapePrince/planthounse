@@ -717,7 +717,25 @@ footer {
 .product_detail__summary {
   display: none; }
 
+.product_detail__detail {
+  display: none; }
+
+.product_detail__review {
+  display: none; }
+
+.product_detail__qa {
+  display: none; }
+
 .js-content--summary .product_detail__summary {
+  display: block; }
+
+.js-content--detail .product_detail__detail {
+  display: block; }
+
+.js-content--review .product_detail__review {
+  display: block; }
+
+.js-content--qa .product_detail__qa {
   display: block; }
 
 .product_detail {
