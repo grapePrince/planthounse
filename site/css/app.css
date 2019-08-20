@@ -1027,3 +1027,45 @@ footer {
   width: 32px;
   height: 30px;
   background-position: -210px -60px; }
+
+.product_detail__detail__image {
+  margin-bottom: 65px;
+  width: 100%; }
+
+.product_detail__detail__desc {
+  text-align: center; }
+
+.product_detail__detail__desc__subtitle {
+  margin-bottom: 10px;
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0em; }
+
+.product_detail__detail__desc__title {
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 21px;
+  letter-spacing: 0em;
+  font-weight: 700;
+  font-size: 27px; }
+
+.product_detail__detail__row--small {
+  margin-bottom: 30px; }
+
+.product_detail__detail__row {
+  margin-bottom: 45px; }
+
+.product_detail__paragraph {
+  margin-bottom: 30px;
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  line-height: 21px; }
+
+.product_detail__detail__image__container--40 {
+  width: 45%; }
+
+.product_detail__detail__content {
+  align-items: center; }
+
+.product_detail__detail__content__image {
+  width: 100%; }

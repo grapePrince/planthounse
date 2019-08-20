@@ -83,6 +83,9 @@
   letter-spacing: -0.02em;
 }
 
+@mixin lh_content_small {
+  line-height: 21px;
+}
 
 @mixin typo_content_small_bold {
   font-family: 'NanumBarunGothic', sans-serif;
