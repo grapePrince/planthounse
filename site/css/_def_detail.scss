@@ -218,7 +218,7 @@
   color: $color_red;
 }
 
-.product_detail__paragraph {
+.product_detail__summary__paragraph {
   margin: 0 10px;
 }
 
@@ -304,7 +304,7 @@
 
 
 .product_detail__detail__image {
-  margin-bottom: 65px;
+  margin-bottom: 30px;
 
   width: 100%;
 }
@@ -340,13 +340,338 @@
 }
 
 .product_detail__detail__image__container--40 {
-  width: 45%;
+  width: 50%;
 }
 
 .product_detail__detail__content {
+  display: flex;
   align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
 .product_detail__detail__content__image {
   width: 100%;
 }
+
+.product_detail__detail__content__desc {
+  margin-left: 30px;
+}
+
+.product_detail__detail__content__container {
+  margin-bottom: 15px;
+}
+.product_detail__detail__content__container:last-child {
+  margin-bottom: 0px;
+}
+
+
+.product_detail__detail__content__icon {
+  display: inline-block;
+  margin-right: 10px;
+
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background: $color_black4;
+}
+
+.product_detail__detail__content__title__container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.product_detail__detail__content__title {
+  display: inline-block;
+
+  @include typo_content;
+}
+
+.product_detail__detail__content__text {
+  margin-left: 15px;
+
+  @include typo_content_small;
+}
+
+
+.product_detail__detail__desc__title {
+  margin-bottom: 15px;
+}
+
+.product_detail__detail__desc {
+  margin-bottom: 30px;
+}
+
+.product_detail__detail__resource__desc {
+  @include typo_content_small;
+  @include lh_content_small;
+}
+
+.product_detail__detail__resource__desc__title {
+  @include typo_content;
+  @include lh_content;
+}
+
+.product_detail__detail__resource__desc--highlight {
+  @include lh_content_small;
+  margin-bottom: 65px;
+  
+  color: $color_red;
+  @include typo_content_small;
+}
+
+.product_detail__detail__resource__desc--dimmed {
+  margin-bottom: 20px;
+  
+  @include typo_content_tiny;
+  @include lh_content_small;
+  color: $color_black2;
+}
+
+.product_detail__detail__resource__desc__container {
+  margin-bottom: 65px;
+}
+
+.product_detail__notice__paragraph--big {
+  @include typo_content_small;
+  @include lh_content_small;
+}
+
+.product_detail__notice__paragraph--big em {
+  @include typo_content_small_bold;
+}
+
+.product_detail__table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin: 0 30px 120px;
+}
+
+.product_detail__table__item {
+  width: 80%;
+  padding: 15px 0;
+
+  border-bottom: 1px solid $color_grey3;
+}
+
+.product_detail__table__title {
+  display: inline-block;
+  width: 100px;
+  margin-right: 70px;
+
+  @include typo_content_small;
+  color: $color_black2;
+}
+
+.product_detail__table__text {
+  @include typo_content_small;
+  color: $color_black3;
+}
+
+// 제품상세 - 리뷰페이지 
+
+.product_detail__review {
+  margin: 10px 10px 30px;
+}
+
+.product_detail__review__list__item {
+  padding: 20px 10px;
+  border-bottom: 1px solid $color_grey3;
+}
+
+.product_detail__review__list__item__title {
+  @include typo_content_big_bold;
+}
+
+.product_detail__review__list__item__row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.product_detail__review__list__item__grade {
+  display: flex;
+  margin-right: 10px;
+}
+
+.product_detail__review__list__item__grade__item {
+  @include sprites;
+  @include sprites__star;
+}
+.product_detail__review__list__item__grade__item.js-active {
+  background-position-y: -30px;
+}
+
+.product_detail__review__list__item__subdesc {
+  margin-top: 4px;
+  margin-right: 10px;
+
+  @include typo_content_tiny;
+  color: $color_black2;
+}
+
+.product_detail__review__list__item__paragraph {
+  @include typo_content_small;
+  color: $color_black;
+}
+
+.product_detail__review__pagination {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.product_detail__review__pagination__left {
+  margin-right: 20px;
+  display: inline-block;
+  
+  @include sprites;
+  @include sprites__left;
+}
+
+.product_detail__review__pagination__right {
+  margin-left: 20px;
+  display: inline-block;
+  
+  @include sprites;
+  @include sprites__right;
+}
+
+.product_detail__review__pagination__pages {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+}
+
+.product_detail__review__pagination__pages__page {
+  color: $color_black3;
+}
+.product_detail__review__pagination__pages__page.js-active {
+  color: $color_green;
+}
+
+
+// qna 
+
+.product_detail__qa {
+  margin: 10px 10px 30px;
+}
+
+// related
+
+.product_detail__related {
+  margin: 40px 0px;
+}
+
+
+// 옵션 수량선택
+
+.layer_option {
+  position: fixed;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+}
+
+.dimmed_layer {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  z-index: 1;
+  background: rgba(47,47,47, 0.5);
+}
+
+.layer_option__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0; 
+  width: 100%;
+  z-index: 2;
+}
+
+.layer_option__content__line {
+  margin-bottom: 10px;
+
+  width: 46px;
+  height: 8px;
+  background: $color_grey2;
+  border-radius: 3px;
+}
+
+.layer_option__content__container {
+  width: 100%;
+  box-sizing: border-box;
+
+  background: $color_grey2;
+}
+
+.layer_option__content__text__container {
+  padding: 20px 15px 0;
+}
+
+.layer_option__title {
+  margin-bottom: 20px;
+
+  @include typo_content_small_bold;
+  color: $color_black5;
+}
+
+#layer_option__select-button {
+  margin-bottom: 15px;
+
+  width: 90%;
+  border: 1px solid $color_black1;
+}
+
+.layer_option__number_updown {
+  margin-bottom: 25px;
+}
+
+.number_updown {
+  display: flex;
+}
+
+.number_updown__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+
+  background: $color_white;
+  border: 1px solid $color_black1;
+  border-radius: 3px;
+  @include typo_title_jumbo_bold;
+  color: $color_black3;
+}
+
+.number_updown__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 10px 15px;
+
+  background: $color_white;
+  border: 1px solid $color_black1;
+  border-radius: 3px;
+  @include typo_title_small_bold;
+  color: $color_black3;
+}
+
+.number_updown__text {
+  @include typo_content_bold;
+  color: $color_black;
+}
+
+.layer_option__buttons {
+  padding: 0 10px 25px;
+}
+

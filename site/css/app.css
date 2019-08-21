@@ -31,6 +31,11 @@ a {
   color: #2F2F2F;
   cursor: pointer; }
 
+.hidden_text {
+  display: inline-block;
+  text-indent: -9999em;
+  outline: none; }
+
 input {
   border: none; }
 
@@ -158,7 +163,7 @@ textarea:-ms-input-placeholder {
   @media all and (-webkit-min-device-pixel-ratio: 2) {
     .list__item__button--basket {
       background-image: url("../images/sprite@2x.png");
-      background-size: 392px 260px; } }
+      background-size: 458px 260px; } }
 
 .list__item__button--like {
   background: url(../images/sprite.png) no-repeat;
@@ -171,7 +176,7 @@ textarea:-ms-input-placeholder {
   @media all and (-webkit-min-device-pixel-ratio: 2) {
     .list__item__button--like {
       background-image: url("../images/sprite@2x.png");
-      background-size: 392px 260px; } }
+      background-size: 458px 260px; } }
 
 .list__item__button--float {
   width: 20px;
@@ -264,7 +269,42 @@ textarea:-ms-input-placeholder {
 
 .row--between {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
+
+.button--big--white {
+  width: 50%;
+  padding: 12px 0;
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 19px;
+  letter-spacing: 0em;
+  color: #28D899;
+  background: #fff;
+  border: 1px solid #28D899;
+  border-radius: 3px; }
+
+.button--big--green {
+  width: 45%;
+  padding: 12px 0;
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 19px;
+  letter-spacing: 0em;
+  color: #fff;
+  background: #28D899;
+  border: 1px solid #28D899;
+  border-radius: 3px; }
+
+.layer_search, .layer_cart, .layer_option {
+  display: none; }
+
+.js-search-opened .content,
+.js-cart-opened .content {
+  display: none; }
+
+.js-search-opened .layer_search,
+.js-cart-opened .layer_cart,
+.js-option-opened .layer_option {
+  display: block; }
 
 section {
   margin-top: 20px; }
@@ -285,7 +325,7 @@ section {
   @media all and (-webkit-min-device-pixel-ratio: 2) {
     .header__upper__menu_btn {
       background-image: url("../images/sprite@2x.png");
-      background-size: 392px 260px; } }
+      background-size: 458px 260px; } }
 
 .header__upper__logo {
   background: url(../images/sprite.png) no-repeat;
@@ -298,7 +338,7 @@ section {
   @media all and (-webkit-min-device-pixel-ratio: 2) {
     .header__upper__logo {
       background-image: url("../images/sprite@2x.png");
-      background-size: 392px 260px; } }
+      background-size: 458px 260px; } }
 
 .header__upper__search_btn {
   background: url(../images/sprite.png) no-repeat;
@@ -310,7 +350,7 @@ section {
   @media all and (-webkit-min-device-pixel-ratio: 2) {
     .header__upper__search_btn {
       background-image: url("../images/sprite@2x.png");
-      background-size: 392px 260px; } }
+      background-size: 458px 260px; } }
 
 .header__nav__container {
   background: #F5F7F8; }
@@ -504,7 +544,7 @@ footer {
   @media all and (-webkit-min-device-pixel-ratio: 2) {
     .footer_social__item {
       background-image: url("../images/sprite@2x.png");
-      background-size: 392px 260px; } }
+      background-size: 458px 260px; } }
 
 .footer_social__item--facebook {
   width: 40px;
@@ -531,15 +571,6 @@ footer {
   border-top: #C4C4C4 1px solid;
   color: #636363; }
 
-.layer_search {
-  display: none; }
-
-.js-search-opened .content {
-  display: none; }
-
-.js-search-opened .layer_search {
-  display: block; }
-
 .layer_search__header {
   display: flex;
   align-items: center;
@@ -559,7 +590,7 @@ footer {
   @media all and (-webkit-min-device-pixel-ratio: 2) {
     .layer_search__back {
       background-image: url("../images/sprite@2x.png");
-      background-size: 392px 260px; } }
+      background-size: 458px 260px; } }
 
 .layer_search__input__container {
   display: flex;
@@ -595,7 +626,7 @@ footer {
   @media all and (-webkit-min-device-pixel-ratio: 2) {
     .layer_search__input__delete {
       background-image: url("../images/sprite@2x.png");
-      background-size: 392px 260px; } }
+      background-size: 458px 260px; } }
 
 .layer_search__input__search {
   background: url(../images/sprite.png) no-repeat;
@@ -608,7 +639,7 @@ footer {
   @media all and (-webkit-min-device-pixel-ratio: 2) {
     .layer_search__input__search {
       background-image: url("../images/sprite@2x.png");
-      background-size: 392px 260px; } }
+      background-size: 458px 260px; } }
 
 .layer_search__beforelist {
   margin: 0 15px; }
@@ -655,7 +686,7 @@ footer {
   @media all and (-webkit-min-device-pixel-ratio: 2) {
     .layer_search__result__view--list {
       background-image: url("../images/sprite@2x.png");
-      background-size: 392px 260px; } }
+      background-size: 458px 260px; } }
 
 .layer_search__result__view--thumb {
   background: url(../images/sprite.png) no-repeat;
@@ -669,7 +700,7 @@ footer {
   @media all and (-webkit-min-device-pixel-ratio: 2) {
     .layer_search__result__view--thumb {
       background-image: url("../images/sprite@2x.png");
-      background-size: 392px 260px; } }
+      background-size: 458px 260px; } }
 
 .js-search--result--1line .layer_search__result__view--list {
   background-position-y: -30px; }
@@ -698,7 +729,7 @@ footer {
   @media all and (-webkit-min-device-pixel-ratio: 2) {
     .ui-button .ui-icon {
       background-image: url("../images/sprite@2x.png");
-      background-size: 392px 260px; } }
+      background-size: 458px 260px; } }
 
 .ui-selectmenu-text {
   font-family: 'NanumBarunGothic', sans-serif;
@@ -796,7 +827,7 @@ footer {
   @media all and (-webkit-min-device-pixel-ratio: 2) {
     .product_detail__item__share {
       background-image: url("../images/sprite@2x.png");
-      background-size: 392px 260px; } }
+      background-size: 458px 260px; } }
 
 .product_detail__item__saletime {
   margin-top: 10px; }
@@ -820,7 +851,7 @@ footer {
   @media all and (-webkit-min-device-pixel-ratio: 2) {
     .product_detail__item__saletime__icon {
       background-image: url("../images/sprite@2x.png");
-      background-size: 392px 260px; } }
+      background-size: 458px 260px; } }
 
 .product_detail__item__saletime__time {
   margin-left: 5px;
@@ -867,7 +898,7 @@ footer {
   @media all and (-webkit-min-device-pixel-ratio: 2) {
     .product_detail__icon {
       background-image: url("../images/sprite@2x.png");
-      background-size: 392px 260px; } }
+      background-size: 458px 260px; } }
 
 .product_detail__icon--price {
   width: 20px;
@@ -952,7 +983,7 @@ footer {
   font-weight: 800;
   color: #ff7777; }
 
-.product_detail__paragraph {
+.product_detail__summary__paragraph {
   margin: 0 10px; }
 
 .product_detail__icon--question {
@@ -1006,7 +1037,7 @@ footer {
   @media all and (-webkit-min-device-pixel-ratio: 2) {
     .product_detail__buttons__icon {
       background-image: url("../images/sprite@2x.png");
-      background-size: 392px 260px; } }
+      background-size: 458px 260px; } }
 
 .product_detail__buttons__small {
   display: flex;
@@ -1029,7 +1060,7 @@ footer {
   background-position: -210px -60px; }
 
 .product_detail__detail__image {
-  margin-bottom: 65px;
+  margin-bottom: 30px;
   width: 100%; }
 
 .product_detail__detail__desc {
@@ -1062,10 +1093,326 @@ footer {
   line-height: 21px; }
 
 .product_detail__detail__image__container--40 {
-  width: 45%; }
+  width: 50%; }
 
 .product_detail__detail__content {
-  align-items: center; }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px; }
 
 .product_detail__detail__content__image {
   width: 100%; }
+
+.product_detail__detail__content__desc {
+  margin-left: 30px; }
+
+.product_detail__detail__content__container {
+  margin-bottom: 15px; }
+
+.product_detail__detail__content__container:last-child {
+  margin-bottom: 0px; }
+
+.product_detail__detail__content__icon {
+  display: inline-block;
+  margin-right: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background: #444444; }
+
+.product_detail__detail__content__title__container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px; }
+
+.product_detail__detail__content__title {
+  display: inline-block;
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0em; }
+
+.product_detail__detail__content__text {
+  margin-left: 15px;
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.02em; }
+
+.product_detail__detail__desc__title {
+  margin-bottom: 15px; }
+
+.product_detail__detail__desc {
+  margin-bottom: 30px; }
+
+.product_detail__detail__resource__desc {
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  line-height: 21px; }
+
+.product_detail__detail__resource__desc__title {
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0em;
+  line-height: 24px; }
+
+.product_detail__detail__resource__desc--highlight {
+  line-height: 21px;
+  margin-bottom: 65px;
+  color: #ff7777;
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.02em; }
+
+.product_detail__detail__resource__desc--dimmed {
+  margin-bottom: 20px;
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 12px;
+  letter-spacing: -0.05em;
+  line-height: 21px;
+  color: #979797; }
+
+.product_detail__detail__resource__desc__container {
+  margin-bottom: 65px; }
+
+.product_detail__notice__paragraph--big {
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  line-height: 21px; }
+
+.product_detail__notice__paragraph--big em {
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  font-weight: 700; }
+
+.product_detail__table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 30px 120px; }
+
+.product_detail__table__item {
+  width: 80%;
+  padding: 15px 0;
+  border-bottom: 1px solid #EEF2F3; }
+
+.product_detail__table__title {
+  display: inline-block;
+  width: 100px;
+  margin-right: 70px;
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #979797; }
+
+.product_detail__table__text {
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #636363; }
+
+.product_detail__review {
+  margin: 10px 10px 30px; }
+
+.product_detail__review__list__item {
+  padding: 20px 10px;
+  border-bottom: 1px solid #EEF2F3; }
+
+.product_detail__review__list__item__title {
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 19px;
+  letter-spacing: -0.05em;
+  font-weight: 700; }
+
+.product_detail__review__list__item__row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px; }
+
+.product_detail__review__list__item__grade {
+  display: flex;
+  margin-right: 10px; }
+
+.product_detail__review__list__item__grade__item {
+  background: url(../images/sprite.png) no-repeat;
+  text-indent: -9999em;
+  outline: none;
+  width: 18px;
+  height: 18px;
+  background-position: -400px -0px; }
+  @media all and (-webkit-min-device-pixel-ratio: 2) {
+    .product_detail__review__list__item__grade__item {
+      background-image: url("../images/sprite@2x.png");
+      background-size: 458px 260px; } }
+
+.product_detail__review__list__item__grade__item.js-active {
+  background-position-y: -30px; }
+
+.product_detail__review__list__item__subdesc {
+  margin-top: 4px;
+  margin-right: 10px;
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 12px;
+  letter-spacing: -0.05em;
+  color: #979797; }
+
+.product_detail__review__list__item__paragraph {
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #000; }
+
+.product_detail__review__pagination {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center; }
+
+.product_detail__review__pagination__left {
+  margin-right: 20px;
+  display: inline-block;
+  background: url(../images/sprite.png) no-repeat;
+  text-indent: -9999em;
+  outline: none;
+  width: 7px;
+  height: 12px;
+  background-position: -310px -60px; }
+  @media all and (-webkit-min-device-pixel-ratio: 2) {
+    .product_detail__review__pagination__left {
+      background-image: url("../images/sprite@2x.png");
+      background-size: 458px 260px; } }
+
+.product_detail__review__pagination__right {
+  margin-left: 20px;
+  display: inline-block;
+  background: url(../images/sprite.png) no-repeat;
+  text-indent: -9999em;
+  outline: none;
+  width: 7px;
+  height: 12px;
+  background-position: -330px -60px; }
+  @media all and (-webkit-min-device-pixel-ratio: 2) {
+    .product_detail__review__pagination__right {
+      background-image: url("../images/sprite@2x.png");
+      background-size: 458px 260px; } }
+
+.product_detail__review__pagination__pages {
+  display: flex;
+  justify-content: space-between;
+  width: 80px; }
+
+.product_detail__review__pagination__pages__page {
+  color: #636363; }
+
+.product_detail__review__pagination__pages__page.js-active {
+  color: #28D899; }
+
+.product_detail__qa {
+  margin: 10px 10px 30px; }
+
+.product_detail__related {
+  margin: 40px 0px; }
+
+.layer_option {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; }
+
+.dimmed_layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(47, 47, 47, 0.5); }
+
+.layer_option__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 2; }
+
+.layer_option__content__line {
+  margin-bottom: 10px;
+  width: 46px;
+  height: 8px;
+  background: #F5F7F8;
+  border-radius: 3px; }
+
+.layer_option__content__container {
+  width: 100%;
+  box-sizing: border-box;
+  background: #F5F7F8; }
+
+.layer_option__content__text__container {
+  padding: 20px 15px 0; }
+
+.layer_option__title {
+  margin-bottom: 20px;
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  color: #2F2F2F; }
+
+#layer_option__select-button {
+  margin-bottom: 15px;
+  width: 90%;
+  border: 1px solid #C4C4C4; }
+
+.layer_option__number_updown {
+  margin-bottom: 25px; }
+
+.number_updown {
+  display: flex; }
+
+.number_updown__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #C4C4C4;
+  border-radius: 3px;
+  font-family: 'NanumSquare', sans-serif;
+  font-size: 21px;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  color: #636363; }
+
+.number_updown__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  background: #fff;
+  border: 1px solid #C4C4C4;
+  border-radius: 3px;
+  font-family: 'NanumSquare', sans-serif;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  color: #636363; }
+
+.number_updown__text {
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0em;
+  font-weight: 700;
+  color: #000; }
+
+.layer_option__buttons {
+  padding: 0 10px 25px; }

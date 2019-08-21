@@ -5,7 +5,7 @@
   outline: none;
   @media all and (-webkit-min-device-pixel-ratio: 2) {
     background-image: url('../images/sprite@2x.png');
-    background-size: 392px 260px;
+    background-size: 458px 260px;
   }
 }
 
@@ -152,5 +152,23 @@
   width: 32px;
   height: 30px;
   background-position: -210px -60px;
+}
+
+@mixin sprites__star {
+  width: 18px;
+  height: 18px;
+  background-position: -400px -0px;
+}
+
+@mixin sprites__left {
+  width: 7px;
+  height: 12px;
+  background-position: -310px -60px;
+}
+
+@mixin sprites__right {
+  width: 7px;
+  height: 12px;
+  background-position: -330px -60px;
 }
 

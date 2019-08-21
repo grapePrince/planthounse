@@ -1,670 +1,993 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>상품상세 - 화분있는집</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>상품상세 - 화분있는집</title>
 
-<!-- meta -->
-<meta
-  name="keywords"
-  content="화분, 화병, 바구니, 화분받침, 식물, 화분쇼핑몰"
-/>
-<meta
-  name="description"
-  content="화분있는 집에서는 화분, 화병, 바구니, 화분받침, 식물 등 다양한 원예용품을 판매하고 있습니다. "
-/>
-<meta name="robots" content="index,follow" />
+  <!-- meta -->
+  <meta name="keywords" content="화분, 화병, 바구니, 화분받침, 식물, 화분쇼핑몰" />
+  <meta name="description" content="화분있는 집에서는 화분, 화병, 바구니, 화분받침, 식물 등 다양한 원예용품을 판매하고 있습니다. " />
+  <meta name="robots" content="index,follow" />
 
-<!-- favicon -->
-<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-<link rel="manifest" href="images/favicon/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="images/favicon//ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/favicon//ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
-<!-- OG TAG -->
-<meta property="og:title" content="화분있는집" />
-<meta property="og:type" content="website" />
-<meta
-  property="og:description"
-  content="화분있는 집에서는 화분, 화병, 바구니, 화분받침, 식물 등 다양한 원예용품을 판매하고 있습니다. "
-/>
-<meta
-  property="og:image"
-  content="http://rahata.dothome.co.kr/planthouse/images/favicon/android-icon-192x192.png"
-/>
-<meta property="og:url" content="http://rahata.dothome.co.kr/planthouse" />
+  <!-- OG TAG -->
+  <meta property="og:title" content="화분있는집" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="화분있는 집에서는 화분, 화병, 바구니, 화분받침, 식물 등 다양한 원예용품을 판매하고 있습니다. " />
+  <meta property="og:image" content="http://rahata.dothome.co.kr/planthouse/images/favicon/android-icon-192x192.png" />
+  <meta property="og:url" content="http://rahata.dothome.co.kr/planthouse" />
 
-<link rel="stylesheet" href="css/lib/swiper.min.css">
-<link rel="stylesheet" href="css/lib/jquery-ui.css">
+  <link rel="stylesheet" href="css/lib/swiper.min.css">
+  <link rel="stylesheet" href="css/lib/jquery-ui.css">
 
-<link rel="stylesheet" href="css/reset.css" />
-<link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/app.css" />
 
 </head>
-<body class="main">
 
-<div class="content js-content--detail">
-  <header class="header">
-    <div class="header__upper container">
-      <a class="header__upper__menu_btn" href="">좌측메뉴</a>
-      <h1><a class="header__upper__logo" href="/index.html">로고</a></h1>
-      <button class="header__upper__search_btn">검색버튼</button>
-    </div>
-    <nav class="header__nav__container">
-      <ul class="header__nav">
-        <li class="js-active"><a href="">홈</a></li>
-        <li><a href="">추천상품</a></li>
-        <li><a href="">신상품</a></li>
-        <li><a href="">타임세일</a></li>
-        <li><a href="">고객센터</a></li>
-        <li><a href="">Q&A</a></li>
-        <li><a href="">찜한목록</a></li>
-        <li><a href="">마이페이지</a></li>
-        <li><a href="">공지사항</a></li>
-        <li><a href="">최근본목록</a></li>
+<body class="main js-option-opened">
+
+  <div class="content js-content--summary">
+    <header class="header">
+      <div class="header__upper container">
+        <a class="header__upper__menu_btn" href="">좌측메뉴</a>
+        <h1><a class="header__upper__logo" href="/index.html">로고</a></h1>
+        <button class="header__upper__search_btn">검색버튼</button>
+      </div>
+      <nav class="header__nav__container">
+        <ul class="header__nav">
+          <li class="js-active"><a href="">홈</a></li>
+          <li><a href="">추천상품</a></li>
+          <li><a href="">신상품</a></li>
+          <li><a href="">타임세일</a></li>
+          <li><a href="">고객센터</a></li>
+          <li><a href="">Q&A</a></li>
+          <li><a href="">찜한목록</a></li>
+          <li><a href="">마이페이지</a></li>
+          <li><a href="">공지사항</a></li>
+          <li><a href="">최근본목록</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="product_detail">
+      <div class="bread_scrumbs">전체 &gt; 화병</div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <img src="images/detail_1.jpg" alt="원목 화병" class="swiper-slide">
+          <img src="images/detail_2.jpg" alt="원목 화병" class="swiper-slide">
+          <img src="images/detail_3.jpg" alt="원목 화병" class="swiper-slide">
+          <img src="images/detail_4.jpg" alt="원목 화병" class="swiper-slide">
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+      <h2 class="product_detail__title">원목 화병 메이플/월넛우드_6series</h2>
+      <div class="row">
+        <span class="product_detail__item__price">19,000원</span>
+        <span class="product_detail__item__percent">10% 할인</span>
+      </div>
+      <div class="row row--between">
+        <span class="product_detail__item__saleprice">17,000원</span>
+        <span class="product_detail__item__share">공유하기</span>
+      </div>
+      <div class="product_detail__item__saletime row">
+        <span class="product_detail__item__saletime__title">남은 할인 시간</span>
+        <span class="product_detail__item__saletime__icon">시계</span>
+        <span class="product_detail__item__saletime__time">235일 03:21:20</span>
+      </div>
+    </section>
+    <nav class="product_detail__menu">
+      <ul class="product_detail__menu__container">
+        <li class="product_detail__menu__item js-active" data-class="js-content--summary">상품정보</li>
+        <li class="product_detail__menu__item" data-class="js-content--detail">상세정보</li>
+        <li class="product_detail__menu__item" data-class="js-content--review">리뷰</li>
+        <li class="product_detail__menu__item" data-class="js-content--qa">Q&amp;A</li>
       </ul>
     </nav>
-  </header>  
-  <section class="product_detail">
-    <div class="bread_scrumbs">전체 &gt; 화병</div>
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <img src="images/detail_1.jpg" alt="원목 화병" class="swiper-slide">
-        <img src="images/detail_2.jpg" alt="원목 화병" class="swiper-slide">
-        <img src="images/detail_3.jpg" alt="원목 화병" class="swiper-slide">
-        <img src="images/detail_4.jpg" alt="원목 화병" class="swiper-slide">
-      </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-    </div>
-    <h2 class="product_detail__title">원목 화병 메이플/월넛우드_6series</h2>
-    <div class="row">
-      <span class="product_detail__item__price">19,000원</span>
-      <span class="product_detail__item__percent">10% 할인</span>
-    </div>
-    <div class="row row--between">
-      <span class="product_detail__item__saleprice">17,000원</span>
-      <span class="product_detail__item__share">공유하기</span>
-    </div>  
-    <div class="product_detail__item__saletime row">
-      <span class="product_detail__item__saletime__title">남은 할인 시간</span>
-      <span class="product_detail__item__saletime__icon">시계</span>
-      <span class="product_detail__item__saletime__time">235일 03:21:20</span>
-    </div>
-  </section>
-  <nav class="product_detail__menu">
-    <ul class="product_detail__menu__container">
-      <li class="product_detail__menu__item js-active" data-class="js-content--summary">상품정보</li>
-      <li class="product_detail__menu__item" data-class="js-content--detail">상세정보</li>
-      <li class="product_detail__menu__item" data-class="js-content--review">리뷰</li>
-      <li class="product_detail__menu__item" data-class="js-content--qa">Q&amp;A</li>
-    </ul>
-  </nav>
-  
-  <section class="product_detail__summary">
-    <ul>
-      <li class="product_detail__row">
-        <div class="row product_detail__row__container--title">
-          <span class="product_detail__icon product_detail__icon--price">판매가</span>
-          <h4 class="product_detail__rowtitle">판매가</h4>
-        </div>
-        <div class="row product_detail__row__container--price">
-          <span class="product__price">19,000원</span>
-          <span class="product__salepercent">10% 할인</span>
-        </div>
-        <div class="row">
-          <span class="product__saleprice">17,000원</span>
-        </div>
-      </li>
-      <li class="product_detail__row">
-        <div class="row product_detail__rowtitle__container">
-          <span class="product_detail__icon product_detail__icon--coupon">쿠폰적용가</span>
-          <h4 class="product_detail__rowtitle">쿠폰적용가</h4>
-        </div>
-        <div class="row">
-          <span class="product__couponprice">13,600원</span>
-          <span class="product__salepercent">20% 할인</span>
-        </div>
-        <div class="row row--between">
-          <span class="product__couponperiod">2019.08.05 ~ 2019.09.05</span>
-          <span class="product__coupondown">쿠폰 다운받기 &gt;</span>
-        </div>
-      </li>
-      <li class="product_detail__row">
-        <div class="row product_detail__rowtitle__container">
-          <span class="product_detail__icon product_detail__icon--summary">상품요약</span>
-          <h4 class="product_detail__rowtitle">상품요약</h4>
-        </div>
-        <p class="product_detail__paragraph">
-          50 * 50 * 170 (mm)<br>
-          체리나무 / 호두나무<br>
-          수작업 특성상 사이즈의 오차가 있을 수 있습니다.<br>
-        </p>
-      </li>
-      <li class="product_detail__row">
-        <div class="row product_detail__rowtitle__container">
-          <span class="product_detail__icon product_detail__icon--global">해외배송가능여부</span>
-          <h4 class="product_detail__rowtitle">해외배송가능여부</h4>
-        </div>
-        <p class="product_detail__paragraph">
-          국내배송
-        </p>
-      </li>
-      <li class="product_detail__row">
-        <div class="row product_detail__rowtitle__container">
-          <span class="product_detail__icon product_detail__icon--express">배송방법</span>
-          <h4 class="product_detail__rowtitle">배송방법</h4>
-        </div>
-        <p class="product_detail__paragraph">
-          택배
-        </p>
-      </li>
-      <li class="product_detail__row">
-        <div class="row product_detail__rowtitle__container">
-          <span class="product_detail__icon product_detail__icon--price">배송비</span>
-          <h4 class="product_detail__rowtitle">배송비</h4>
-        </div>
-        <div class="row">
-          <span class="product_detail__text">1,000원 ~ 10,000원</span>
-          <span class="product_detail__icon product_detail__icon--question">배송비안내</span>
-        </div>
-      </li>
-    </ul>
-    <ul class="container">
-      <li class="product_detail__notice">
-        <h4 class="product_detail__notice__title">결제 안내</h4>
-        <p class="product_detail__notice__paragraph"> 
-          &nbsp;&nbsp;고액 결제의 경우 안전을 위해 카드사에서 확인전화를 드릴 수도 있습니다. 확인과정에서 도난 카드의 사용이나 타인 명의의 주문 등 정상적인 주문이 아니라고 판단될 경우 임의로 주문을 보류 또는 취소할 수 있습니다.<br>
-          &nbsp;&nbsp;무통장 입금은 상품 구매 대금은 PC뱅킹, 인터넷뱅킹, 텔레뱅킹 혹은 가까운 은행에서 직접 입금하시면 됩니다.<br> 
-          &nbsp;&nbsp;주문시 입력한 입금자명과 실제 입금자의 성명이 반드시 일치하여야 하며, 7일 이내로 입금을 하셔야 하며 입금 되지 않은 주문은 자동 취소 됩니다. 
-        </p>
-      </li>
-      <li class="product_detail__notice">
-        <h4 class="product_detail__notice__title">배송 안내</h4>
-        <p class="product_detail__notice__paragraph"> 
-            상품 배송방법은 로젠 택배 입니다.<br> 
+    <section class="product_detail__summary">
+      <ul>
+        <li class="product_detail__row">
+          <div class="row product_detail__row__container--title">
+            <span class="product_detail__icon product_detail__icon--price">판매가</span>
+            <h4 class="product_detail__rowtitle">판매가</h4>
+          </div>
+          <div class="row product_detail__row__container--price">
+            <span class="product__price">19,000원</span>
+            <span class="product__salepercent">10% 할인</span>
+          </div>
+          <div class="row">
+            <span class="product__saleprice">17,000원</span>
+          </div>
+        </li>
+        <li class="product_detail__row">
+          <div class="row product_detail__rowtitle__container">
+            <span class="product_detail__icon product_detail__icon--coupon">쿠폰적용가</span>
+            <h4 class="product_detail__rowtitle">쿠폰적용가</h4>
+          </div>
+          <div class="row">
+            <span class="product__couponprice">13,600원</span>
+            <span class="product__salepercent">20% 할인</span>
+          </div>
+          <div class="row row--between">
+            <span class="product__couponperiod">2019.08.05 ~ 2019.09.05</span>
+            <span class="product__coupondown">쿠폰 다운받기 &gt;</span>
+          </div>
+        </li>
+        <li class="product_detail__row">
+          <div class="row product_detail__rowtitle__container">
+            <span class="product_detail__icon product_detail__icon--summary">상품요약</span>
+            <h4 class="product_detail__rowtitle">상품요약</h4>
+          </div>
+          <p class="product_detail__summary__paragraph">
+            50 * 50 * 170 (mm)<br>
+            체리나무 / 호두나무<br>
+            수작업 특성상 사이즈의 오차가 있을 수 있습니다.<br>
+          </p>
+        </li>
+        <li class="product_detail__row">
+          <div class="row product_detail__rowtitle__container">
+            <span class="product_detail__icon product_detail__icon--global">해외배송가능여부</span>
+            <h4 class="product_detail__rowtitle">해외배송가능여부</h4>
+          </div>
+          <p class="product_detail__summary__paragraph">
+            국내배송
+          </p>
+        </li>
+        <li class="product_detail__row">
+          <div class="row product_detail__rowtitle__container">
+            <span class="product_detail__icon product_detail__icon--express">배송방법</span>
+            <h4 class="product_detail__rowtitle">배송방법</h4>
+          </div>
+          <p class="product_detail__summary__paragraph">
+            택배
+          </p>
+        </li>
+        <li class="product_detail__row">
+          <div class="row product_detail__rowtitle__container">
+            <span class="product_detail__icon product_detail__icon--price">배송비</span>
+            <h4 class="product_detail__rowtitle">배송비</h4>
+          </div>
+          <div class="row">
+            <span class="product_detail__text">1,000원 ~ 10,000원</span>
+            <span class="product_detail__icon product_detail__icon--question">배송비안내</span>
+          </div>
+        </li>
+      </ul>
+      <ul class="container">
+        <li class="product_detail__notice">
+          <h4 class="product_detail__notice__title">결제 안내</h4>
+          <p class="product_detail__notice__paragraph">
+            &nbsp;&nbsp;고액 결제의 경우 안전을 위해 카드사에서 확인전화를 드릴 수도 있습니다. 확인과정에서 도난 카드의 사용이나 타인 명의의 주문 등 정상적인 주문이 아니라고 판단될 경우 임의로
+            주문을 보류 또는 취소할 수 있습니다.<br>
+            &nbsp;&nbsp;무통장 입금은 상품 구매 대금은 PC뱅킹, 인터넷뱅킹, 텔레뱅킹 혹은 가까운 은행에서 직접 입금하시면 됩니다.<br>
+            &nbsp;&nbsp;주문시 입력한 입금자명과 실제 입금자의 성명이 반드시 일치하여야 하며, 7일 이내로 입금을 하셔야 하며 입금 되지 않은 주문은 자동 취소 됩니다.
+          </p>
+        </li>
+        <li class="product_detail__notice">
+          <h4 class="product_detail__notice__title">배송 안내</h4>
+          <p class="product_detail__notice__paragraph">
+            상품 배송방법은 로젠 택배 입니다.<br>
             - 택배비는 선불입니다.<br>
-            - 배송비는 묶음 배송이므로 재품 가지수에 상관없이 40000원 미만일시 3000원이 부과됩니다.(도서산간 및 제주도는 추가요금 있습니다.) 
+            - 배송비는 묶음 배송이므로 재품 가지수에 상관없이 40000원 미만일시 3000원이 부과됩니다.(도서산간 및 제주도는 추가요금 있습니다.)
             제주도및 섬지역 항공료 도선료는 고객님께서 부담해 주셔야 합니다. 착불 발송입니다.<br>
-            -단, 도로용화분, 화분커버, 대형 화분 등등 몇몇 재품들은 택배비가 별도로 부과 되거나 착불로 배송 출고 됩니다(개당 5000원부터 30000만원 이상도 크기에 따라 부과 됩니다.)<br> 
-            - 배송기간은 상품의 대금결제 확인후 2~4일 정도 소요 됩니다.(주말이나 공휴일일 경우 포함되어 있을경우 더 소요될수 있습니다. )<br> 
+            -단, 도로용화분, 화분커버, 대형 화분 등등 몇몇 재품들은 택배비가 별도로 부과 되거나 착불로 배송 출고 됩니다(개당 5000원부터 30000만원 이상도 크기에 따라 부과 됩니다.)<br>
+            - 배송기간은 상품의 대금결제 확인후 2~4일 정도 소요 됩니다.(주말이나 공휴일일 경우 포함되어 있을경우 더 소요될수 있습니다. )<br>
             (지역에 따라서 기간은 다소 달라질 수 있습니다.)<br>
             - 결제 확인및 주문 확인은 매일 11시에 확인합니다. 당일 11시 이후에 주문하신 고객님은 다음날 11시 입급확인후 배송 됩니다.(배송기간은 결제 확인후 2~4일 입니다.)<br>
-            - 상품의 대금결제 후 5일 이내에 상품이 도착하지 않을 시에는 즉시 연락을 주셔야 합니다. 
-        </p>
-      </li>
-      <li class="product_detail__notice">
-        <h4 class="product_detail__notice__title">반품 및 교환 안내</h4>
-        <p class="product_detail__notice__paragraph"> 
+            - 상품의 대금결제 후 5일 이내에 상품이 도착하지 않을 시에는 즉시 연락을 주셔야 합니다.
+          </p>
+        </li>
+        <li class="product_detail__notice">
+          <h4 class="product_detail__notice__title">반품 및 교환 안내</h4>
+          <p class="product_detail__notice__paragraph">
             -고객님의 변심으로 인한 교환,반품시 운송중 발생하는 파손은 교환,환불이 불가합니다.<br>
             - 상품에 이상이 있을 시(운송중 파손시) : 100% 교환 및 반품 가능하며 운송료는 고객께서 부담하실 필요없습니다. 반송처에서 부담합니다. <br>
             - 상품에 이상이 없을 시 : 제품수령 후 3일 이내에 반품 및 교환 가능하며 운송료는 고객님께서 부담합니다. <br>
             - 고객님의 부주의로 인한 상품훼손,Tag, 비닐포장 폐기 후 및 상품 가치 상실 등의 경우는 교환/환불/반품이 불가능합니다. <br>
             - 반품 교환 시 제품을 먼저 보내주시면(제품 수령 후 2일 이내) 물품 확인 후 교환/환불/반품해 드립니다.<br>
             - 주문제작인 제품(도로화분, 화분커버)은 교환이 불가합니다. 물품 구매시 신중히 선택하시기 바랍니다.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="product_detail__detail">
+      <img class="product_detail__detail__image" src="images/detail_detail_1.jpg" alt="비리프 화병">
+      <div class="product_detail__detail__desc">
+        <div class="product_detail__detail__row">
+          <h3 class="product_detail__detail__desc__subtitle">&lsqb;비&colon;리프&rsqb;</h3>
+          <h2 class="product_detail__detail__desc__title">Vase Series</h2>
+        </div>
+        <p class="product_detail__paragraph product_detail__detail__row">
+          드라이플라워나 마른 가지를 꽂을 수 있는<br>
+          원목화병입니다.
         </p>
-      </li>
-    </ul>
-  </section>
-  <section class="product_detail__detail">
-    <img class="product_detail__detail__image" src="images/detail_detail_1.jpg" alt="비리프 화병">
-    <div class="product_detail__detail__desc">
-      <div class="product_detail__detail__row">
-        <h3 class="product_detail__detail__desc__subtitle">&lsqb;비&colon;리프&rsqb;</h3>
-        <h2 class="product_detail__detail__desc__title">Vase Series</h2>
-      </div>      
-      <p class="product_detail__paragraph product_detail__detail__row">
-        드라이플라워나 마른 가지를 꽂을 수 있는<br> 
-        원목화병입니다.
-      </p>
-      <p class="product_detail__paragraph product_detail__detail__row">
-        꽃을 꽂지않고 오브제로서 연출하여도<br>
-        멋스러운 소재입니다.
-      </p>     
-    </div>
-    <img class="product_detail__detail__image" src="images/detail_detail_2.jpg" alt="화병들">
-    <ul class="product_detail__detail__content">
-      <li>
-        <div class="product_detail__detail__desc">
-          <div class="product_detail__detail__row">
-            <h3 class="product_detail__detail__desc__subtitle">&lsqb;비&colon;리프&rsqb;</h3>
-            <h2 class="product_detail__detail__desc__title">V001</h2>
-          </div>
-        </div>
-        <div class="row product_detail__detail__content">
-          <div class="product_detail__detail__image__container--40">
-            <img class="product_detail__detail__content__image" src="images/detail_detail_3.jpg" alt="비리프 화병">
-          </div>
-          <ul class="product_detail__detail__content__desc">
-            <li class="product_detail__detail__content__container">
-              <h4 class="product_detail__detail__content__title">부피</h4>
-              <p class="product_detail__detail__content__title">75 &ast; 75 &ast; 250 &lpar;mm&rpar;</p>
-            </li>
-            <li class="product_detail__detail__content__container">
-              <h4 class="product_detail__detail__content__title">재료</h4>
-              <p class="product_detail__detail__content__title">체리 &sol; 월넛</p>
-            </li>
-            <li class="product_detail__detail__content__container">
-              <h4 class="product_detail__detail__content__title">원산지</h4>
-              <p class="product_detail__detail__content__title">한국산</p>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li>
+        <p class="product_detail__paragraph product_detail__detail__row">
+          꽃을 꽂지않고 오브제로서 연출하여도<br>
+          멋스러운 소재입니다.
+        </p>
+      </div>
+      <img class="product_detail__detail__image" src="images/detail_detail_2.jpg" alt="화병들">
+      <ul>
+        <li>
           <div class="product_detail__detail__desc">
-              <div class="product_detail__detail__row">
-                <h3 class="product_detail__detail__desc__subtitle">&lsqb;비&colon;리프&rsqb;</h3>
-                <h2 class="product_detail__detail__desc__title">V002</h2>
-              </div>
+            <div class="product_detail__detail__row">
+              <h3 class="product_detail__detail__desc__subtitle">&lsqb;비&colon;리프&rsqb;</h3>
+              <h2 class="product_detail__detail__desc__title">V001</h2>
             </div>
-        <div class="row product_detail__detail__content">
-          <div class="product_detail__detail__image__container--40">
-            <img class="product_detail__detail__content__image" src="images/detail_detail_4.jpg" alt="비리프 화병">
           </div>
-          <ul class="product_detail__detail__content__desc">
-            <li class="product_detail__detail__content__container">
-              <h4 class="product_detail__detail__content__title">부피</h4>
-              <p class="product_detail__detail__content__title">75 &ast; 75 &ast; 250 &lpar;mm&rpar;</p>
-            </li>
-            <li class="product_detail__detail__content__container">
-              <h4 class="product_detail__detail__content__title">재료</h4>
-              <p class="product_detail__detail__content__title">메이플 &sol; 월넛</p>
-            </li>
-            <li class="product_detail__detail__content__container">
-              <h4 class="product_detail__detail__content__title">원산지</h4>
-              <p class="product_detail__detail__content__title">한국산</p>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li>
-          <div class="product_detail__detail__desc">
-              <div class="product_detail__detail__row">
-                <h3 class="product_detail__detail__desc__subtitle">&lsqb;비&colon;리프&rsqb;</h3>
-                <h2 class="product_detail__detail__desc__title">V003</h2>
-              </div>
-            </div>
-        <div class="row product_detail__detail__content">
-          <div class="product_detail__detail__image__container--40">
-            <img class="product_detail__detail__content__image" src="images/detail_detail_5.jpg" alt="비리프 화병">
-          </div>
-          <ul class="product_detail__detail__content__desc">
-            <li class="product_detail__detail__content__container">
-              <h4 class="product_detail__detail__content__title">부피</h4>
-              <p class="product_detail__detail__content__title">75 &ast; 75 &ast; 280 &lpar;mm&rpar;</p>
-            </li>
-            <li class="product_detail__detail__content__container">
-              <h4 class="product_detail__detail__content__title">재료</h4>
-              <p class="product_detail__detail__content__title">메이플 &sol; 월넛</p>
-            </li>
-            <li class="product_detail__detail__content__container">
-              <h4 class="product_detail__detail__content__title">원산지</h4>
-              <p class="product_detail__detail__content__title">한국산</p>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li>
-          <div class="product_detail__detail__desc">
-              <div class="product_detail__detail__row">
-                <h3 class="product_detail__detail__desc__subtitle">&lsqb;비&colon;리프&rsqb;</h3>
-                <h2 class="product_detail__detail__desc__title">V004</h2>
-              </div>
-            </div>
-        <div class="row product_detail__detail__content">
+          <div class="product_detail__detail__content">
             <div class="product_detail__detail__image__container--40">
-                <img class="product_detail__detail__content__image" src="images/detail_detail_6.jpg" alt="비리프 화병">
-              </div>
-          <ul class="product_detail__detail__content__desc">
-            <li class="product_detail__detail__content__container">
-              <h4 class="product_detail__detail__content__title">부피</h4>
-              <p class="product_detail__detail__content__title">75 &ast; 75 &ast; 280 &lpar;mm&rpar;</p>
-            </li>
-            <li class="product_detail__detail__content__container">
-              <h4 class="product_detail__detail__content__title">재료</h4>
-              <p class="product_detail__detail__content__title">메이플 &sol; 월넛</p>
-            </li>
-            <li class="product_detail__detail__content__container">
-              <h4 class="product_detail__detail__content__title">원산지</h4>
-              <p class="product_detail__detail__content__title">한국산</p>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li>
-        <div class="product_detail__detail__desc">
+              <img class="product_detail__detail__content__image" src="images/detail_detail_3.jpg" alt="비리프 화병">
+            </div>
+            <ul class="product_detail__detail__content__desc">
+              <li class="product_detail__detail__content__container">
+                <div class="product_detail__detail__content__title__container">
+                  <span class="product_detail__detail__content__icon hidden_text">리스트스타일</span>
+                  <h4 class="product_detail__detail__content__title">부피</h4>
+                </div>
+                <p class="product_detail__detail__content__text">75 &ast; 75 &ast; 250 &lpar;mm&rpar;</p>
+              </li>
+              <li class="product_detail__detail__content__container">
+                <div class="product_detail__detail__content__title__container">
+                  <span class="product_detail__detail__content__icon hidden_text">리스트스타일</span>
+                  <h4 class="product_detail__detail__content__title">재료</h4>
+                </div>
+                <p class="product_detail__detail__content__text">체리 &sol; 월넛</p>
+              </li>
+              <li class="product_detail__detail__content__container">
+                <div class="product_detail__detail__content__title__container">
+                  <span class="product_detail__detail__content__icon hidden_text">리스트스타일</span>
+                  <h4 class="product_detail__detail__content__title">원산지</h4>
+                </div>
+                <p class="product_detail__detail__content__text">한국산</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="product_detail__detail__desc">
+            <div class="product_detail__detail__row">
+              <h3 class="product_detail__detail__desc__subtitle">&lsqb;비&colon;리프&rsqb;</h3>
+              <h2 class="product_detail__detail__desc__title">V002</h2>
+            </div>
+          </div>
+          <div class="product_detail__detail__content">
+            <div class="product_detail__detail__image__container--40">
+              <img class="product_detail__detail__content__image" src="images/detail_detail_4.jpg" alt="비리프 화병">
+            </div>
+            <ul class="product_detail__detail__content__desc">
+              <li class="product_detail__detail__content__container">
+                <div class="product_detail__detail__content__title__container">
+                  <span class="product_detail__detail__content__icon hidden_text">리스트스타일</span>
+                  <h4 class="product_detail__detail__content__title">부피</h4>
+                </div>
+                <p class="product_detail__detail__content__text">75 &ast; 75 &ast; 250 &lpar;mm&rpar;</p>
+              </li>
+              <li class="product_detail__detail__content__container">
+                <div class="product_detail__detail__content__title__container">
+                  <span class="product_detail__detail__content__icon hidden_text">리스트스타일</span>
+                  <h4 class="product_detail__detail__content__title">재료</h4>
+                </div>
+                <p class="product_detail__detail__content__text">메이플 &sol; 월넛</p>
+              </li>
+              <li class="product_detail__detail__content__container">
+                <div class="product_detail__detail__content__title__container">
+                  <span class="product_detail__detail__content__icon hidden_text">리스트스타일</span>
+                  <h4 class="product_detail__detail__content__title">원산지</h4>
+                </div>
+                <p class="product_detail__detail__content__text">한국산</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="product_detail__detail__desc">
+            <div class="product_detail__detail__row">
+              <h3 class="product_detail__detail__desc__subtitle">&lsqb;비&colon;리프&rsqb;</h3>
+              <h2 class="product_detail__detail__desc__title">V003</h2>
+            </div>
+          </div>
+          <div class="product_detail__detail__content">
+            <div class="product_detail__detail__image__container--40">
+              <img class="product_detail__detail__content__image" src="images/detail_detail_5.jpg" alt="비리프 화병">
+            </div>
+            <ul class="product_detail__detail__content__desc">
+              <li class="product_detail__detail__content__container">
+                <div class="product_detail__detail__content__title__container">
+                  <span class="product_detail__detail__content__icon hidden_text">리스트스타일</span>
+                  <h4 class="product_detail__detail__content__title">부피</h4>
+                </div>
+                <p class="product_detail__detail__content__text">75 &ast; 75 &ast; 280 &lpar;mm&rpar;</p>
+              </li>
+              <li class="product_detail__detail__content__container">
+                <div class="product_detail__detail__content__title__container">
+                  <span class="product_detail__detail__content__icon hidden_text">리스트스타일</span>
+                  <h4 class="product_detail__detail__content__title">재료</h4>
+                </div>
+                <p class="product_detail__detail__content__text">메이플 &sol; 월넛</p>
+              </li>
+              <li class="product_detail__detail__content__container">
+                <div class="product_detail__detail__content__title__container">
+                  <span class="product_detail__detail__content__icon hidden_text">리스트스타일</span>
+                  <h4 class="product_detail__detail__content__title">원산지</h4>
+                </div>
+                <p class="product_detail__detail__content__text">한국산</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="product_detail__detail__desc">
+            <div class="product_detail__detail__row">
+              <h3 class="product_detail__detail__desc__subtitle">&lsqb;비&colon;리프&rsqb;</h3>
+              <h2 class="product_detail__detail__desc__title">V004</h2>
+            </div>
+          </div>
+          <div class="product_detail__detail__content">
+            <div class="product_detail__detail__image__container--40">
+              <img class="product_detail__detail__content__image" src="images/detail_detail_6.jpg" alt="비리프 화병">
+            </div>
+            <ul class="product_detail__detail__content__desc">
+              <li class="product_detail__detail__content__container">
+                <div class="product_detail__detail__content__title__container">
+                  <span class="product_detail__detail__content__icon hidden_text">리스트스타일</span>
+                  <h4 class="product_detail__detail__content__title">부피</h4>
+                </div>
+                <p class="product_detail__detail__content__text">75 &ast; 75 &ast; 280 &lpar;mm&rpar;</p>
+              </li>
+              <li class="product_detail__detail__content__container">
+                <div class="product_detail__detail__content__title__container">
+                  <span class="product_detail__detail__content__icon hidden_text">리스트스타일</span>
+                  <h4 class="product_detail__detail__content__title">재료</h4>
+                </div>
+                <p class="product_detail__detail__content__text">메이플 &sol; 월넛</p>
+              </li>
+              <li class="product_detail__detail__content__container">
+                <div class="product_detail__detail__content__title__container">
+                  <span class="product_detail__detail__content__icon hidden_text">리스트스타일</span>
+                  <h4 class="product_detail__detail__content__title">원산지</h4>
+                </div>
+                <p class="product_detail__detail__content__text">한국산</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="product_detail__detail__desc">
             <div class="product_detail__detail__row">
               <h3 class="product_detail__detail__desc__subtitle">&lsqb;비&colon;리프&rsqb;</h3>
               <h2 class="product_detail__detail__desc__title">V005</h2>
             </div>
           </div>
-        <div class="row product_detail__detail__content">
+          <div class="product_detail__detail__content">
             <div class="product_detail__detail__image__container--40">
-                <img class="product_detail__detail__content__image" src="images/detail_detail_7.jpg" alt="비리프 화병">
-              </div>
-          <ul class="product_detail__detail__content__desc">
-            <li class="product_detail__detail__content__container">
-              <h4 class="product_detail__detail__content__title">부피</h4>
-              <p class="product_detail__detail__content__title">75 &ast; 75 &ast; 280 &lpar;mm&rpar;</p>
-            </li>
-            <li class="product_detail__detail__content__container">
-              <h4 class="product_detail__detail__content__title">재료</h4>
-              <p class="product_detail__detail__content__title">메이플 &sol; 월넛</p>
-            </li>
-            <li class="product_detail__detail__content__container">
-              <h4 class="product_detail__detail__content__title">원산지</h4>
-              <p class="product_detail__detail__content__title">한국산</p>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li>
+              <img class="product_detail__detail__content__image" src="images/detail_detail_7.jpg" alt="비리프 화병">
+            </div>
+            <ul class="product_detail__detail__content__desc">
+              <li class="product_detail__detail__content__container">
+                <div class="product_detail__detail__content__title__container">
+                  <span class="product_detail__detail__content__icon hidden_text">리스트스타일</span>
+                  <h4 class="product_detail__detail__content__title">부피</h4>
+                </div>
+                <p class="product_detail__detail__content__text">75 &ast; 75 &ast; 280 &lpar;mm&rpar;</p>
+              </li>
+              <li class="product_detail__detail__content__container">
+                <div class="product_detail__detail__content__title__container">
+                  <span class="product_detail__detail__content__icon hidden_text">리스트스타일</span>
+                  <h4 class="product_detail__detail__content__title">재료</h4>
+                </div>
+                <p class="product_detail__detail__content__text">메이플 &sol; 월넛</p>
+              </li>
+              <li class="product_detail__detail__content__container">
+                <div class="product_detail__detail__content__title__container">
+                  <span class="product_detail__detail__content__icon hidden_text">리스트스타일</span>
+                  <h4 class="product_detail__detail__content__title">원산지</h4>
+                </div>
+                <p class="product_detail__detail__content__text">한국산</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
           <div class="product_detail__detail__desc">
-              <div class="product_detail__detail__row">
-                <h3 class="product_detail__detail__desc__subtitle">&lsqb;비&colon;리프&rsqb;</h3>
-                <h2 class="product_detail__detail__desc__title">V006</h2>
-              </div>
+            <div class="product_detail__detail__row">
+              <h3 class="product_detail__detail__desc__subtitle">&lsqb;비&colon;리프&rsqb;</h3>
+              <h2 class="product_detail__detail__desc__title">V006</h2>
             </div>
-        <div class="row product_detail__detail__content">
+          </div>
+          <div class="product_detail__detail__content">
             <div class="product_detail__detail__image__container--40">
-                <img class="product_detail__detail__content__image" src="images/detail_detail_7.jpg" alt="비리프 화병">
+              <img class="product_detail__detail__content__image" src="images/detail_detail_7.jpg" alt="비리프 화병">
+            </div>
+            <ul class="product_detail__detail__content__desc">
+              <li class="product_detail__detail__content__container">
+                <div class="product_detail__detail__content__title__container">
+                  <span class="product_detail__detail__content__icon hidden_text">리스트스타일</span>
+                  <h4 class="product_detail__detail__content__title">부피</h4>
+                </div>
+                <p class="product_detail__detail__content__text">75 &ast; 75 &ast; 280 &lpar;mm&rpar;</p>
+              </li>
+              <li class="product_detail__detail__content__container">
+                <div class="product_detail__detail__content__title__container">
+                  <span class="product_detail__detail__content__icon hidden_text">리스트스타일</span>
+                  <h4 class="product_detail__detail__content__title">재료</h4>
+                </div>
+                <p class="product_detail__detail__content__text">메이플 &sol; 월넛</p>
+              </li>
+              <li class="product_detail__detail__content__container">
+                <div class="product_detail__detail__content__title__container">
+                  <span class="product_detail__detail__content__icon hidden_text">리스트스타일</span>
+                  <h4 class="product_detail__detail__content__title">원산지</h4>
+                </div>
+                <p class="product_detail__detail__content__text">한국산</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="product_detail__detail__desc">
+        <h2 class="product_detail__detail__desc__title">재료소개</h2>
+        <p>
+          내구성이 강한 하드우드로 제작합니다.
+        </p>
+      </div>
+      <img class="product_detail__detail__image" src="images/detail_detail_8.jpg" alt="화병들">
+      <div class="product_detail__detail__resource__desc container">
+        <h4 class="product_detail__detail__resource__desc__title">- Maple &lpar;단풍나무&rpar;</h4>
+        <p>
+          &nbsp;밝은 계열의 하드우드로 예쁜 나뭇결과 자연스럽고 고급스러운 광택을 지녔으며 가볍지만 조직이 매우 세밀하고 단단하여 고급 가구와 소품에 많이 쓰입니다.
+        </p>        
+        <br>
+        <h4 class="product_detail__detail__resource__desc__title">- Walnut &lpar;호두나무&rpar;</h4>
+        <p>
+          &nbsp;은은한 흑갈색을 띠는 월넛은 우아하고 고풍스러운 느낌을 주며 충격에 강하고 조직이 치밀하며 결이 아름다워 고급가구나 소품에 많이 쓰입니다.
+        </p>  
+        <br>
+      </div>
+      <p class="product_detail__detail__resource__desc--highlight container">
+        &ast; 천연 원목의 특성상 같은 수종이여도 색감의 톤, 결의 차이가 있을 수 있습니다.
+      </p>
+      <img class="product_detail__detail__image" src="images/detail_detail_9.jpg" alt="화병들">
+      <div class="product_detail__detail__resource__desc__container container">
+        <p class="product_detail__detail__resource__desc">
+          1. 루비오 오일은 VOC(휘발성 유기화합물)가 일체 함유되어 있지 않은 천연오일입니다.
+        </p>
+        <p class="product_detail__detail__resource__desc--dimmed">
+          &lpar;세계 최고의 유해물질 분석, 시험 인증기관인 유로핀스 골드 레이블 인증 획득&rpar;
+        </p>
+        <p class="product_detail__detail__resource__desc">
+          2. 단 한겹으로도 우수한 보호력과 오래 지속되는 유지성을 지닌 천연오일입니다.
+        </p>
+      </div>
+      <div class="product_detail__notice container">
+        <p class="product_detail__notice__paragraph product_detail__notice__paragraph--big">
+          - 수제작 제품의 특성 상 제작기간이 <em>2~7일</em> 정도 소요됩니다. &lpar;주문 후 자세한 일정은 안내해드립니다.&rpar;<br>
+          <br>
+          - 천연 원목 제품이기 때문에 물을 담을 시 나무에 스며들어 갈라짐의 원인이 될 수 있으니 <em>물을 담아 사용하지 마세요.</em><br>
+          <br>
+          - 수제 우드 제품의 특성상 형태와 크기에 약간의 차이가 있을 수 있습니다.<br>
+          <br>
+          - 화면의 해상도에 따라 제품의 색상이 다소 차이가 있을 수 있습니다. <br>
+          <br>
+          - 나무의 자연적인 특성인 옹이, 나무의 결, 색상 등으로 인한 교환, 환불이 어려운 점 양해 부탁드립니다.<br>
+          <br>
+          - 주문제작 상품으로 단순한 변심으로 인한 교환, 환불이 어려우니 신중한 구매 부탁드립니다.<br>
+          <br>
+          - 사이즈 및 디자인 변경은 고객센터로 문의 주시기 바랍니다.<br>
+        </p>
+      </div>
+      <ul class="product_detail__table">
+        <li class="product_detail__table__item">
+          <span class="product_detail__table__title">품명 및 모델명</span>
+          <span class="product_detail__table__text">원목화병</span>
+        </li>
+        <li class="product_detail__table__item">
+          <span class="product_detail__table__title">
+            법에 의한 인증,<br>
+            허가 확인사항
+          </span>
+          <span class="product_detail__table__text">해당없음</span>
+        </li>
+        <li class="product_detail__table__item">
+          <span class="product_detail__table__title">제조자</span>
+          <span class="product_detail__table__text">자체생산</span>
+        </li>
+        <li class="product_detail__table__item">
+          <span class="product_detail__table__title">제조국&lpar;수입여부&rpar;</span>
+          <span class="product_detail__table__text">국내</span>
+        </li>
+      </ul>
+    </section>
+    <section class="product_detail__review">
+      <ul class="product_detail__review__list">
+        <li class="product_detail__review__list__item">
+          <h4 class="product_detail__review__list__item__title">testtest</h4>
+          <div class="product_detail__review__list__item__row">
+            <ul class="product_detail__review__list__item__grade">
+              <li class="product_detail__review__list__item__grade__item js-active">별</li>
+              <li class="product_detail__review__list__item__grade__item js-active">별</li>
+              <li class="product_detail__review__list__item__grade__item js-active">별</li>
+              <li class="product_detail__review__list__item__grade__item">별</li>
+              <li class="product_detail__review__list__item__grade__item">별</li>
+            </ul>
+            <span class="product_detail__review__list__item__subdesc">2019.06.20 17:48:29</span>
+            <span class="product_detail__review__list__item__subdesc">조회 0</span>
+          </div>
+          <p class="product_detail__review__list__item__paragraph">
+            주문 후 제작이라 배송은 좀 느렸지만 예뻐서 마음에 들어요.
+          </p>
+        </li>
+        <li class="product_detail__review__list__item">
+          <h4 class="product_detail__review__list__item__title">testtest</h4>
+          <div class="product_detail__review__list__item__row">
+            <ul class="product_detail__review__list__item__grade">
+              <li class="product_detail__review__list__item__grade__item js-active">별</li>
+              <li class="product_detail__review__list__item__grade__item js-active">별</li>
+              <li class="product_detail__review__list__item__grade__item js-active">별</li>
+              <li class="product_detail__review__list__item__grade__item">별</li>
+              <li class="product_detail__review__list__item__grade__item">별</li>
+            </ul>
+            <span class="product_detail__review__list__item__subdesc">2019.06.20 17:48:29</span>
+            <span class="product_detail__review__list__item__subdesc">조회 0</span>
+          </div>
+          <p class="product_detail__review__list__item__paragraph">
+            주문 후 제작이라 배송은 좀 느렸지만 예뻐서 마음에 들어요.
+          </p>
+        </li>
+        <li class="product_detail__review__list__item">
+          <h4 class="product_detail__review__list__item__title">testtest</h4>
+          <div class="product_detail__review__list__item__row">
+            <ul class="product_detail__review__list__item__grade">
+              <li class="product_detail__review__list__item__grade__item js-active">별</li>
+              <li class="product_detail__review__list__item__grade__item js-active">별</li>
+              <li class="product_detail__review__list__item__grade__item js-active">별</li>
+              <li class="product_detail__review__list__item__grade__item">별</li>
+              <li class="product_detail__review__list__item__grade__item">별</li>
+            </ul>
+            <span class="product_detail__review__list__item__subdesc">2019.06.20 17:48:29</span>
+            <span class="product_detail__review__list__item__subdesc">조회 0</span>
+          </div>
+          <p class="product_detail__review__list__item__paragraph">
+            주문 후 제작이라 배송은 좀 느렸지만 예뻐서 마음에 들어요.
+          </p>
+        </li>
+        <li class="product_detail__review__list__item">
+          <h4 class="product_detail__review__list__item__title">testtest</h4>
+          <div class="product_detail__review__list__item__row">
+            <ul class="product_detail__review__list__item__grade">
+              <li class="product_detail__review__list__item__grade__item js-active">별</li>
+              <li class="product_detail__review__list__item__grade__item js-active">별</li>
+              <li class="product_detail__review__list__item__grade__item js-active">별</li>
+              <li class="product_detail__review__list__item__grade__item">별</li>
+              <li class="product_detail__review__list__item__grade__item">별</li>
+            </ul>
+            <span class="product_detail__review__list__item__subdesc">2019.06.20 17:48:29</span>
+            <span class="product_detail__review__list__item__subdesc">조회 0</span>
+          </div>
+          <p class="product_detail__review__list__item__paragraph">
+            주문 후 제작이라 배송은 좀 느렸지만 예뻐서 마음에 들어요.
+          </p>
+        </li>
+        <li class="product_detail__review__list__item">
+          <h4 class="product_detail__review__list__item__title">testtest</h4>
+          <div class="product_detail__review__list__item__row">
+            <ul class="product_detail__review__list__item__grade">
+              <li class="product_detail__review__list__item__grade__item js-active">별</li>
+              <li class="product_detail__review__list__item__grade__item js-active">별</li>
+              <li class="product_detail__review__list__item__grade__item js-active">별</li>
+              <li class="product_detail__review__list__item__grade__item">별</li>
+              <li class="product_detail__review__list__item__grade__item">별</li>
+            </ul>
+            <span class="product_detail__review__list__item__subdesc">2019.06.20 17:48:29</span>
+            <span class="product_detail__review__list__item__subdesc">조회 0</span>
+          </div>
+          <p class="product_detail__review__list__item__paragraph">
+            주문 후 제작이라 배송은 좀 느렸지만 예뻐서 마음에 들어요.
+          </p>
+        </li>
+      </ul>
+      <div class="product_detail__review__pagination">
+        <span class="product_detail__review__pagination__left">이전으로</span>
+        <ul class="product_detail__review__pagination__pages">
+          <li class="product_detail__review__pagination__pages__page js-active">1</li>
+          <li class="product_detail__review__pagination__pages__page">2</li>
+          <li class="product_detail__review__pagination__pages__page">3</li>
+          <li class="product_detail__review__pagination__pages__page">4</li>
+          <li class="product_detail__review__pagination__pages__page">5</li>
+        </ul>
+        <span class="product_detail__review__pagination__right">다음으로</span>
+      </div>
+    </section>
+    <section class="product_detail__qa">
+      <ul class="product_detail__review__list">
+        <li class="product_detail__review__list__item">
+          <h4 class="product_detail__review__list__item__title">testtest</h4>
+          <div class="product_detail__review__list__item__row">
+            <span class="product_detail__review__list__item__subdesc">2019.06.20 17:48:29</span>
+            <span class="product_detail__review__list__item__subdesc">조회 0</span>
+          </div>
+          <p class="product_detail__review__list__item__paragraph">
+            주문 후 제작이라 배송은 좀 느렸지만 예뻐서 마음에 들어요.
+          </p>
+        </li>
+        <li class="product_detail__review__list__item">
+          <h4 class="product_detail__review__list__item__title">testtest</h4>
+          <div class="product_detail__review__list__item__row">
+            <span class="product_detail__review__list__item__subdesc">2019.06.20 17:48:29</span>
+            <span class="product_detail__review__list__item__subdesc">조회 0</span>
+          </div>
+          <p class="product_detail__review__list__item__paragraph">
+            주문 후 제작이라 배송은 좀 느렸지만 예뻐서 마음에 들어요.
+          </p>
+        </li>
+        <li class="product_detail__review__list__item">
+          <h4 class="product_detail__review__list__item__title">testtest</h4>
+          <div class="product_detail__review__list__item__row">
+            <span class="product_detail__review__list__item__subdesc">2019.06.20 17:48:29</span>
+            <span class="product_detail__review__list__item__subdesc">조회 0</span>
+          </div>
+          <p class="product_detail__review__list__item__paragraph">
+            주문 후 제작이라 배송은 좀 느렸지만 예뻐서 마음에 들어요.
+          </p>
+        </li>
+        <li class="product_detail__review__list__item">
+          <h4 class="product_detail__review__list__item__title">testtest</h4>
+          <div class="product_detail__review__list__item__row">
+            <span class="product_detail__review__list__item__subdesc">2019.06.20 17:48:29</span>
+            <span class="product_detail__review__list__item__subdesc">조회 0</span>
+          </div>
+          <p class="product_detail__review__list__item__paragraph">
+            주문 후 제작이라 배송은 좀 느렸지만 예뻐서 마음에 들어요.
+          </p>
+        </li>
+        <li class="product_detail__review__list__item">
+          <h4 class="product_detail__review__list__item__title">testtest</h4>
+          <div class="product_detail__review__list__item__row">
+            <span class="product_detail__review__list__item__subdesc">2019.06.20 17:48:29</span>
+            <span class="product_detail__review__list__item__subdesc">조회 0</span>
+          </div>
+          <p class="product_detail__review__list__item__paragraph">
+            주문 후 제작이라 배송은 좀 느렸지만 예뻐서 마음에 들어요.
+          </p>
+        </li>
+      </ul>
+      <div class="product_detail__review__pagination">
+        <span class="product_detail__review__pagination__left">이전으로</span>
+        <ul class="product_detail__review__pagination__pages">
+          <li class="product_detail__review__pagination__pages__page js-active">1</li>
+          <li class="product_detail__review__pagination__pages__page">2</li>
+          <li class="product_detail__review__pagination__pages__page">3</li>
+          <li class="product_detail__review__pagination__pages__page">4</li>
+          <li class="product_detail__review__pagination__pages__page">5</li>
+        </ul>
+        <span class="product_detail__review__pagination__right">다음으로</span>
+      </div>
+    </section>
+    <section class="product_detail__buttons">
+      <div class="product_detail__buttons__container">
+        <div class="product_detail__buttons__order">
+          <span class="product_detail__buttons__order__text">주문하기</span>
+        </div>
+        <div class="product_detail__buttons__small">
+          <span class="product_detail__buttons__icon product_detail__buttons__icon--order">장바구니</span>
+        </div>
+        <div class="product_detail__buttons__small">
+          <span class="product_detail__buttons__icon product_detail__buttons__icon--like">찜하기</span>
+        </div>
+      </div>
+    </section>
+    <section class="product_detail__related">
+        <div class="container">
+          <h2 class="main_new__title">관련 상품들</h2>
+        </div>
+        <ul class="list__container list__container--horizontal">
+          <li class="list__item--vertical">
+              <div class="list__item__image__container list__item__up list__item__image__container--new">
+                <img class="list__item__image" src="images/product_4.jpg" alt="무광베이직 원형화분">
+                <div class="list__item__button--float">
+                  <span class="list__item__button--like">찜하기</span>
+                </div>
               </div>
-          <ul class="product_detail__detail__content__desc">
-            <li class="product_detail__detail__content__container">
-              <h4 class="product_detail__detail__content__title">부피</h4>
-              <p class="product_detail__detail__content__title">75 &ast; 75 &ast; 280 &lpar;mm&rpar;</p>
-            </li>
-            <li class="product_detail__detail__content__container">
-              <h4 class="product_detail__detail__content__title">재료</h4>
-              <p class="product_detail__detail__content__title">메이플 &sol; 월넛</p>
-            </li>
-            <li class="product_detail__detail__content__container">
-              <h4 class="product_detail__detail__content__title">원산지</h4>
-              <p class="product_detail__detail__content__title">한국산</p>
-            </li>
-          </ul>
+              <div class="list__item__down">
+                <h4 class="list__item__title">무광베이직 원형화분</h4>
+                <p class="list__item__desc">#원형화분 #무광</p>
+                <div class="list__item__rows--wrap">
+                  <div class="list__item__row_container">
+                    <span class="list__item__saleprice">3,500원</span>
+                  </div>  
+                  <div class="list__item__row_container">
+                    <span class="list__item__percent">5% 할인</span>
+                    <span class="list__item__price">30,000원</span>
+                  </div>
+                </div>
+                <div class="list__item__row_container--buttons">
+                  <span class="list__item__tag list__item__tag--new">신규</span>
+                  <span class="list__item__tag list__item__tag--hot">인기</span>
+                </div>
+              </div>
+          </li>
+          <li class="list__item--vertical">
+              <div class="list__item__image__container  list__item__up list__item__image__container--new">
+                <img class="list__item__image" src="images/product_5.jpg" alt="철재 베란다 화분걸이 화분받침대">
+                <div class="list__item__button--float">
+                  <span class="list__item__button--like">찜하기</span>
+                </div>
+              </div>
+              <div class="list__item__down">
+                <h4 class="list__item__title">철재 베란다 화분걸이 화분받침대</h4>
+                <p class="list__item__desc">#화분받침대 #베란다</p>
+                <div class="list__item__rows--wrap">
+                  <div class="list__item__row_container">
+                    <span class="list__item__saleprice">19,800원</span>
+                  </div>  
+                  <div class="list__item__row_container">
+                    <span class="list__item__percent">34% 할인</span>
+                    <span class="list__item__price">30,000원</span>
+                  </div>
+                </div>
+                <div class="list__item__row_container--buttons">
+                  <span class="list__item__tag list__item__tag--soldout">품절</span>
+                  <span class="list__item__tag list__item__tag--new">신규</span>
+                  <span class="list__item__tag list__item__tag--hot">인기</span>
+                </div>
+              </div>
+          </li>
+          <li class="list__item--vertical">
+              <div class="list__item__up list__item__image__container list__item__image__container--new">
+                <img class="list__item__image" src="images/product_6.jpg" alt="감성 화병, 꽃병 모음전(유리/도자기)">
+                <div class="list__item__button--float">
+                  <span class="list__item__button--like">찜하기</span>
+                </div>
+              </div>
+              <div class="list__item__down">
+                <h4 class="list__item__title">감성 화병, 꽃병 모음전(유리/도자기)</h4>
+                <p class="list__item__desc">#화병 #꽃병 #감성</p>
+                <div class="list__item__rows--wrap">
+                  <div class="list__item__row_container">
+                    <span class="list__item__saleprice">6,800원</span>
+                  </div>  
+                  <div class="list__item__row_container">
+                    <span class="list__item__percent">51% 할인</span>
+                    <span class="list__item__price">14,100원</span>
+                  </div>
+                </div>
+                <div class="list__item__row_container--buttons">
+                  <span class="list__item__tag list__item__tag--soldout">품절</span>
+                  <span class="list__item__tag list__item__tag--new">신규</span>
+                  <span class="list__item__tag list__item__tag--hot">인기</span>
+                </div>
+              </div>
+          </li>
+        </ul>
+        
+    </section>
+    <footer>
+      <ul class="footer_nav">
+        <li><a class="footer_nav__item" href="">회사소개</a></li>
+        <li><a class="footer_nav__item" href="">이용약관</a></li>
+        <li><a class="footer_nav__item" href="">개인정보처리방침</a></li>
+        <li><a class="footer_nav__item" href="">이용안내</a></li>
+      </ul>
+      <ul class="footer_social">
+        <li>
+          <a class="footer_social__item footer_social__item--facebook" href="">페이스북</a>
+        </li>
+        <li>
+          <a class="footer_social__item footer_social__item--instagram" href="">인스타그램</a>
+        </li>
+        <li>
+          <a class="footer_social__item footer_social__item--kakaotalk" href="">카카오톡</a>
+        </li>
+      </ul>
+      <div class="footer_copy">
+        Copyright&copy; 2019 Yeji Lee. All Rights Reserved.
+      </div>
+    </footer>
+  </div>
+
+  <div class="layer_search">
+    <div class="layer_search__header">
+      <span class="layer_search__back">뒤로가기</span>
+      <div class="layer_search__input__container">
+        <input class="layer_search__input" type="text" placeholder="검색어를 입력하세요">
+        <span class="layer_search__input__delete">지우기</span>
+        <span class="layer_search__input__search">검색하기</span>
+      </div>
+    </div>
+    <ul class="layer_search__beforelist">
+      <li class="layer_search__beforelist__item"><a class="layer_search__beforelist__item__text" href="">샘플</a></li>
+      <li class="layer_search__beforelist__item"><a class="layer_search__beforelist__item__text" href="">샘플</a></li>
+      <li class="layer_search__beforelist__item"><a class="layer_search__beforelist__item__text" href="">샘플</a></li>
+      <li class="layer_search__beforelist__item"><a class="layer_search__beforelist__item__text" href="">샘플</a></li>
+      <li class="layer_search__beforelist__item"><a class="layer_search__beforelist__item__text" href="">샘플</a></li>
+    </ul>
+    <div class="layer_search__result">
+      <div class="layer_search__result__menu">
+        <div class="layer_search__result__view__container">
+          <span class="layer_search__result__view--list">한줄로보기</span>
+          <span class="layer_search__result__view--thumb">두줄로보기</span>
         </div>
-      </li>
-    </ul>
-    <div class="product_detail__detail__desc">
-      <h2 class="product_detail__detail__desc__title">재료소개</h2>
-      <p>
-        내구성이 강한 하드우드로 제작합니다.
-      </p>
-    </div>
-    <img class="product_detail__detail__image" src="images/detail_detail_8.jpg" alt="화병들">
-    <p class="product_detail__detail__resource__desc">
-      - Maple &lpar;단풍나무&rpar;<br>
-      &nbsp;밝은 계열의 하드우드로 예쁜 나뭇결과 자연스럽고 고급스러운 광택을 지녔으며 가볍지만 조직이 매우 세밀하고 단단하여 고급 가구와 소품에 많이 쓰입니다.<br>
-      <br>
-      - Walnut &lpar;호두나무&rpar;<br>
-      &nbsp;은은한 흑갈색을 띠는 월넛은 우아하고 고풍스러운 느낌을 주며 충격에 강하고 조직이 치밀하며 결이 아름다워 고급가구나 소품에 많이 쓰입니다.<br>
-    </p>
-    <p class="product_detail__detail__resource__desc--highlight">
-      &ast; 천연 원목의 특성상 같은 수종이여도 색감의 톤, 결의 차이가 있을 수 있습니다. 
-    </p>
-    <img class="product_detail__detail__image" src="images/detail_detail_9.jpg" alt="화병들">
-    <p class="product_detail__detail__resource__desc">
-      1. 루비오 오일은 VOC(휘발성 유기화합물)가 일체 함유되어 있지 않은 천연오일입니다. 
-    </p>
-    <p class="product_detail__detail__resource__desc--dimmed">
-      &lpar;세계 최고의 유해물질 분석, 시험 인증기관인 유로핀스 골드 레이블 인증 획득&rpar; 
-    </p>
-    <p class="product_detail__detail__resource__desc">
-      2. 단 한겹으로도 우수한 보호력과 오래 지속되는 유지성을 지닌 천연오일입니다.
-    </p>
-    <div class="product_detail__notice">
-      <p class="product_detail__notice__paragraph"> 
-        - 수제작 제품의 특성 상 제작기간이 2~7일 정도 소요됩니다. &lpar;주문 후 자세한 일정은 안내해드립니다.&rpar;<br>
-        <br>
-        - 천연 원목 제품이기 때문에 물을 담을 시 나무에 스며들어 갈라짐의 원인이 될 수 있으니 물을 담아 사용하지 마세요.<br>
-        <br>
-        - 수제 우드 제품의 특성상 형태와 크기에 약간의 차이가 있을 수 있습니다.<br> 
-        <br>
-        - 화면의 해상도에 따라 제품의 색상이 다소 차이가 있을 수 있습니다. <br>
-        <br>
-        - 나무의 자연적인 특성인 옹이, 나무의 결, 색상 등으로 인한 교환, 환불이 어려운 점 양해 부탁드립니다.<br>
-        <br>
-        - 주문제작 상품으로 단순한 변심으로 인한 교환, 환불이 어려우니 신중한 구매 부탁드립니다.<br>
-        <br>
-        - 사이즈 및 디자인 변경은 고객센터로 문의 주시기 바랍니다.<br>
-      </p>
-    </div>
-    <ul>
-      <li>
-        <span>품명 및 모델명</span>
-        <span>원목화병</span>
-      </li>
-      <li>
-        <span>
-          법에 의한 인증,<br>
-          허가 확인사항
-        </span>
-        <span>해당없음</span>
-      </li>
-      <li>
-        <span>제조자</span>
-        <span>자체생산</span>
-      </li>
-      <li>
-        <span>제조국&lpar;수입여부&rpar;</span>
-        <span>국내</span>
-      </li>
-    </ul>    
-  </section>
-  <section class="product_detail__review">
-b
-  </section>
-  <section class="product_detail__qa">
-n
-  </section>
-  
-
-
-  <section class="product_detail__buttons">
-    <div class="product_detail__buttons__container">
-      <div class="product_detail__buttons__order">
-        <span class="product_detail__buttons__order__text">주문하기</span>
+        <select name="" id="layer_search__result__sort">
+          <option>신상품</option>
+          <option>상품명</option>
+          <option>높은가격</option>
+          <option>낮은가격</option>
+        </select>
       </div>
-      <div class="product_detail__buttons__small">
-        <span class="product_detail__buttons__icon product_detail__buttons__icon--order">장바구니</span>
-      </div>
-      <div class="product_detail__buttons__small">
-        <span class="product_detail__buttons__icon product_detail__buttons__icon--like">찜하기</span>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <ul class="footer_nav">
-      <li><a class="footer_nav__item" href="">회사소개</a></li>
-      <li><a class="footer_nav__item" href="">이용약관</a></li>
-      <li><a class="footer_nav__item" href="">개인정보처리방침</a></li>
-      <li><a class="footer_nav__item" href="">이용안내</a></li>
-    </ul>
-    <ul class="footer_social">
-      <li>
-        <a class="footer_social__item footer_social__item--facebook" href="">페이스북</a>
-      </li>
-      <li>
-        <a class="footer_social__item footer_social__item--instagram" href="">인스타그램</a>
-      </li>
-      <li>
-        <a class="footer_social__item footer_social__item--kakaotalk" href="">카카오톡</a>
-      </li>
-    </ul>
-    <div class="footer_copy">
-      Copyright&copy; 2019 Yeji Lee. All Rights Reserved. 
-    </div>
-  </footer>
-</div>
-
-<div class="layer_search">
-  <div class="layer_search__header">
-    <span class="layer_search__back">뒤로가기</span>
-    <div class="layer_search__input__container">
-      <input class="layer_search__input" type="text" placeholder="검색어를 입력하세요">
-      <span class="layer_search__input__delete">지우기</span>
-      <span class="layer_search__input__search">검색하기</span>
+      <ul class="list__container">
+        <li class="list__item">
+          <div class="list__item__left list__item__image__container">
+            <img class="list__item__image" src="images/product_1.jpg" alt="해초바구니">
+          </div>
+          <div class="list__item__right">
+            <p class="list__item__desc">#해초바구니 #바구니</p>
+            <h4 class="list__item__title">내츄럴 해초바구니(왕바구니) 12type</h4>
+            <div class="list__item__row_container--between">
+              <div class="list__item__buttons">
+                <span class="list__item__button--basket">장바구니</span>
+                <span class="list__item__button--like">찜하기</span>
+              </div>
+              <div class="list__item__price__container">
+                <span class="list__item__saleprice">4,900원</span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="list__item">
+          <div class="list__item__left list__item__image__container">
+            <img class="list__item__image" src="images/product_2.jpg" alt="석고상">
+          </div>
+          <div class="list__item__right">
+            <p class="list__item__desc">#석고상 #클래식</p>
+            <h4 class="list__item__title">석고상화분</h4>
+            <div class="list__item__row_container--between">
+              <div class="list__item__buttons">
+                <span class="list__item__button--basket">장바구니</span>
+                <span class="list__item__button--like">찜하기</span>
+              </div>
+              <div class="list__item__price__container">
+                <span class="list__item__saleprice">36,000원</span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="list__item">
+          <div class="list__item__left list__item__image__container">
+            <img class="list__item__image" src="images/product_3.jpg" alt="모노 스탠드화분">
+          </div>
+          <div class="list__item__right">
+            <p class="list__item__desc">#스탠드화분 #14종류</p>
+            <h4 class="list__item__title">모노 스탠드화분 14종</h4>
+            <div class="list__item__row_container--between">
+              <div class="list__item__buttons">
+                <span class="list__item__button--basket">장바구니</span>
+                <span class="list__item__button--like">찜하기</span>
+              </div>
+              <div class="list__item__price__container">
+                <span class="list__item__saleprice">7,900원</span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="list__item">
+          <div class="list__item__left list__item__image__container">
+            <img class="list__item__image" src="images/product_4.jpg" alt="무광베이직 원형화분">
+          </div>
+          <div class="list__item__right">
+            <p class="list__item__desc">#원형화분 #무광</p>
+            <h4 class="list__item__title">무광베이직 원형화분</h4>
+            <div class="list__item__row_container--between">
+              <div class="list__item__buttons">
+                <span class="list__item__button--basket">장바구니</span>
+                <span class="list__item__button--like">찜하기</span>
+              </div>
+              <div class="list__item__price__container">
+                <span class="list__item__saleprice">3,500원</span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="list__item">
+          <div class="list__item__left list__item__image__container">
+            <img class="list__item__image" src="images/product_10.jpg" alt="대형 석고">
+          </div>
+          <div class="list__item__right">
+            <p class="list__item__desc">#석고상화분 #대형</p>
+            <h4 class="list__item__title">대형 석고 석고상 화분 모음 65cm 내외</h4>
+            <div class="list__item__row_container--between">
+              <div class="list__item__buttons">
+                <span class="list__item__button--basket">장바구니</span>
+                <span class="list__item__button--like">찜하기</span>
+              </div>
+              <div class="list__item__price__container">
+                <span class="list__item__saleprice">65,000원</span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="list__item">
+          <div class="list__item__left list__item__image__container">
+            <img class="list__item__image" src="images/product_7.jpg" alt="독일 토분">
+          </div>
+          <div class="list__item__right">
+            <p class="list__item__desc">#독일 #토분 #앤티크</p>
+            <h4 class="list__item__title">독일 토분 바솔트 앤티크</h4>
+            <div class="list__item__row_container--between">
+              <div class="list__item__buttons">
+                <span class="list__item__button--basket">장바구니</span>
+                <span class="list__item__button--like">찜하기</span>
+              </div>
+              <div class="list__item__price__container">
+                <span class="list__item__saleprice">3,500원</span>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
-  <ul class="layer_search__beforelist">
-    <li class="layer_search__beforelist__item"><a class="layer_search__beforelist__item__text" href="">샘플</a></li>
-    <li class="layer_search__beforelist__item"><a class="layer_search__beforelist__item__text" href="">샘플</a></li>
-    <li class="layer_search__beforelist__item"><a class="layer_search__beforelist__item__text" href="">샘플</a></li>
-    <li class="layer_search__beforelist__item"><a class="layer_search__beforelist__item__text" href="">샘플</a></li>
-    <li class="layer_search__beforelist__item"><a class="layer_search__beforelist__item__text" href="">샘플</a></li>
-  </ul>
-  <div class="layer_search__result">
-    <div class="layer_search__result__menu">
-      <div class="layer_search__result__view__container">
-        <span class="layer_search__result__view--list">한줄로보기</span>
-        <span class="layer_search__result__view--thumb">두줄로보기</span>
+
+  <div class="layer_option">
+    <div class="dimmed_layer hidden_text">딤드레이어</div>
+    <div class="layer_option__content">
+      <span class="layer_option__content__line hidden_text">라인</span>
+      <div class="layer_option__content__container">
+        <div class="layer_option__content__text__container">
+          <h2 class="layer_option__title">옵션&sol;수량 선택</h2>
+          <select name="" id="layer_option__select">
+            <option>스몰사이즈</option>
+            <option>미들사이즈</option>
+            <option>라지사이즈</option>
+          </select>
+          <div class="row--between layer_option__number_updown">
+            <div class="number_updown">
+              <button class="number_updown__button number_updown__down">-</button>
+              <input class="number_updown__input" type="text" value="1">
+              <button class="number_updown__button number_updown__up">+</button>
+            </div>
+            <span class="number_updown__text">1개</span>
+          </div>
+        </div>
+        
+        <div class="row--between layer_option__buttons">
+          <button class="button--big--white">장바구니 담기</button>
+          <button class="button--big--green">주문계속</button>
+        </div>
       </div>
-      <select name="" id="layer_search__result__sort">
-        <option>신상품</option>
-        <option>상품명</option>
-        <option>높은가격</option>
-        <option>낮은가격</option>
-      </select>
-    </div>
-    <ul class="list__container">
-      <li class="list__item">
-        <div class="list__item__left list__item__image__container">
-          <img class="list__item__image" src="images/product_1.jpg" alt="해초바구니">
-        </div>
-        <div class="list__item__right">
-          <p class="list__item__desc">#해초바구니 #바구니</p>
-          <h4 class="list__item__title">내츄럴 해초바구니(왕바구니) 12type</h4>
-          <div class="list__item__row_container--between">
-            <div class="list__item__buttons">
-              <span class="list__item__button--basket">장바구니</span>
-              <span class="list__item__button--like">찜하기</span>
-            </div>
-            <div class="list__item__price__container">
-              <span class="list__item__saleprice">4,900원</span>
-            </div>
-          </div>
-        </div>
-      </li>    
-      <li class="list__item">
-        <div class="list__item__left list__item__image__container">
-          <img class="list__item__image" src="images/product_2.jpg" alt="석고상">
-        </div>
-        <div class="list__item__right">
-          <p class="list__item__desc">#석고상 #클래식</p>
-          <h4 class="list__item__title">석고상화분</h4>
-          <div class="list__item__row_container--between">
-            <div class="list__item__buttons">
-              <span class="list__item__button--basket">장바구니</span>
-              <span class="list__item__button--like">찜하기</span>
-            </div>
-            <div class="list__item__price__container">
-              <span class="list__item__saleprice">36,000원</span>
-            </div>
-          </div>
-        </div>
-      </li>    
-      <li class="list__item">
-        <div class="list__item__left list__item__image__container">
-          <img class="list__item__image" src="images/product_3.jpg" alt="모노 스탠드화분">
-        </div>
-        <div class="list__item__right">
-          <p class="list__item__desc">#스탠드화분 #14종류</p>
-          <h4 class="list__item__title">모노 스탠드화분 14종</h4>
-          <div class="list__item__row_container--between">
-            <div class="list__item__buttons">
-              <span class="list__item__button--basket">장바구니</span>
-              <span class="list__item__button--like">찜하기</span>
-            </div>
-            <div class="list__item__price__container">
-              <span class="list__item__saleprice">7,900원</span>
-            </div>
-          </div>
-        </div>
-      </li>    
-      <li class="list__item">
-        <div class="list__item__left list__item__image__container">
-          <img class="list__item__image" src="images/product_4.jpg" alt="무광베이직 원형화분">
-        </div>
-        <div class="list__item__right">
-          <p class="list__item__desc">#원형화분 #무광</p>
-          <h4 class="list__item__title">무광베이직 원형화분</h4>
-          <div class="list__item__row_container--between">
-            <div class="list__item__buttons">
-              <span class="list__item__button--basket">장바구니</span>
-              <span class="list__item__button--like">찜하기</span>
-            </div>
-            <div class="list__item__price__container">
-              <span class="list__item__saleprice">3,500원</span>
-            </div>
-          </div>
-        </div>
-      </li>    
-      <li class="list__item">
-        <div class="list__item__left list__item__image__container">
-          <img class="list__item__image" src="images/product_10.jpg" alt="대형 석고">
-        </div>
-        <div class="list__item__right">
-          <p class="list__item__desc">#석고상화분 #대형</p>
-          <h4 class="list__item__title">대형 석고 석고상 화분 모음 65cm 내외</h4>
-          <div class="list__item__row_container--between">
-            <div class="list__item__buttons">
-              <span class="list__item__button--basket">장바구니</span>
-              <span class="list__item__button--like">찜하기</span>
-            </div>
-            <div class="list__item__price__container">
-              <span class="list__item__saleprice">65,000원</span>
-            </div>
-          </div>
-        </div>
-      </li>    
-      <li class="list__item">
-        <div class="list__item__left list__item__image__container">
-          <img class="list__item__image" src="images/product_7.jpg" alt="독일 토분">
-        </div>
-        <div class="list__item__right">
-          <p class="list__item__desc">#독일 #토분 #앤티크</p>
-          <h4 class="list__item__title">독일 토분 바솔트 앤티크</h4>
-          <div class="list__item__row_container--between">
-            <div class="list__item__buttons">
-              <span class="list__item__button--basket">장바구니</span>
-              <span class="list__item__button--like">찜하기</span>
-            </div>
-            <div class="list__item__price__container">
-              <span class="list__item__saleprice">3,500원</span>
-            </div>
-          </div>
-        </div>
-      </li>    
-    </ul>   
+    </div>    
   </div>
-</div>
 
-<link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/font.css">
 
-<script src="js/lib/jquery-3.4.1.min.js"></script>
-<script src="js/lib/jquery-ui.min.js"></script>
-<script src="js/lib/swiper.min.js"></script>
-
+  <script src="js/lib/jquery-3.4.1.min.js"></script>
+  <script src="js/lib/jquery-ui.min.js"></script>
+  <script src="js/lib/swiper.min.js"></script>
 
 
-<script src="js/main.js"></script>
+
+  <script src="js/main.js"></script>
 
 </body>
+
 </html>

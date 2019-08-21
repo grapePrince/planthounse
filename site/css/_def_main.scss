@@ -1,4 +1,20 @@
 
+.layer_search, .layer_cart, .layer_option {
+  display: none;
+}
+
+.js-search-opened .content,
+.js-cart-opened .content {
+  display: none;
+}
+
+.js-search-opened .layer_search,
+.js-cart-opened .layer_cart,
+.js-option-opened .layer_option    {
+  display: block;
+}
+
+
 section {
   @include l_section;
 }
@@ -215,18 +231,6 @@ footer {
 
 // search opened 
 
-.layer_search {
-  display: none;
-}
-
-.js-search-opened .content {
-  display: none;
-}
-
-.js-search-opened .layer_search {
-  display: block;
-}
-
 
 .layer_search__header {
   @include l_layer_search__header;
@@ -361,3 +365,5 @@ footer {
   background-color: $color_green;
   border-color: $color_green;
 }
+
+
