@@ -146,6 +146,10 @@
   border-bottom: 1px solid $color_grey3;
 }
 
+.product_detail__summary .product_detail__row:last-child {
+  border-bottom: none;
+} 
+
 .product_detail__icon {
   display: inline-block;
 
@@ -220,6 +224,7 @@
 
 .product_detail__summary__paragraph {
   margin: 0 10px;
+  @include lh_content_small;
 }
 
 .product_detail__icon--question {
@@ -572,16 +577,11 @@
 
 .layer_option {
   position: fixed;
+  z-index: 3;
   left: 0; right: 0;
   top: 0; bottom: 0;
 }
 
-.dimmed_layer {
-  position: absolute;
-  top: 0; bottom: 0; left: 0; right: 0;
-  z-index: 1;
-  background: rgba(47,47,47, 0.5);
-}
 
 .layer_option__content {
   display: flex;

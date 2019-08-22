@@ -1,0 +1,166 @@
+
+.mypage__profile__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom:  1px solid $color_grey3;
+}
+
+.mypage__profile {
+  width: 90%;
+  max-width: 400px;
+  padding-bottom: 20px;
+}
+
+.mypage__profile_image__container {
+  margin: 0px 20px 0px 0px;
+
+  width: 17vw;
+  border: 1px solid $color_grey3;
+  border-radius: 3px;
+}
+
+.mypage__profile_image {
+  width: 100%;
+}
+
+.mypage__profile__text {
+  padding: 13px 0;
+}
+
+.mypage__profile__username {
+  margin-bottom: 7px;
+
+  @include typo_title_bold;
+  color: $color_green;
+}
+
+.mypage__profile__userclass {
+  @include typo_title_smaller;
+  color: $color_black4;
+}
+
+.mypage__modify_buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.mypage__modify_buttons .button--small--grey:first-child {
+  margin-bottom: 2px;
+}
+
+
+// 포인트드 ㄹ
+
+.mypage__points {
+  padding: 15px 0px;
+  border-bottom: 1px solid $color_grey3;
+}
+
+.mypage__point {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 35%;
+  box-sizing: border-box; 
+
+  border-right: 1px solid $color_grey3;
+}
+
+.mypage__point:last-child {
+  border-right: none;
+}
+
+.mypage__point__value {
+  margin-bottom: 5px;
+
+  @include typo_title_small_bold;
+  color: $color_black;
+}
+
+.mypage__point__title {
+  @include typo_title_smaller;
+  color: $color_black4;
+}
+
+// mypage menu 
+.mypage__mymenu {
+  display: flex; 
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+
+  border-bottom: 1px solid $color_grey3;
+}
+
+.mypage__mymenu__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  width: 30%;
+}
+
+.mypage__mymenu__item__icon {
+  display: inline-block;
+  margin-bottom: 15px;
+
+  @include sprites;
+}
+
+.mypage__mymenu__item__title {
+  @include typo_title_smaller_bold;
+  color: $color_black4;
+}
+
+.mypage__mymenu__item__icon--order {
+  @include sprites__document;
+}
+.mypage__mymenu__item__icon--likelist {
+  @include sprites__heart--big--green;
+}
+.mypage__mymenu__item__icon--point {
+  @include sprites__money--big;
+}
+.mypage__mymenu__item__icon--money {
+  @include sprites__bankbook--big;
+}
+.mypage__mymenu__item__icon--coupon {
+  @include sprites__coupon--big;
+}
+.mypage__mymenu__item__icon--mywrite {
+  @include sprites__talk--big;
+}
+
+// 질문버튼 
+
+.mypage__question__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 0px;
+
+  border-bottom: 1px solid $color_grey3;
+}
+
+.mypage__question__buttons .button--small--grey {
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include typo_title_smaller;
+}
+
+.mypage__question__buttons .button--small--grey:first-child {
+  margin-left: 20px;
+}
+
+.mypage__question__buttons .button--small--grey:last-child {
+  margin-right: 20px;
+}
+

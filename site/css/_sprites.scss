@@ -142,12 +142,6 @@
   background-position: -130px -0px;
 }
 
-@mixin sprites__cart--big {
-  width: 40px;
-  height: 30px;
-  background-position: -40px -100px;
-}
-
 @mixin sprites__heart--big {
   width: 32px;
   height: 30px;
@@ -172,3 +166,119 @@
   background-position: -330px -60px;
 }
 
+@mixin sprites__close {
+  width: 20px;
+  height: 20px;
+  background-position: -130px -60px;
+}
+
+@mixin sprites__close {
+  width: 20px;
+  height: 20px;
+  background-position: -130px -60px;
+}
+
+@mixin sprites__logo--image {
+  width: 30px;
+  height: 53px;
+  background-position: 0px 0px;
+}
+
+@mixin sprites__person {
+  width: 40px;
+  height: 30px;
+  background-position: 0px -100px;
+}
+
+@mixin sprites__cart--big {
+  width: 40px;
+  height: 30px;
+  background-position: -40px -100px;
+}
+
+@mixin sprites__new {
+  width: 20px;
+  height: 20px;
+  background-position: -150px -0px;
+}
+
+@mixin sprites__recommend {
+  width: 20px;
+  height: 20px;
+  background-position: -170px -0px;
+}
+
+@mixin sprites__hot {
+  width: 20px;
+  height: 20px;
+  background-position: -190px -0px;
+}
+
+@mixin sprites__sale {
+  width: 20px;
+  height: 20px;
+  background-position: -210px -0px;
+}
+
+@mixin sprites__category {
+  width: 20px;
+  height: 20px;
+  background-position: -230px -0px;
+}
+
+@mixin sprites__right--big {
+  width: 12px;
+  height: 21px;
+  background-position: -160px -60px;
+}
+
+@mixin sprites__up--big {
+  width: 21px;
+  height: 12px;
+  background-position: -380px -60px;
+}
+
+@mixin sprites__down--big {
+  width: 21px;
+  height: 12px;
+  background-position: -350px -60px;
+}
+
+
+
+@mixin sprites__document {
+  width: 40px;
+  height: 30px;
+  background-position: -80px -100px;
+}
+
+@mixin sprites__heart--big--green {
+  width: 40px;
+  height: 30px;
+  background-position: -120px -100px;
+}
+
+
+@mixin sprites__money--big {
+  width: 40px;
+  height: 30px;
+  background-position: -160px -100px;
+}
+
+@mixin sprites__bankbook--big {
+  width: 40px;
+  height: 30px;
+  background-position: -200px -100px;
+}
+
+@mixin sprites__coupon--big {
+  width: 40px;
+  height: 30px;
+  background-position: -240px -100px;
+}
+
+@mixin sprites__talk--big {
+  width: 40px;
+  height: 30px;
+  background-position: -280px -100px;
+}

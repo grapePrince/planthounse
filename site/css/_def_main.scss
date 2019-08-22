@@ -1,5 +1,8 @@
 
-.layer_search, .layer_cart, .layer_option {
+.layer_search, 
+.layer_cart, 
+.layer_option,
+.layer_left {
   display: none;
 }
 
@@ -10,8 +13,13 @@
 
 .js-search-opened .layer_search,
 .js-cart-opened .layer_cart,
-.js-option-opened .layer_option    {
+.js-option-opened .layer_option,
+.js-left-opened .layer_left {
   display: block;
+}
+
+.js-option-opened, .js-left-opened {
+  position: fixed;
 }
 
 
@@ -365,5 +373,214 @@ footer {
   background-color: $color_green;
   border-color: $color_green;
 }
+
+.layer_left {
+  position: absolute;
+  top: 0; bottom: 0; left: 0;   right: 0;
+  overflow-y: scroll;
+  z-index: 3;
+}
+
+.layer_left__dimmed__container {
+  position: relative;
+}
+
+.layer_left__content {
+  position: relative;
+  z-index: 3;
+  width: 85%; 
+  padding-bottom: 17px;
+
+  background: $color_white;
+}
+
+.layer_left__close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 100%; top: 0;
+  width: 40px; height: 40px;
+
+  background: $color_white;
+}
+
+.layer_left__close--icon {
+  @include sprites;
+  @include sprites__close;
+  display: inline-block;
+}
+
+.layer_left__logo__container {
+  padding: 20px 0 5px;
+  text-align: center;
+}
+
+.layer_left__logo {
+  display: inline-block;
+
+
+  @include sprites;
+  @include sprites__logo--image;
+}
+
+.layer_left__buttons {
+  padding: 17px;
+
+  border-bottom: 1px solid  $color_grey3;
+}
+
+.layer_left__button {
+  width: 48%;
+  padding: 10px 0;
+}
+
+.layer_left__menu {
+  justify-content: space-around;
+  align-items: center;
+  padding: 17px 0;
+
+  border-bottom: 1px solid $color_grey3;
+}
+
+.layer_left__menu__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.layer_left__menu__item__icon {
+  display: inline-block;
+  margin-bottom: 10px;
+
+  @include sprites;
+}
+
+.layer_left__menu__item__icon--mypage {
+  @include sprites__person;
+}
+
+.layer_left__menu__item__icon--cart {
+  @include sprites__cart--big;
+}
+
+.layer_left__menu__item__icon--order {
+  @include sprites__document;
+}
+
+.layer_left__menu__item__icon--likelist {
+  @include sprites__heart--big--green ;
+}
+
+.layer_left__menu__item__title {
+  @include typo_title_tiny;
+  color: $color_black5;
+}
+
+.layer_left__submenu__item {
+  padding: 15px 15px;
+
+  border-bottom: 1px solid $color_grey3;
+}
+
+.layer_left__submenu__item__left {
+  margin: 0;
+}
+
+li:last-child .layer_left__submenu__item {
+  padding-bottom: 10px;
+
+  border-bottom: none;
+}
+
+.layer_left__submenu__item__icon {
+  display: inline-block;
+  margin-right: 2px;
+
+  @include sprites;
+}
+
+.layer_left__submenu__item__icon--new {
+  @include sprites__new;
+}
+.layer_left__submenu__item__icon--recommend {
+  @include sprites__recommend;
+}
+.layer_left__submenu__item__icon--hot {
+  @include sprites__hot;
+}
+.layer_left__submenu__item__icon--sale {
+  @include sprites__sale;
+}
+.layer_left__submenu__item__icon--category {
+  @include sprites__category;
+}
+
+.layer_left__submenu__item__title {
+  @include typo_title_small_bold;
+  color: $color_black5;
+}
+
+.layer_left__submenu__item__right {
+  display: inline-block;
+  @include sprites;
+  @include sprites__right--big;
+}
+
+.layer_left__submenu__item__arrow.js-up {
+  display: inline-block;
+  @include sprites;
+  @include sprites__up--big;
+}
+
+.layer_left__submenu__item__arrow.js-down {
+  display: inline-block;
+  @include sprites;
+  @include sprites__down--big;
+}
+
+.layer_left__categories {
+  padding: 0px 7px 7px;
+  text-align: center;
+}
+
+.layer_left__category {
+  padding: 12px;
+  @include typo_title_smaller;
+}
+
+.layer_left__category:first-child {
+  padding-top: 0px;
+}
+
+.layer_left_notice_buttons {
+  position: relative;
+  display: flex;
+}
+
+.layer_left_notice_buttons:after {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 50%; transform: translateX(-50%);
+  
+  width: 1px;
+  background: $color_grey5;
+}
+
+.layer_left_notice_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 15px 0;
+  box-sizing: border-box;
+
+  background: $color_grey2;
+  @include typo_title_small_bold;
+  color: $color_black4;
+}
+
+
 
 

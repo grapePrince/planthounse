@@ -478,6 +478,11 @@ textarea:-ms-input-placeholder {
   color: $color_black;
 }
 
+.row--flex {
+  display: flex;
+  align-items: center;
+}
+
 .row {
   display: flex;
   align-items: center;
@@ -510,4 +515,27 @@ textarea:-ms-input-placeholder {
   background: $color_green;
   border: 1px solid $color_green;
   border-radius: 3px;
+}
+
+.button--small--grey {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 84px;
+  padding: 7px 0;
+  box-sizing: border-box;
+
+  @include typo_title_tiny;
+  color: $color_black4;
+  background: $color_white;
+  border: 1px solid $color_grey5;
+  border-radius: 3px;
+}
+
+
+.dimmed_layer {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  z-index: 1;
+  background: rgba(47,47,47, 0.5);
 }
