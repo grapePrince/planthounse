@@ -2,7 +2,10 @@
 .layer_search, 
 .layer_cart, 
 .layer_option,
-.layer_left {
+.layer_left,
+.layer_login, 
+.layer_join
+{
   display: none;
 }
 
@@ -14,11 +17,15 @@
 .js-search-opened .layer_search,
 .js-cart-opened .layer_cart,
 .js-option-opened .layer_option,
-.js-left-opened .layer_left {
+.js-left-opened .layer_left,
+.js-login-opened .layer_login,
+.js-join-opened .layer_join {
   display: block;
 }
 
-.js-option-opened, .js-left-opened {
+.js-option-opened, 
+.js-left-opened,
+.js-login-opened {
   position: fixed;
 }
 
@@ -582,5 +589,48 @@ li:last-child .layer_left__submenu__item {
 }
 
 
+// 로그인 레이어
+
+.layer_login {
+  position: fixed;
+  left: 0; right: 0; top: 0; bottom: 0;
+  z-index: 3;
+
+  background: $color_white;
+}
+
+.layer_login__before {
+  margin-top: 10px;
+}
+
+.layer_login__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0 40px;
+}
+
+.layer_login__logo--image {
+  display: inline-block;
+  margin-bottom: 22px;
+
+  @include sprites;
+  @include sprites__logo--image;
+}
+
+.layer_login__logo--text {
+  display: inline-block;
+  @include sprites;
+  @include sprites__header__upper__logo;
+}
+
+.layer_login__input__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
 
 

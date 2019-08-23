@@ -539,3 +539,13 @@ textarea:-ms-input-placeholder {
   z-index: 1;
   background: rgba(47,47,47, 0.5);
 }
+
+.before_arrow {
+  display: inline-block;
+  @include sprites;
+  @include sprites__back--black;
+}
+
+.input--big {
+  border: 1px solid $color_grey4;
+}

@@ -56,7 +56,7 @@
 <link rel="stylesheet" href="css/app.css" />
 
 </head>
-<body class="main">
+<body class="main js-login-opened">
 
 <div class="content">
   <header class="header">
@@ -660,8 +660,8 @@
         <span class="layer_left__logo">로고</span>
       </h2>
       <div class="row--between layer_left__buttons">
-        <button class="button--big--white layer_left__button">로그인</button>
-        <button class="button--big--green layer_left__button">회원가입</button>
+        <button class="layer_left__button--login button--big--white layer_left__button">로그인</button>
+        <button class="layer_left__button--join button--big--green layer_left__button">회원가입</button>
       </div>
       <ul class="row layer_left__menu">
         <li>
@@ -757,6 +757,41 @@
     <div class="dimmed_layer hidden_text">딤드레이어</div>
   </div>
 </div>
+
+<div class="layer_login">
+  <div class="container">
+    <span class="before_arrow layer_login__before">뒤로가기</span>
+    <div class="layer_login__logo">
+      <span class="layer_login__logo--image">로고이미지</span>
+      <span class="layer_login__logo--text">화분있는집</span>
+    </div>
+    <form action="">
+      <div class="layer_login__input__container">
+        <input type="text" class="layer_login__email input--big typo_title color_black3" placeholder="이메일">
+        <input type="text" class="layer_login__password input--big typo_title color_black3" placeholder="비밀번호">
+      </div>
+      <button class="button--big--green">로그인하기</button>
+    </form>    
+    <div class="layer_login__links">
+      <a class="layer_login__link typo_title_smaller_bold color_black3" href="">비밀번호를 잊어버리셨나요? &gt;</a>
+      <a class="layer_login__link typo_title_smaller_bold color_black3" href="">회원가입하러가기 &gt;</a>
+    </div>
+    <div class="layer_login__sns">
+      <ul class="layer_login__sns__links">
+        <li><a class="sprite sprites__facebook" href="">페이스북</a></li>
+        <li><a class="sprite sprites__instagram" href="">인스타그램</a></li>
+        <li><a class="sprite sprites__kaokaotalk" href="">카카오톡</a></li>
+      </ul>
+      <p class="typo_title_tiny_bold color_black3">SNS 계정으로도 로그인 하실 수 있어요</p>
+    </div>
+    <p class="typo_title_small_bold color_black5">비회원 주문 조회하기</p>
+  </div>
+</div>
+
+<div class="layer_join">
+
+</div>
+
 
 <link rel="stylesheet" href="css/font.css">
 

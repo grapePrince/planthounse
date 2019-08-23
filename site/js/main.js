@@ -69,6 +69,18 @@ $(function() {
     $('body').removeClass('js-left-opened');
   });
 
+  $('.layer_left__button--login').on('click', function() {
+    $('body').addClass('js-login-opened');
+  });
+
+  $('.layer_login .before_arrow').on('click', function() {
+    $('body').removeClass('js-login-opened');
+  });
+
+  $('.layer_left__button--join').on('click', function() {
+    $('body').addClass('js-join-opened');
+  });
+
 
   $('.list__item__image, .list__item__title').on('click', function() {
     location.href = home_url + '/detail.html';
@@ -78,7 +90,7 @@ $(function() {
   $('.header__upper__logo, .layer_left__menu__item').on('click', function(e) {
     e.preventDefault();
     location.href = home_url + $(this).attr('href');
-  })
+  });
 
 
   $( "#layer_search__result__sort" ).selectmenu();
