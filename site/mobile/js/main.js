@@ -73,10 +73,12 @@ $(function() {
   $('.header__upper__menu_btn').on('click', function(e) {
     e.preventDefault();
     $('body').addClass('js-left-opened');
+    $('.layer_left').addClass('js-active');
   });
   
   $('.layer_left .dimmed_layer, .layer_left__close').on('click', function() {
     $('body').removeClass('js-left-opened');
+    $('.layer_left').removeClass('js-active');
   });
 
   $('.layer_left__button--login').on('click', function() {
@@ -119,11 +121,78 @@ $(function() {
     $('body').removeClass('js-like-opened');
   });
 
+  $('.list__item__button--like').on('click', function() {
+    $(this).toggleClass('js-active');
+  });
+
+  $('.number_updown__up').on('click', function() {
+    var number = Number($('.number_updown__input').val());
+    number += 1;
+    $('.number_updown__input').val(number);
+    $('.number_updown__text').text(number + '개');
+  });
+
+  $('.number_updown__down').on('click', function() {
+    var number = Number($('.number_updown__input').val());
+    number -= 1;
+    number = Math.max(1, number);
+    $('.number_updown__input').val(number);
+    $('.number_updown__text').text(number + '개');
+  });
+ 
+  $('.layer_like .layer_list__item__checkbox input').on('change', function() {
+    setTimeout(function() {
+      var all_checked = true;
+      if(!$('#layer_list__item__checkbox--like_1').prop('checked')) {
+        all_checked = false;
+      }
+      if(!$('#layer_list__item__checkbox--like_2').prop('checked')) {
+        all_checked = false;
+      }
+      if(!$('#layer_list__item__checkbox--like_3').prop('checked')) {
+        all_checked = false;
+      }
+      if(all_checked) {
+        $('#layer_like__select_all').prop('checked', true);
+      }
+
+    }, 100);
+    
+  });
+
+  $('#layer_like__select_all').on('change', function() {
+    if($('#layer_like__select_all').prop('checked')) {
+      $('#layer_list__item__checkbox--like_1').prop('checked', true);
+      $('#layer_list__item__checkbox--like_2').prop('checked', true);
+      $('#layer_list__item__checkbox--like_3').prop('checked', true);
+    } else {
+      $('#layer_list__item__checkbox--like_1').prop('checked', false);
+      $('#layer_list__item__checkbox--like_2').prop('checked', false);
+      $('#layer_list__item__checkbox--like_3').prop('checked', false);
+    };
+  });
+
+  $('.layer_login__button').on('click', function(e) {
+    e.preventDefault();
+    var noerror = true;
+    if($('.layer_login__password').val().length < 1) {
+      $('.layer_login__error').text('패스워드를 확인해주세요');
+      noerror = false;
+    }
+    if($('.layer_login__email').val().length < 1) {
+      $('.layer_login__error').text('이메일을 확인해주세요');
+      noerror = false;
+    }
+    if(noerror) {
+      $('.layer_login__error').text();  
+      location.href = home_url + '/index.html';
+
+    }
+  });
   
   $('.list__item__image, .list__item__title').on('click', function() {
     location.href = home_url + '/detail.html';
   });
-
 
   $('.header__upper__logo, .js-layer_left__menu__item--mypage, .js-button--home, .js-button--mypage').on('click', function(e) {
     e.preventDefault();
@@ -134,6 +203,15 @@ $(function() {
     e.preventDefault();
     location.href = home_url + '/list.html';
   });
+
+  $('.layer_left__submenu__item, .layer_left__category').on('click', function(e) {
+    e.preventDefault();
+    location.href = home_url + '/list.html';
+  });
+
+  $('.mypage__mymenu__item--likelist').on('click', function(e) {
+    $('body').addClass('js-like-opened');
+  })
 
   if($('.layer_search select').length) {
     $('.layer_search select').selectmenu();
@@ -152,15 +230,8 @@ $(function() {
     $('.js-nav--home').addClass('js-active');
   }
 
-  $('.layer_join__button').on('click', function(e) {
-    e.preventDefault();
 
-
-    if($('.layer_join__button').text() === "가입하기") {
-      location.href = home_url + '/index.html';
-    }
-
-
+  function validateJoin() {
     var noError = true;
 
     if($('.layer_join__input--email').val().length < 1) {
@@ -191,6 +262,16 @@ $(function() {
       $('.layer_join__error--terms').text('');
     }
 
+    return noError;
+    
+  }
+
+  $('.layer_join__button').on('click', function(e) {
+    e.preventDefault();
+    if($('.layer_join__button').text() === "가입하기") {
+      location.href = home_url + '/index.html';
+    }
+    var noError = validateJoin();
     if(noError) {     
       $('.layer_join')
       .removeClass('js-basic-error')
@@ -201,21 +282,40 @@ $(function() {
     } else {
       $('.layer_join').addClass('js-basic-error');
     }
-
   });
 
   $('.layer_join__input--email').on('keyup', function() {
     $('.layer_join__error--email').text('');
+    noError = validateJoin();
+    if(noError) {     
+      $('.layer_join')
+      .removeClass('js-basic-error');
+    } 
   });
   $('.layer_join__input--password').on('keyup', function() {
     $('.layer_join__error--password').text('');
+    noError = validateJoin();
+    if(noError) {     
+      $('.layer_join')
+      .removeClass('js-basic-error');
+    } 
   });
   $('.layer_join__input--nickname').on('keyup', function() {
     $('.layer_join__error--nickname').text('');
     $('.layer_join_textlength').text(  $('.layer_join__input--nickname').val().length + ' / 12');
+    noError = validateJoin();
+    if(noError) {     
+      $('.layer_join')
+      .removeClass('js-basic-error');
+    } 
   });
   $('#layer_join_agreement').on('change', function() {
     $('.layer_join__error--terms').text('');
+    noError = validateJoin();
+    if(noError) {     
+      $('.layer_join')
+      .removeClass('js-basic-error');
+    } 
   });
 
 

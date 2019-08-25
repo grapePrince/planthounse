@@ -510,6 +510,11 @@ input[type=checkbox]:checked + label:after {
       background-image: url("../images/sprite@2x.png");
       background-size: 458px 260px; } }
 
+.list__item__button--like.js-active {
+  width: 15px;
+  height: 14px;
+  background-position: -50px -40px; }
+
 .list__item__button--float {
   width: 20px;
   height: 20px;
@@ -718,7 +723,6 @@ input[type=checkbox]:checked + label:after {
 .layer_search,
 .layer_cart,
 .layer_option,
-.layer_left,
 .layer_login,
 .layer_join,
 .layer_cart,
@@ -1199,10 +1203,15 @@ footer {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: -100%;
+  right: 100%;
   overflow-y: scroll;
-  z-index: 3; }
+  z-index: 3;
+  transition: left 0.7s, right 0.7s; }
+
+.layer_left.js-active {
+  left: 0;
+  right: 0; }
 
 .layer_left__dimmed__container {
   position: relative; }
@@ -1466,12 +1475,17 @@ li:last-child .layer_left__submenu__item {
   margin: 15px;
   text-align: left; }
 
+.layer_login__error {
+  text-align: left;
+  margin-left: 50px;
+  margin-bottom: 10px; }
+
 .layer_login__logo {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 5px 0 40px; }
+  margin: 5px 0 25px; }
 
 .layer_login__logo--image {
   display: inline-block;

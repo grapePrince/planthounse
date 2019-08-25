@@ -406,6 +406,10 @@ input[type=checkbox]:checked + label:after {
   @include s_list__item__button--like;
 }
 
+.list__item__button--like.js-active {
+  @include sprites__like--active;
+}
+
 .list__item__button--float {
   @include s_list__item__button--float;
   @include l_list__item__button--float;
