@@ -139,8 +139,8 @@ $(function() {
     $('.layer_search select').selectmenu();
   }
 
-  if($( "#layer_search__result__sort" ).length) {
-    $( "#layer_search__result__sort" ).selectmenu();
+  if($( "#layer_search__result__sort--page" ).length) {
+    $( "#layer_search__result__sort--page" ).selectmenu();
   }
   if($('#layer_option__select').length) {
     $('#layer_option__select').selectmenu();
