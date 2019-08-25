@@ -45,8 +45,14 @@ a {
   outline: none;
 }
 
+hr {
+  margin: 0;
+  border-style: solid;
+}
+
 input {
   border: none;
+  outline: none;
 }
 
 input::-webkit-input-placeholder {
@@ -65,6 +71,52 @@ textarea:-ms-input-placeholder {
 .hidden {
   display: none;
 }
+
+input[type=checkbox] {
+  opacity: 0;
+}
+
+input[type=checkbox] + label {
+  position: relative;
+  margin-left: 2px;
+}
+
+input[type=checkbox] + label:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: -23px;
+  top: 50%; transform: translateY(-50%);
+ 
+  border: 1px solid $color_grey5;
+  background: $color_grey1;
+  border-radius: 3px;
+}
+
+input[type=checkbox] + label:after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  left: -19px;
+  top: calc(50% + 1px); transform: translateY(-50%);
+
+  @include sprites;
+  @include sprites__checkbox;
+}
+
+
+input[type=checkbox]:checked  + label:before {
+  border: 1px solid $color_green;
+  background: $color_green;
+}
+
+input[type=checkbox]:checked + label:after {
+  background-position-y: -15px;
+}
+
+
+
 
 @mixin section_title {
   @include l_section_title;
@@ -379,6 +431,11 @@ textarea:-ms-input-placeholder {
   @include s_list__item__tag--hot;
 }
 
+.listitem__left {
+  margin-right: 10px;
+}
+
+
 .list__more {  
   @include typo_title_tiny_bold;
   @include l_list__more;
@@ -494,6 +551,37 @@ textarea:-ms-input-placeholder {
   justify-content: space-between;
   align-items: center;
 }
+ 
+@mixin button--100--grey {
+  width: 100%;
+  padding: 12px 0;
+
+  @include typo_content_big;
+  color: $color_white;
+  background: $color_black1;
+  border: 1px solid $color_black1;
+  border-radius: 3px; 
+}
+
+.button--100--grey {
+  @include button--100--grey;
+}
+
+
+@mixin button-100--green {
+  width: 100%;
+  padding: 12px 0;
+
+  @include typo_content_big;
+  color: $color_white;
+  background: $color_green;
+  border: 1px solid $color_green;
+  border-radius: 3px; 
+}
+
+.button-100--green {
+  @include button-100--green;
+}
 
 .button--big--white {
   width: 50%;
@@ -547,5 +635,26 @@ textarea:-ms-input-placeholder {
 }
 
 .input--big {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  padding: 15px;
+  box-sizing: border-box;
+
+  @include typo_title;
+  color: $color_black3;
+  background: $color_white;
   border: 1px solid $color_grey4;
+  border-radius: 3px;
+}
+
+.image {
+  width: 100%;
+}
+
+.imagecontainer--35 {
+  display: inline-block;
+  border-radius: 3px;
+  width: 35%;
 }

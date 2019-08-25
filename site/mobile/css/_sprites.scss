@@ -78,11 +78,7 @@
   background-position: -110px -0px;
 }
 
-@mixin sprites__delete {
-  width: 16px;
-  height: 16px;
-  background-position: -110px -0px;
-}
+
 
 @mixin sprites__view--list {
   width: 25px;
@@ -173,6 +169,12 @@
   width: 7px;
   height: 12px;
   background-position: -330px -60px;
+}
+
+@mixin sprites__right--black {
+  width: 7px;
+  height: 12px;
+  background-position: -360px -30px;
 }
 
 @mixin sprites__close {
@@ -292,6 +294,24 @@
   background-position: -280px -100px;
 }
 
+@mixin sprites__checkbox {
+  width: 10px;
+  height: 10px; 
+  background-position: -250px 0px;
+}
+
+@mixin sprites__garbagecan {
+  width: 15px;
+  height: 15px;
+  background-position: -90px -0px;
+}
+
+@mixin sprites__cart {
+  width: 15px;
+  height: 14px;
+  background-position: -50px -0px;
+}
+
 .sprite {
   display: inline-block;
   @include sprites;  
@@ -307,4 +327,32 @@
 
 .sprites__kakaotalk {
   @include sprites__kakaotalk;
+}
+
+.sprites__right--black {
+  @include sprites__right--black;
+}
+
+.sprites__back {
+  @include sprites__back;
+}
+
+.sprites__delete {
+  @include sprites__delete;
+}
+
+.sprites__garbagecan {
+  @include sprites__garbagecan;
+}
+
+.sprites__cart {
+  @include sprites__cart;
+}
+
+.sprites__left {
+  @include sprites__left;
+}
+
+.sprites__right {
+  @include sprites__right;
 }

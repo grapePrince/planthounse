@@ -5,15 +5,15 @@ const browserSync = require('browser-sync').create();
 
 
 const SRC = {
-    JS: 'js/*',
-    CSS: 'css/app.scss',
-    HTML: '*.html'
+    JS: 'mobile/js/*',
+    CSS: 'mobile/css/app.scss',
+    HTML: 'mobile/*.html'
 };
 
 const DEST = {
-    JS: 'js',
-    CSS: 'css',
-    HTML: ''
+    JS: 'mobile/js',
+    CSS: 'mobile/css',
+    HTML: 'mobile/'
 };
 
 const build_css = series(task_scss);
@@ -47,17 +47,17 @@ exports.default = function() {
         }
     });
 
-    const cssWatcher = watch('css/*.scss', { events: 'all', delay: 500 }, build_css);
+    const cssWatcher = watch('mobile/css/*.scss', { events: 'all', delay: 500 }, build_css);
     cssWatcher.on('change', function(path, stats) {
         console.log(`File ${path} was changed`);
     });
 
-    const jsWatcher = watch('js/*', { events: 'all', delay: 500 }, reload_js);
+    const jsWatcher = watch('mobile/js/*', { events: 'all', delay: 500 }, reload_js);
     jsWatcher.on('change', function(path, stats) {
         console.log(`File ${path} was changed`);
     });
 
-    const htmlWatcher = watch('*.html', { events: 'all', delay: 500 }, reload_html);
+    const htmlWatcher = watch('mobile/*.html', { events: 'all', delay: 500 }, reload_html);
     htmlWatcher.on('change', function(path, stats) {
         console.log(`File ${path} was changed`);
     });   
