@@ -1214,13 +1214,16 @@ footer {
   right: 0; }
 
 .layer_left__dimmed__container {
-  position: relative; }
+  position: relative;
+  min-height: 100%; }
 
 .layer_left__content {
   position: relative;
   z-index: 3;
   width: 85%;
   padding-bottom: 17px;
+  min-height: 100vh;
+  box-sizing: border-box;
   background: #fff; }
 
 .layer_left__close {
@@ -1429,6 +1432,13 @@ li:last-child .layer_left__submenu__item {
 .layer_left_notice_buttons {
   position: relative;
   display: flex; }
+
+@media all and (min-height: 800px) {
+  .layer_left_notice_buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; } }
 
 .layer_left_notice_buttons:after {
   content: '';
