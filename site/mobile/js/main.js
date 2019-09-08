@@ -133,19 +133,26 @@ $(function() {
     $(this).toggleClass('js-active');
   });
 
-  $('.number_updown__up').on('click', function() {
-    var number = Number($('.number_updown__input').val());
+  $('.js-cart-plus-button').on('click', function(e) {
+    var $parent = $(this).parent();
+    var $input = $parent.find('.number_updown__input');
+    var $text = $parent.parent().find('.number_updown__text');
+
+    var number = Number($input.val());
     number += 1;
-    $('.number_updown__input').val(number);
-    $('.number_updown__text').text(number + '개');
+    $input.val(number);
+    $text.text(number + '개');
   });
 
-  $('.number_updown__down').on('click', function() {
-    var number = Number($('.number_updown__input').val());
+  $('.js-cart-minus-button').on('click', function() {
+    var $parent = $(this).parent();
+    var $input = $parent.find('.number_updown__input');
+    var $text = $parent.parent().find('.number_updown__text');
+    var number = Number($input.val());
     number -= 1;
     number = Math.max(1, number);
-    $('.number_updown__input').val(number);
-    $('.number_updown__text').text(number + '개');
+    $input.val(number);
+    $text.text(number + '개');
   });
  
   $('.layer_like .layer_list__item__checkbox input').on('change', function() {
