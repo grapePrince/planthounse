@@ -1,7 +1,7 @@
 $(function() {
 
   if(location.href.indexOf('rahata.dothome.co.kr') !== -1) {
-    var homne_url = location.origin + '/planthouse/mobile';
+    var home_url = location.origin + '/planthouse/mobile';
   } else if (location.href.indexOf('file') !== -1) {
     var home_urls = location.href.split('/');
     home_urls = home_urls.splice(0, home_urls.length - 1);
@@ -9,6 +9,7 @@ $(function() {
   } else {
     var home_url = location.origin + '/mobile';
   }
+  console.log(home_url);
 
   if($('.swiper-container').length) {
     var swiper = new Swiper('.swiper-container', {
