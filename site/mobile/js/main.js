@@ -188,7 +188,7 @@ $(function() {
     };
   });
 
-  $('.layer_like .layer_list__item__checkbox input').on('change', function() {
+  $('.layer_cart .layer_list__item__checkbox input').on('change', function() {
     setTimeout(function() {
       var all_checked = true;
       if(!$('#layer_list__item__checkbox--cart_1').prop('checked')) {
