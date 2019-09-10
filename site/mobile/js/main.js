@@ -170,6 +170,8 @@ $(function() {
       }
       if(all_checked) {
         $('#layer_like__select_all').prop('checked', true);
+      } else {
+        $('#layer_like__select_all').prop('checked', false);
       }
 
     }, 100);
@@ -202,6 +204,8 @@ $(function() {
       }
       if(all_checked) {
         $('#layer_cart__select_all').prop('checked', true);
+      } else {
+        $('#layer_cart__select_all').prop('checked', false);
       }
 
     }, 100);
