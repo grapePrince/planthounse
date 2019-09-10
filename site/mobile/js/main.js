@@ -201,7 +201,7 @@ $(function() {
         all_checked = false;
       }
       if(all_checked) {
-        $('#layer_like__select_all').prop('checked', true);
+        $('#layer_cart__select_all').prop('checked', true);
       }
 
     }, 100);
