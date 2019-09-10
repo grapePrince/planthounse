@@ -188,6 +188,38 @@ $(function() {
     };
   });
 
+  $('.layer_like .layer_list__item__checkbox input').on('change', function() {
+    setTimeout(function() {
+      var all_checked = true;
+      if(!$('#layer_list__item__checkbox--cart_1').prop('checked')) {
+        all_checked = false;
+      }
+      if(!$('#layer_list__item__checkbox--cart_2').prop('checked')) {
+        all_checked = false;
+      }
+      if(!$('#layer_list__item__checkbox--cart_3').prop('checked')) {
+        all_checked = false;
+      }
+      if(all_checked) {
+        $('#layer_like__select_all').prop('checked', true);
+      }
+
+    }, 100);
+    
+  });
+
+  $('#layer_cart__select_all').on('change', function() {
+    if($('#layer_cart__select_all').prop('checked')) {
+      $('#layer_list__item__checkbox--cart_1').prop('checked', true);
+      $('#layer_list__item__checkbox--cart_2').prop('checked', true);
+      $('#layer_list__item__checkbox--cart_3').prop('checked', true);
+    } else {
+      $('#layer_list__item__checkbox--cart_1').prop('checked', false);
+      $('#layer_list__item__checkbox--cart_2').prop('checked', false);
+      $('#layer_list__item__checkbox--cart_3').prop('checked', false);
+    };
+  });
+
   $('.layer_login__button').on('click', function(e) {
     e.preventDefault();
     var noerror = true;
